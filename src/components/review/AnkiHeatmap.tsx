@@ -282,9 +282,9 @@ export default function AnkiHeatmap({ className = '', defaultTheme = 'meo-cam' }
         </div>
       )}
 
-      {/* 3. Dòng Thống Kê Chuẩn 100% Anki Heatmap (1 hàng duy nhất: Daily average, Days learned, Longest streak, Current streak) */}
+      {/* 3. Dòng Thống Kê Chuẩn 100% Anki Heatmap (Mobile: 2 cột gọn gàng, Desktop: 1 hàng ngang chuẩn Anki) */}
       <div
-        className={`pt-2.5 flex items-center justify-between gap-2 text-xs sm:text-sm font-bold tracking-tight select-text ${
+        className={`pt-2.5 grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-x-3 gap-y-2 text-xs sm:text-sm font-bold tracking-tight select-text ${
           isDark ? 'border-t border-zinc-700/40 text-white' : 'border-t border-orange-200/80 text-orange-950'
         }`}
       >

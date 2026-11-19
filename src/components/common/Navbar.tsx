@@ -70,7 +70,8 @@ export default function Navbar() {
 
           {/* Navigation links & Utilities */}
           <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-            <nav className="flex items-center gap-1 sm:gap-1.5">
+            {/* Desktop Navigation Links */}
+            <nav className="hidden md:flex items-center gap-1 sm:gap-1.5">
               {navLinks.map((link) => {
                 const Icon = link.icon;
                 const isActive = pathname === link.href;
@@ -78,7 +79,7 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`whitespace-nowrap shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-bold transition-all ${
+                    className={`whitespace-nowrap shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl text-xs sm:text-sm font-bold transition-all press-spring ${
                       isActive
                         ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md shadow-orange-500/20 scale-102'
                         : 'text-orange-950/85 hover:bg-orange-100/70 hover:text-orange-950'
@@ -96,7 +97,7 @@ export default function Navbar() {
               })}
             </nav>
 
-            <div className="h-6 w-px bg-orange-200/80 mx-0.5 hidden sm:block" />
+            <div className="h-6 w-px bg-orange-200/80 mx-0.5 hidden md:block" />
 
             {/* Chỉ báo trạng thái Đồng bộ Đám mây (Icon gọn gàng kèm Tooltip) */}
             {isConfigured ? (
@@ -112,7 +113,7 @@ export default function Navbar() {
                   type="button"
                   onClick={() => runFullSync()}
                   title={errorMessage || "Lỗi đồng bộ. Bấm để Mèo Cam thử lại nhé!"}
-                  className="p-2 rounded-2xl bg-rose-50 border border-rose-300 text-rose-800 hover:bg-rose-100 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0"
+                  className="p-2 rounded-2xl bg-rose-50 border border-rose-300 text-rose-800 hover:bg-rose-100 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0 press-spring"
                 >
                   <CloudOff className="w-4 h-4 text-rose-600" />
                 </button>
@@ -121,7 +122,7 @@ export default function Navbar() {
                   type="button"
                   onClick={() => runFullSync()}
                   title="Dữ liệu đã được lưu an toàn trên Supabase Cloud. Bấm để đồng bộ lại"
-                  className="p-2 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-800 hover:bg-emerald-100 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0"
+                  className="p-2 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-800 hover:bg-emerald-100 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0 press-spring"
                 >
                   <Cloud className="w-4 h-4 text-emerald-600" />
                 </button>
@@ -131,7 +132,7 @@ export default function Navbar() {
                 type="button"
                 onClick={() => setShowSettings(true)}
                 title="Đang lưu cục bộ trên máy (Dexie). Bấm để cài đặt Supabase Cloud"
-                className="p-2 rounded-2xl bg-orange-100/70 border border-orange-200 text-orange-800 hover:bg-orange-200 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0"
+                className="p-2 rounded-2xl bg-orange-100/70 border border-orange-200 text-orange-800 hover:bg-orange-200 transition-colors shadow-2xs cursor-pointer flex items-center justify-center shrink-0 press-spring"
               >
                 <HardDrive className="w-4 h-4 text-orange-600" />
               </button>
@@ -142,13 +143,48 @@ export default function Navbar() {
               type="button"
               onClick={() => setShowSettings(true)}
               title="Cài đặt Mèo Cam & API Key"
-              className="p-2 rounded-2xl text-orange-800 hover:bg-orange-100/70 hover:text-orange-950 border border-orange-200/80 transition-colors bg-white/80 shadow-2xs shrink-0 cursor-pointer"
+              className="p-2 rounded-2xl text-orange-800 hover:bg-orange-100/70 hover:text-orange-950 border border-orange-200/80 transition-colors bg-white/80 shadow-2xs shrink-0 cursor-pointer press-spring"
             >
               <Settings className="w-4 h-4" />
             </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile Bottom Navigation Bar (Dành riêng cho màn hình điện thoại < md) */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffdfa]/95 backdrop-blur-lg border-t-2 border-orange-200/90 shadow-2xl px-2 py-1 flex items-center justify-around safe-bottom">
+        {navLinks.map((link) => {
+          const Icon = link.icon;
+          const isActive = pathname === link.href;
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`flex-1 min-h-[48px] py-1 px-1 rounded-2xl flex flex-col items-center justify-center gap-0.5 transition-all text-center relative press-spring ${
+                isActive
+                  ? 'text-orange-600 font-extrabold'
+                  : 'text-orange-900/70 hover:text-orange-950 font-bold'
+              }`}
+            >
+              <div
+                className={`p-1 rounded-xl transition-all ${
+                  isActive ? 'bg-orange-100 text-orange-600 shadow-xs' : ''
+                }`}
+              >
+                <Icon className="w-5 h-5" />
+              </div>
+              <span className="text-[10px] leading-tight font-medium tracking-tight">
+                {link.label}
+              </span>
+              {link.count !== undefined && link.count > 0 && (
+                <span className="absolute top-1 right-3 px-1.5 py-0.2 rounded-full bg-rose-500 text-white text-[9px] font-black shadow-xs animate-pulse">
+                  {link.count}
+                </span>
+              )}
+            </Link>
+          );
+        })}
+      </nav>
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
     </>

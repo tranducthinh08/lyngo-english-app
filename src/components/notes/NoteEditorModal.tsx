@@ -325,17 +325,17 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 backdrop-blur-sm p-4 overflow-y-auto">
-      <div className="bg-[#fffdfa] rounded-3xl border-2 border-orange-200 shadow-modal max-w-lg w-full max-h-[90vh] flex flex-col overflow-hidden my-auto animate-modal-in">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-2.5 sm:p-4 overflow-y-auto">
+      <div className="bg-[#fffdfa] rounded-3xl border-2 border-orange-200 shadow-modal max-w-lg w-full max-h-[92vh] flex flex-col overflow-hidden my-auto animate-modal-in">
         {/* Header */}
-        <div className="px-6 py-4 border-b border-orange-200 flex items-center justify-between bg-gradient-to-r from-orange-100 via-amber-50 to-orange-100 shrink-0">
-          <div className="flex items-center gap-3">
-            <CuteCat size={40} mood="reading" />
+        <div className="px-4 sm:px-6 py-3.5 sm:py-4 border-b border-orange-200 flex items-center justify-between bg-gradient-to-r from-orange-100 via-amber-50 to-orange-100 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <CuteCat size={36} mood="reading" />
             <div>
-              <h2 className="font-serif font-black text-xl text-orange-950 flex items-center gap-1.5">
+              <h2 className="font-serif font-black text-lg sm:text-xl text-orange-950 flex items-center gap-1.5">
                 {existing ? 'Sửa Thẻ Ghi Nhớ' : 'Tạo Thẻ Mẹo Nhớ Tự Động'} <span>🐾</span>
               </h2>
-              <p className="text-xs text-orange-800 font-medium">Mèo Cam tự động gen IPA, nghĩa tiếng Việt & mẹo nhớ :3</p>
+              <p className="text-[11px] sm:text-xs text-orange-800 font-medium">Mèo Cam tự động gen IPA, nghĩa tiếng Việt & mẹo nhớ :3</p>
             </div>
           </div>
           <button
@@ -348,7 +348,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
 
         {/* Thanh trạng thái AI đang tạo nội dung */}
         {isGeneratingAI && (
-          <div className="px-6 py-2.5 bg-gradient-to-r from-amber-100 to-orange-100 border-b border-orange-300 flex items-center gap-2 text-xs font-bold text-orange-950 animate-pulse shrink-0">
+          <div className="px-4 sm:px-6 py-2.5 bg-gradient-to-r from-amber-100 to-orange-100 border-b border-orange-300 flex items-center gap-2 text-xs font-bold text-orange-950 animate-pulse shrink-0">
             <Loader2 className="w-4 h-4 animate-spin text-orange-600" />
             <span>Mèo Cam AI đang tự động gen IPA, nghĩa & mẹo nhớ cho Cô Ly... 🪄</span>
           </div>
@@ -356,7 +356,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
 
         {/* Thông báo gen thành công */}
         {aiGeneratedSuccess && (
-          <div className="px-6 py-2 bg-emerald-100 border-b border-emerald-300 flex items-center gap-2 text-xs font-bold text-emerald-950 animate-in fade-in shrink-0">
+          <div className="px-4 sm:px-6 py-2 bg-emerald-100 border-b border-emerald-300 flex items-center gap-2 text-xs font-bold text-emerald-950 animate-in fade-in shrink-0">
             <Sparkles className="w-4 h-4 text-emerald-600 fill-current" />
             <span>Đã tự động gen xong toàn bộ IPA, nghĩa & mẹo nhớ xuất sắc! ✨</span>
           </div>
@@ -365,7 +365,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
         {/* Form */}
         <form onSubmit={handleSave} className="flex flex-col flex-1 min-h-0 overflow-hidden">
           {/* Scrollable Form Body */}
-          <div className="p-6 space-y-4 flex-1 overflow-y-auto min-h-0">
+          <div className="p-4 sm:p-6 space-y-3.5 sm:space-y-4 flex-1 overflow-y-auto min-h-0">
           {/* 1. TỪ VỰNG, PHÁT ÂM & IPA & LOẠI TỪ */}
           <div className="space-y-2">
             <div className="flex items-center justify-between">
@@ -577,17 +577,17 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
 
           {/* Thêm ảnh minh họa (Visual Memory) */}
           <div>
-            <label className="block text-xs font-bold text-orange-950 mb-1 flex items-center justify-between">
+            <label className="text-xs font-bold text-orange-950 mb-1.5 flex flex-wrap items-center justify-between gap-1.5">
               <span className="flex items-center gap-1">
                 <ImageIcon className="w-4 h-4 text-orange-600" /> Ảnh minh họa (Visual Memory) 🐾
               </span>
               {imageUrl && (
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-1.5">
                   <button
                     type="button"
                     onClick={() => handleFetchRealPhotos(word, false)}
                     disabled={isLoadingPhotos || !word.trim()}
-                    className="text-xs text-orange-700 hover:text-orange-950 flex items-center gap-1 font-bold bg-orange-100 hover:bg-orange-200 px-2 py-0.5 rounded-lg transition-colors cursor-pointer disabled:opacity-50"
+                    className="text-[11px] sm:text-xs text-orange-700 hover:text-orange-950 flex items-center gap-1 font-bold bg-orange-100 hover:bg-orange-200 px-2 py-0.5 rounded-lg transition-colors cursor-pointer disabled:opacity-50 press-spring"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 text-orange-600 ${isLoadingPhotos ? 'animate-spin' : ''}`} /> Đổi ảnh khác 📸
                   </button>
@@ -595,14 +595,14 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
                     type="button"
                     onClick={() => handleGenerateAIImage()}
                     disabled={isGeneratingImage || !word.trim()}
-                    className="text-xs text-amber-800 hover:text-amber-950 flex items-center gap-1 font-bold bg-amber-100 hover:bg-amber-200 px-2 py-0.5 rounded-lg transition-colors cursor-pointer disabled:opacity-50"
+                    className="text-[11px] sm:text-xs text-amber-800 hover:text-amber-950 flex items-center gap-1 font-bold bg-amber-100 hover:bg-amber-200 px-2 py-0.5 rounded-lg transition-colors cursor-pointer disabled:opacity-50 press-spring"
                   >
                     <Dices className="w-3.5 h-3.5 text-amber-600" /> AI Masterpiece 🎨
                   </button>
                   <button
                     type="button"
                     onClick={() => setImageUrl('')}
-                    className="text-xs text-rose-600 hover:text-rose-800 flex items-center gap-0.5 font-bold cursor-pointer"
+                    className="text-[11px] sm:text-xs text-rose-600 hover:text-rose-800 flex items-center gap-0.5 font-bold cursor-pointer press-spring"
                   >
                     <Trash2 className="w-3.5 h-3.5" /> Xóa
                   </button>

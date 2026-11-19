@@ -331,20 +331,20 @@ export default function ScanPage() {
           Chụp trang sách tiếng Anh cô Ly đang đọc. Mèo Cam đã kết nối API Key và tối ưu thuật toán giúp scan siêu nhanh chỉ trong chớp mắt!
         </p>
 
-        {/* BỘ CHỌN ĐỘNG CƠ QUÉT (ENGINE SWITCHER) */}
-        <div className="inline-flex flex-wrap items-center justify-center p-1.5 bg-orange-200/60 rounded-2xl border-2 border-orange-300 gap-1.5 max-w-lg mx-auto shadow-inner">
+        {/* BỘ CHỌN ĐỘNG CƠ QUÉT (ENGINE SWITCHER - Responsive Grid) */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 p-1.5 bg-orange-200/60 rounded-2xl border-2 border-orange-300 gap-1.5 max-w-xl mx-auto shadow-inner w-full">
           <button
             type="button"
             onClick={() => setSelectedEngine('gemini')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all ${
+            className={`px-3 py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 transition-all press-spring ${
               selectedEngine === 'gemini'
                 ? 'bg-orange-500 text-white shadow-md shadow-orange-500/30'
-                : 'text-orange-950 hover:bg-orange-100'
+                : 'text-orange-950 hover:bg-orange-100/70'
             }`}
           >
-            <Zap className="w-3.5 h-3.5 fill-current" />
-            <span>Gemini Flash-Lite</span>
-            <span className="text-[10px] opacity-80">(Mặc định ~2s)</span>
+            <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
+            <span>Gemini Flash</span>
+            <span className="text-[10px] opacity-80">(Chuẩn ~2s)</span>
           </button>
 
           <button
@@ -353,27 +353,27 @@ export default function ScanPage() {
               setSelectedEngine('groq');
               setShowGroqInput(true);
             }}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all ${
+            className={`px-3 py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 transition-all press-spring ${
               selectedEngine === 'groq'
                 ? 'bg-amber-600 text-white shadow-md shadow-amber-600/30'
-                : 'text-orange-950 hover:bg-orange-100'
+                : 'text-orange-950 hover:bg-orange-100/70'
             }`}
           >
-            <Cpu className="w-3.5 h-3.5" />
+            <Cpu className="w-3.5 h-3.5 shrink-0" />
             <span>Groq LPU</span>
-            <span className="text-[10px] opacity-80">(Cực nhanh &lt;1s)</span>
+            <span className="text-[10px] opacity-80">(&lt;1s)</span>
           </button>
 
           <button
             type="button"
             onClick={() => setSelectedEngine('offline')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all ${
+            className={`px-3 py-2 rounded-xl text-xs font-extrabold flex items-center justify-center gap-1.5 transition-all press-spring ${
               selectedEngine === 'offline'
                 ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/30'
-                : 'text-orange-950 hover:bg-orange-100'
+                : 'text-orange-950 hover:bg-orange-100/70'
             }`}
           >
-            <WifiOff className="w-3.5 h-3.5" />
+            <WifiOff className="w-3.5 h-3.5 shrink-0" />
             <span>Quét Cục Bộ</span>
             <span className="text-[10px] opacity-80">(Offline)</span>
           </button>

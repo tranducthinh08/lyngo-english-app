@@ -42,7 +42,7 @@ export default function RootLayout({
       >
         <CatCursor />
         <Navbar />
-        <div className="min-h-[calc(100vh-4rem)]">
+        <div className="min-h-[calc(100vh-4rem)] pb-20 md:pb-6">
           {children}
         </div>
       </body>
