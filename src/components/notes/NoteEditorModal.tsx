@@ -326,7 +326,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 backdrop-blur-sm p-4 overflow-y-auto">
-      <div className="bg-[#fffdfa] rounded-3xl border-2 border-orange-200 shadow-modal max-w-lg w-full max-h-[90vh] flex flex-col overflow-hidden my-auto animate-in fade-in zoom-in-95 duration-150">
+      <div className="bg-[#fffdfa] rounded-3xl border-2 border-orange-200 shadow-modal max-w-lg w-full max-h-[90vh] flex flex-col overflow-hidden my-auto animate-modal-in">
         {/* Header */}
         <div className="px-6 py-4 border-b border-orange-200 flex items-center justify-between bg-gradient-to-r from-orange-100 via-amber-50 to-orange-100 shrink-0">
           <div className="flex items-center gap-3">
@@ -776,14 +776,14 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 rounded-2xl text-sm font-bold text-orange-900 hover:bg-orange-100 transition-colors"
+            className="px-4 py-2 rounded-2xl text-sm font-bold text-orange-900 hover:bg-orange-100 transition-colors press-spring"
           >
             Hủy
           </button>
           <button
             type="submit"
             disabled={isSubmitting || isGeneratingAI}
-            className="px-6 py-2.5 rounded-2xl text-sm font-extrabold bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:scale-105 shadow-md shadow-orange-500/20 transition-all flex items-center gap-2 disabled:opacity-50 active:scale-95 cursor-pointer"
+            className="px-6 py-2.5 rounded-2xl text-sm font-extrabold bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md shadow-orange-500/20 flex items-center gap-2 disabled:opacity-50 press-spring cursor-pointer"
           >
             <Check className="w-4 h-4" />
             <span>{existing ? 'Lưu cập nhật 🐾' : 'Lưu thẻ ghi nhớ & Thưởng cá 🐟'}</span>

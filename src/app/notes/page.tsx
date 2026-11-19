@@ -224,7 +224,7 @@ export default function NotesPage() {
                 setIsCreateModalOpen(true);
               }
             }}
-            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-black text-xs shadow-md shadow-orange-500/20 hover:scale-102 flex items-center justify-center gap-2 shrink-0 transition-all active:scale-95 cursor-pointer"
+            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-black text-xs shadow-md shadow-orange-500/20 hover:scale-102 flex items-center justify-center gap-2 shrink-0 press-spring cursor-pointer"
           >
             <Zap className="w-4 h-4 text-amber-200" />
             <span>Tạo Thẻ Siêu Tốc ⚡</span>

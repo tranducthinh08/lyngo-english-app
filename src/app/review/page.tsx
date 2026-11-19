@@ -274,11 +274,15 @@ export default function ReviewPage() {
             />
           </div>
 
-          {/* Khung thẻ Flashcard chính */}
+          {/* Khung thẻ Flashcard chính (Áp dụng Emil Kowalski Motion Design: 260ms ease-out) */}
           <div
+            key={currentIndex}
             onClick={() => !isFlipped && setIsFlipped(true)}
-            className={`min-h-[360px] bg-[#fffdfa] rounded-3xl border-4 border-orange-300 shadow-xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 ${
-              !isFlipped ? 'cursor-pointer hover:border-orange-400 hover:shadow-2xl' : ''
+            style={{
+              transition: 'transform 260ms var(--ease-out), box-shadow 260ms var(--ease-out), border-color 260ms var(--ease-out)',
+            }}
+            className={`min-h-[360px] bg-[#fffdfa] rounded-3xl border-4 border-orange-300 shadow-xl p-6 sm:p-8 flex flex-col justify-between ${
+              !isFlipped ? 'cursor-pointer hover:border-orange-400 hover:shadow-2xl hover:-translate-y-1' : ''
             }`}
           >
             {/* Top Bar của Thẻ */}
@@ -411,7 +415,7 @@ export default function ReviewPage() {
                     <button
                       type="button"
                       onClick={() => handleRating(1)}
-                      className="p-2.5 rounded-2xl bg-rose-50 hover:bg-rose-100 border-2 border-rose-300 text-rose-950 text-center transition-all active:scale-95 cursor-pointer"
+                      className="p-2.5 rounded-2xl bg-rose-50 hover:bg-rose-100 border-2 border-rose-300 text-rose-950 text-center press-spring hover:scale-102 hover:shadow-xs cursor-pointer"
                     >
                       <span className="block text-xs font-black">🔴 Học lại (1)</span>
                       <span className="block text-[10px] text-rose-700 font-mono mt-0.5">
@@ -423,7 +427,7 @@ export default function ReviewPage() {
                     <button
                       type="button"
                       onClick={() => handleRating(2)}
-                      className="p-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 border-2 border-amber-300 text-amber-950 text-center transition-all active:scale-95 cursor-pointer"
+                      className="p-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 border-2 border-amber-300 text-amber-950 text-center press-spring hover:scale-102 hover:shadow-xs cursor-pointer"
                     >
                       <span className="block text-xs font-black">🟠 Khó (2)</span>
                       <span className="block text-[10px] text-amber-700 font-mono mt-0.5">
@@ -435,7 +439,7 @@ export default function ReviewPage() {
                     <button
                       type="button"
                       onClick={() => handleRating(3)}
-                      className="p-2.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-300 text-emerald-950 text-center transition-all active:scale-95 cursor-pointer shadow-xs"
+                      className="p-2.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-300 text-emerald-950 text-center press-spring hover:scale-102 hover:shadow-sm cursor-pointer"
                     >
                       <span className="block text-xs font-black">🟢 Tốt (3)</span>
                       <span className="block text-[10px] text-emerald-700 font-mono mt-0.5">
@@ -447,7 +451,7 @@ export default function ReviewPage() {
                     <button
                       type="button"
                       onClick={() => handleRating(4)}
-                      className="p-2.5 rounded-2xl bg-sky-50 hover:bg-sky-100 border-2 border-sky-300 text-sky-950 text-center transition-all active:scale-95 cursor-pointer"
+                      className="p-2.5 rounded-2xl bg-sky-50 hover:bg-sky-100 border-2 border-sky-300 text-sky-950 text-center press-spring hover:scale-102 hover:shadow-xs cursor-pointer"
                     >
                       <span className="block text-xs font-black">🔵 Dễ (4)</span>
                       <span className="block text-[10px] text-sky-700 font-mono mt-0.5">
