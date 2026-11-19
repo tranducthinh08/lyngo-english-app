@@ -58,6 +58,15 @@ export default function InteractiveText({
     return map;
   }, [notes]);
 
+  // Biên dịch RegExp khớp từ/cụm từ một lần duy nhất cho toàn bộ văn bản (tránh khởi tạo lại 50-100 lần trong vòng lặp)
+  const phrasePattern = useMemo(() => {
+    if (notesMap.size === 0) return null;
+    const sortedKeys = Array.from(notesMap.keys()).sort((a, b) => b.length - a.length);
+    const escapedTerms = sortedKeys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (escapedTerms.length === 0) return null;
+    return new RegExp(`(\\b(?:${escapedTerms.join('|')})\\b)`, 'gi');
+  }, [notesMap]);
+
   // Bắt sự kiện double-click trên từ
   const handleDoubleClick = (e: React.MouseEvent) => {
     // Hủy bỏ mouseUp pending để tránh giật giao diện hoặc kích hoạt trùng lặp
@@ -146,7 +155,7 @@ export default function InteractiveText({
                     <Volume2 className="w-3 h-3" />
                   </button>
                 )}
-                {renderSentenceWithNotes(sentBlock.text, notesMap, onOpenExistingNote)}
+                {renderSentenceWithNotes(sentBlock.text, phrasePattern, notesMap, onOpenExistingNote)}
                 {' '}
               </span>
             );
@@ -163,24 +172,14 @@ export default function InteractiveText({
  */
 function renderSentenceWithNotes(
   sentence: string,
+  phrasePattern: RegExp | null,
   notesMap: Map<string, VocabNote>,
   onOpenExistingNote: (note: VocabNote) => void
 ) {
-  if (notesMap.size === 0) {
+  if (!phrasePattern || notesMap.size === 0) {
     return <span>{sentence}</span>;
   }
 
-  // Sắp xếp các từ/cụm từ theo độ dài giảm dần để ưu tiên match cụm dài trước (vd: "bring to bear" trước "bear")
-  const sortedKeys = Array.from(notesMap.keys()).sort((a, b) => b.length - a.length);
-
-  // Thoát các ký tự đặc biệt của RegExp
-  const escapedTerms = sortedKeys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  if (escapedTerms.length === 0) {
-    return <span>{sentence}</span>;
-  }
-
-  // Khớp chính xác ranh giới từ (\b) để không match nhầm từ con trong từ khác
-  const phrasePattern = new RegExp(`(\\b(?:${escapedTerms.join('|')})\\b)`, 'gi');
   const parts = sentence.split(phrasePattern);
 
   return parts.map((part, idx) => {

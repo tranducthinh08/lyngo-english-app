@@ -16,6 +16,7 @@ import {
 import { db, seedSampleDataIfEmpty } from '@/lib/db';
 import { Album, PageItem } from '@/types';
 import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
+import { syncService, trackDeletedId } from '@/lib/syncService';
 import CreateAlbumModal from '@/components/bookshelf/CreateAlbumModal';
 import CuteCat from '@/components/common/CuteCat';
 
@@ -47,6 +48,7 @@ export default function HomePage() {
 
   const handleDeletePage = async (pageId: string) => {
     if (confirm('Cô Ly có chắc muốn xóa trang sách này không meow? 🐾')) {
+      trackDeletedId('pages', pageId);
       await db.pages.delete(pageId);
       if (isSupabaseConfigured()) {
         const sb = getSupabaseClient();
@@ -54,20 +56,27 @@ export default function HomePage() {
           await sb.from('pages').delete().eq('id', pageId);
         }
       }
+      syncService.triggerSync(1000);
       loadData();
     }
   };
 
   const handleDeleteAlbum = async (albumId: string) => {
     if (confirm('Xóa Album này sẽ xóa cả các trang sách bên trong. Cô Ly có chắc không meow? 🐾')) {
+      trackDeletedId('albums', albumId);
+      const albumPages = await db.pages.where('albumId').equals(albumId).toArray();
+      albumPages.forEach((p) => trackDeletedId('pages', p.id));
+
       await db.albums.delete(albumId);
       await db.pages.where('albumId').equals(albumId).delete();
       if (isSupabaseConfigured()) {
         const sb = getSupabaseClient();
         if (sb) {
           await sb.from('albums').delete().eq('id', albumId);
+          await sb.from('pages').delete().eq('album_id', albumId);
         }
       }
+      syncService.triggerSync(1000);
       loadData();
     }
   };

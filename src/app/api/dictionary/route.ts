@@ -9,7 +9,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Missing word parameter' }, { status: 400 });
   }
 
-  const apiKey = (process.env.GEMINI_API_KEY || '').trim();
+  const customKey = req.headers.get('x-gemini-key');
+  const apiKey = (customKey || process.env.GEMINI_API_KEY || '').trim();
   const googleTranslateUrl = getGoogleTranslateUrl(word);
   const cambridgeUrl = getCambridgeDictionaryUrl(word);
 
@@ -20,10 +21,13 @@ export async function GET(req: NextRequest) {
 Word: "${word}"`;
 
       const geminiRes = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${encodeURIComponent(apiKey)}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent`,
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': apiKey,
+          },
           body: JSON.stringify({
             contents: [{ parts: [{ text: prompt }] }],
             generationConfig: {

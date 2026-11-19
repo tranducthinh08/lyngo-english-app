@@ -69,6 +69,17 @@ export default function CatCursor() {
           cursor: ${CAT_DEFAULT_CURSOR} !important;
         }
 
+        /* Giữ con trỏ chữ I-Beam chuẩn khi nhập liệu văn bản */
+        input[type="text"],
+        input[type="search"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        [contenteditable="true"] {
+          cursor: text !important;
+        }
+
         a,
         button,
         [role="button"],

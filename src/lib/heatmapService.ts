@@ -66,17 +66,20 @@ export async function getHeatmapStats(targetYear?: number): Promise<HeatmapStats
   const year = targetYear || now.getFullYear();
   const todayStr = formatDateStr(now);
 
-  // 1. Tải tất cả review logs thực tế trong năm đó (loại bỏ dứt điểm log giả seed-log)
+  // 1. Tải tất cả review logs thực tế trong năm đó (và xuyên suốt để tính streak chính xác)
   const countsByDate = new Map<string, number>();
 
   try {
     if (typeof window !== 'undefined') {
-      // Dọn dẹp sạch log ảo ngẫu nhiên nếu còn sót lại trong máy
-      await db.reviewLogs.filter((log) => log.id.startsWith('seed-log-')).delete();
+      // Dọn dẹp log ảo một lần duy nhất nếu còn sót lại
+      if (!localStorage.getItem('lyngo_cleaned_seed_logs_v1')) {
+        await db.reviewLogs.filter((log) => log.id.startsWith('seed-log-')).delete();
+        localStorage.setItem('lyngo_cleaned_seed_logs_v1', 'true');
+      }
 
       const logs = await db.reviewLogs.toArray();
       for (const log of logs) {
-        if (log.dateStr && log.dateStr.startsWith(String(year))) {
+        if (log.dateStr) {
           countsByDate.set(log.dateStr, (countsByDate.get(log.dateStr) || 0) + 1);
         }
       }
@@ -86,18 +89,14 @@ export async function getHeatmapStats(targetYear?: number): Promise<HeatmapStats
       for (const note of notes) {
         if (note.lastReviewedAt) {
           const rDateStr = formatDateStr(new Date(note.lastReviewedAt));
-          if (rDateStr.startsWith(String(year))) {
-            if (!countsByDate.has(rDateStr)) {
-              countsByDate.set(rDateStr, 1);
-            }
+          if (!countsByDate.has(rDateStr)) {
+            countsByDate.set(rDateStr, 1);
           }
         }
         if (note.createdAt) {
           const cDateStr = formatDateStr(new Date(note.createdAt));
-          if (cDateStr.startsWith(String(year))) {
-            if (!countsByDate.has(cDateStr)) {
-              countsByDate.set(cDateStr, 1);
-            }
+          if (!countsByDate.has(cDateStr)) {
+            countsByDate.set(cDateStr, 1);
           }
         }
       }
@@ -222,7 +221,10 @@ export async function getHeatmapStats(targetYear?: number): Promise<HeatmapStats
     streakPointer.setDate(streakPointer.getDate() - 1);
   }
 
-  while (streakPointer >= new Date(year, 0, 1)) {
+  // Đếm ngược streak không bị giới hạn bởi ranh giới năm (chuẩn Streak Anki)
+  let loopGuard = 0;
+  while (loopGuard < 3650) {
+    loopGuard++;
     const dStr = formatDateStr(streakPointer);
     const count = countsByDate.get(dStr) || 0;
     if (count > 0) {

@@ -20,7 +20,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Thiếu từ vựng cần tạo thẻ meow~' }, { status: 400 });
     }
 
-    const apiKey = (process.env.GEMINI_API_KEY || '').trim();
+    const customKey = (body.apiKey as string | null) || req.headers.get('x-gemini-key');
+    const apiKey = (customKey || process.env.GEMINI_API_KEY || '').trim();
     const googleTranslateUrl = getGoogleTranslateUrl(word);
     const cambridgeUrl = getCambridgeDictionaryUrl(word);
 
@@ -45,10 +46,13 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
       for (const modelCandidate of MODELS) {
         try {
           const res = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent?key=${encodeURIComponent(apiKey)}`,
+            `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent`,
             {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
+              headers: {
+                'Content-Type': 'application/json',
+                'x-goog-api-key': apiKey,
+              },
               body: JSON.stringify({
                 contents: [{ parts: [{ text: prompt }] }],
                 generationConfig: {

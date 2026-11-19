@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { db } from '@/lib/db';
 import { VocabNote, Album, MemoryType } from '@/types';
-import { syncService } from '@/lib/syncService';
+import { syncService, trackDeletedId } from '@/lib/syncService';
 import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
 import { recordReviewActivity } from '@/lib/heatmapService';
 import NoteEditorModal from '@/components/notes/NoteEditorModal';
@@ -94,6 +94,7 @@ export default function NotesPage() {
 
   const handleDeleteNote = async (id: string) => {
     if (confirm('Cô Ly có chắc muốn xóa từ vựng này khỏi sổ tay Mèo Cam không meow? 🐾')) {
+      trackDeletedId('vocabNotes', id);
       await db.vocabNotes.delete(id);
       if (isSupabaseConfigured()) {
         const sb = getSupabaseClient();
@@ -101,6 +102,7 @@ export default function NotesPage() {
           await sb.from('vocab_notes').delete().eq('id', id);
         }
       }
+      syncService.triggerSync(1000);
       loadData();
     }
   };

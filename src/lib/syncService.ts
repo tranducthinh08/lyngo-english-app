@@ -6,6 +6,47 @@ import { Album, PageItem, VocabNote } from '@/types';
 
 export type SyncState = 'idle' | 'syncing' | 'synced' | 'error' | 'offline';
 
+const DELETED_KEYS = {
+  albums: 'lyngo_deleted_albums',
+  pages: 'lyngo_deleted_pages',
+  vocabNotes: 'lyngo_deleted_vocab_notes',
+} as const;
+
+export function trackDeletedId(type: keyof typeof DELETED_KEYS, id: string) {
+  if (typeof window === 'undefined') return;
+  try {
+    const key = DELETED_KEYS[type];
+    const list: string[] = JSON.parse(localStorage.getItem(key) || '[]');
+    if (!list.includes(id)) {
+      list.push(id);
+      localStorage.setItem(key, JSON.stringify(list));
+    }
+  } catch (err) {
+    console.warn('Lỗi lưu trackDeletedId:', err);
+  }
+}
+
+function getDeletedIds(type: keyof typeof DELETED_KEYS): string[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    return JSON.parse(localStorage.getItem(DELETED_KEYS[type]) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function clearDeletedIds(type: keyof typeof DELETED_KEYS, ids: string[]) {
+  if (typeof window === 'undefined' || ids.length === 0) return;
+  try {
+    const key = DELETED_KEYS[type];
+    const list: string[] = JSON.parse(localStorage.getItem(key) || '[]');
+    const next = list.filter((x) => !ids.includes(x));
+    localStorage.setItem(key, JSON.stringify(next));
+  } catch (err) {
+    console.warn('Lỗi clearDeletedIds:', err);
+  }
+}
+
 type SyncListener = (state: {
   status: SyncState;
   lastSyncTime: number | null;
@@ -114,6 +155,9 @@ class SyncService {
       // 3. ĐỒNG BỘ BẢNG VOCAB_NOTES
       await this.syncVocabNotes(supabase);
 
+      // 4. ĐỒNG BỘ BẢNG REVIEW_LOGS (Nhật ký Heatmap Anki)
+      await this.syncReviewLogs(supabase);
+
       this.status = 'synced';
       this.lastSyncTime = Date.now();
       this.notify();
@@ -135,10 +179,19 @@ class SyncService {
   }
 
   // --------------------------------------------------------------------------
-  // ĐỒNG BỘ ALBUMS (TỐI ƯU BATCH UPSERT)
+  // ĐỒNG BỘ ALBUMS (TỐI ƯU BATCH UPSERT & XỬ LÝ XÓA DỨT ĐIỂM)
   // --------------------------------------------------------------------------
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private async syncAlbums(supabase: any) {
+    // Xóa trên Cloud các item đã xóa ở Local
+    const deletedIds = getDeletedIds('albums');
+    if (deletedIds.length > 0) {
+      const { error: delErr } = await supabase.from('albums').delete().in('id', deletedIds);
+      if (!delErr) {
+        clearDeletedIds('albums', deletedIds);
+      }
+    }
+
     const localAlbums = await db.albums.toArray();
     const { data: cloudAlbums, error } = await supabase.from('albums').select('*');
 
@@ -170,9 +223,11 @@ class SyncService {
       if (upsertErr) throw new Error(`Lỗi lưu Albums lên Cloud: ${upsertErr.message}`);
     }
 
-    // 1.2 Cloud -> Local: Gom nhóm để bulkPut vào IndexedDB
+    // 1.2 Cloud -> Local: Gom nhóm để bulkPut vào IndexedDB (chặn hồi sinh các item đã xóa)
+    const activeDeletedIds = new Set(getDeletedIds('albums'));
     const localAlbumsToSave: Album[] = [];
     for (const cloud of cloudAlbums || []) {
+      if (activeDeletedIds.has(cloud.id)) continue; // ĐÃ XÓA Ở LOCAL: KHÔNG HỒI SINH
       const local = localMap.get(cloud.id);
       if (!local || Number(cloud.updated_at) > local.updatedAt) {
         localAlbumsToSave.push({
@@ -193,10 +248,19 @@ class SyncService {
   }
 
   // --------------------------------------------------------------------------
-  // ĐỒNG BỘ PAGES (TỐI ƯU BATCH UPSERT)
+  // ĐỒNG BỘ PAGES (TỐI ƯU BATCH UPSERT & XỬ LÝ XÓA DỨT ĐIỂM)
   // --------------------------------------------------------------------------
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private async syncPages(supabase: any) {
+    // Xóa trên Cloud các item đã xóa ở Local
+    const deletedIds = getDeletedIds('pages');
+    if (deletedIds.length > 0) {
+      const { error: delErr } = await supabase.from('pages').delete().in('id', deletedIds);
+      if (!delErr) {
+        clearDeletedIds('pages', deletedIds);
+      }
+    }
+
     const localPages = await db.pages.toArray();
     const { data: cloudPages, error } = await supabase.from('pages').select('*');
 
@@ -230,9 +294,11 @@ class SyncService {
       if (upsertErr) throw new Error(`Lỗi lưu Pages lên Cloud: ${upsertErr.message}`);
     }
 
-    // 2.2 Cloud -> Local: Gom nhóm bulkPut vào IndexedDB
+    // 2.2 Cloud -> Local: Gom nhóm bulkPut vào IndexedDB (chặn hồi sinh các item đã xóa)
+    const activeDeletedIds = new Set(getDeletedIds('pages'));
     const localPagesToSave: PageItem[] = [];
     for (const cloud of cloudPages || []) {
+      if (activeDeletedIds.has(cloud.id)) continue; // ĐÃ XÓA Ở LOCAL: KHÔNG HỒI SINH
       const local = localMap.get(cloud.id);
       if (!local || Number(cloud.updated_at) > local.updatedAt) {
         localPagesToSave.push({
@@ -255,10 +321,19 @@ class SyncService {
   }
 
   // --------------------------------------------------------------------------
-  // ĐỒNG BỘ VOCAB_NOTES (TỐI ƯU BATCH UPSERT)
+  // ĐỒNG BỘ VOCAB_NOTES (TỐI ƯU BATCH UPSERT & XỬ LÝ XÓA DỨT ĐIỂM)
   // --------------------------------------------------------------------------
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private async syncVocabNotes(supabase: any) {
+    // Xóa trên Cloud các item đã xóa ở Local
+    const deletedIds = getDeletedIds('vocabNotes');
+    if (deletedIds.length > 0) {
+      const { error: delErr } = await supabase.from('vocab_notes').delete().in('id', deletedIds);
+      if (!delErr) {
+        clearDeletedIds('vocabNotes', deletedIds);
+      }
+    }
+
     const localNotes = await db.vocabNotes.toArray();
     const { data: cloudNotes, error } = await supabase.from('vocab_notes').select('*');
 
@@ -306,9 +381,11 @@ class SyncService {
       if (upsertErr) throw new Error(`Lỗi lưu Vocab Notes lên Cloud: ${upsertErr.message}`);
     }
 
-    // 3.2 Cloud -> Local: Gom nhóm bulkPut vào IndexedDB
+    // 3.2 Cloud -> Local: Gom nhóm bulkPut vào IndexedDB (chặn hồi sinh các item đã xóa)
+    const activeDeletedIds = new Set(getDeletedIds('vocabNotes'));
     const localNotesToSave: VocabNote[] = [];
     for (const cloud of cloudNotes || []) {
+      if (activeDeletedIds.has(cloud.id)) continue; // ĐÃ XÓA Ở LOCAL: KHÔNG HỒI SINH
       const local = localMap.get(cloud.id);
       if (!local || Number(cloud.updated_at) > local.updatedAt) {
         localNotesToSave.push({
@@ -341,6 +418,38 @@ class SyncService {
 
     if (localNotesToSave.length > 0) {
       await db.vocabNotes.bulkPut(localNotesToSave);
+    }
+  }
+
+  // --------------------------------------------------------------------------
+  // ĐỒNG BỘ REVIEW_LOGS (HEATMAP STREAK)
+  // --------------------------------------------------------------------------
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private async syncReviewLogs(supabase: any) {
+    try {
+      const localLogs = await db.reviewLogs.toArray();
+      if (localLogs.length === 0) return;
+
+      const { data: cloudLogs, error } = await supabase.from('review_logs').select('id');
+      if (error) return; // Nếu bảng chưa có trên Cloud, bỏ qua nhẹ nhàng
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const cloudIdSet = new Set((cloudLogs || []).map((l: any) => l.id));
+      const logsToUpsert = localLogs
+        .filter((l) => !cloudIdSet.has(l.id))
+        .map((l) => ({
+          id: l.id,
+          note_id: l.noteId,
+          rating: l.rating,
+          reviewed_at: l.reviewedAt,
+          date_str: l.dateStr,
+        }));
+
+      if (logsToUpsert.length > 0) {
+        await supabase.from('review_logs').upsert(logsToUpsert, { onConflict: 'id' });
+      }
+    } catch {
+      // Bỏ qua nếu người dùng chưa khởi tạo bảng review_logs
     }
   }
 }

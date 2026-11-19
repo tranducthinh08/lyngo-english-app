@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Camera, BookmarkCheck, Settings, BookOpen, Cloud, CloudOff, Loader2, HardDrive, Sparkles } from 'lucide-react';
 import { db } from '@/lib/db';
-import { getDueCards } from '@/lib/sm2';
 import { useSyncStatus } from '@/hooks/useSyncStatus';
 import SettingsModal from './SettingsModal';
 import CuteCat from './CuteCat';
@@ -16,19 +15,20 @@ export default function Navbar() {
   const [dueCount, setDueCount] = useState<number>(0);
   const { status, runFullSync, isConfigured, errorMessage } = useSyncStatus();
 
-  // Kiểm tra số lượng thẻ cần ôn hôm nay
+  // Kiểm tra số lượng thẻ cần ôn hôm nay (tối ưu đếm trực tiếp từ IndexedDB, không nạp toàn bộ mảng vào RAM)
   useEffect(() => {
     const checkDue = async () => {
       try {
-        const notes = await db.vocabNotes.toArray();
-        const due = getDueCards(notes);
-        setDueCount(due.length);
+        const count = await db.vocabNotes
+          .filter((c) => !c.nextReviewDate || c.nextReviewDate <= Date.now())
+          .count();
+        setDueCount(count);
       } catch (err) {
         console.warn('Lỗi kiểm tra thẻ đến hạn:', err);
       }
     };
     checkDue();
-    const timer = setInterval(checkDue, 10000);
+    const timer = setInterval(checkDue, 15000);
     return () => clearInterval(timer);
   }, [pathname]);
 

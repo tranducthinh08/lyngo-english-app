@@ -26,6 +26,7 @@ import { uploadBookImage, isSupabaseConfigured } from '@/lib/supabase';
 import { lookupCambridgeInstant } from '@/lib/cambridgeLookup';
 import { recordReviewActivity } from '@/lib/heatmapService';
 import { generateVocabImageUrl, preloadImageUrl, fetchRealVocabImages } from '@/lib/imageGenerator';
+import { getStoredGeminiKey } from '@/lib/settings';
 import CuteCat from '@/components/common/CuteCat';
 
 interface NoteEditorModalProps {
@@ -195,12 +196,19 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
     setAiGeneratedSuccess(false);
 
     try {
+      const storedKey = getStoredGeminiKey();
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (storedKey) {
+        headers['x-gemini-key'] = storedKey;
+      }
+
       const res = await fetch('/api/gen-card', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({
           word: cleanWord,
-          context: contextSentence || initialData.contextSentence || ''
+          context: contextSentence || initialData.contextSentence || '',
+          apiKey: storedKey || undefined,
         }),
       });
 

@@ -66,7 +66,8 @@ export function calculateSM2(card: VocabNote, rating: SM2Rating): SM2Result {
     repetitions += 1;
   }
 
-  const nextReviewDate = now + interval * ONE_DAY_MS;
+  // Khi chọn "Học lại" (Rating 1), thẻ đến hạn ôn lại sau 10 phút (chuẩn relearning queue Anki)
+  const nextReviewDate = rating === 1 ? now + 10 * 60 * 1000 : now + interval * ONE_DAY_MS;
   // Nếu khoảng cách ôn >= 21 ngày thì xem như đã thành thạo (Mastered)
   const status: 'learning' | 'mastered' = interval >= 21 ? 'mastered' : 'learning';
 

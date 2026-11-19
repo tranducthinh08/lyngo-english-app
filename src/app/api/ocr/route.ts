@@ -154,10 +154,13 @@ The stars are beautiful, because of a flower that cannot be seen. What makes the
     for (const modelCandidate of GEMINI_CANDIDATES) {
       try {
         const res = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent?key=${encodeURIComponent(geminiApiKey)}`,
+          `https://generativelanguage.googleapis.com/v1beta/models/${modelCandidate}:generateContent`,
           {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              'x-goog-api-key': geminiApiKey,
+            },
             body: JSON.stringify(requestBody),
             cache: 'no-store',
             signal: AbortSignal.timeout(6500), // Tối đa 6.5s mỗi candidate để cascade nhanh gọn

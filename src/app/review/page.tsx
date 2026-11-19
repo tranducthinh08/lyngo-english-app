@@ -107,21 +107,29 @@ export default function ReviewPage() {
 
     setReviewedCount((prev) => prev + 1);
 
-    // Chuyển sang thẻ tiếp theo
-    if (currentIndex + 1 < reviewQueue.length) {
+    // XỬ LÝ HÀNG ĐỢI ÔN TẬP CHUẨN ANKI:
+    // Nếu bấm "Học lại" (Again - Rating 1): Đẩy thẻ về cuối hàng đợi để học lại trước khi kết thúc phiên
+    if (rating === 1) {
+      setReviewQueue((prev) => [...prev, { ...currentCard, ...sm2Update }]);
       setIsFlipped(false);
       setCurrentIndex((prev) => prev + 1);
     } else {
-      setIsFinished(true);
-      // Bắn pháo hoa ăn mừng
-      try {
-        confetti({
-          particleCount: 100,
-          spread: 80,
-          origin: { y: 0.6 },
-          colors: ['#f97316', '#fbbf24', '#38bdf8', '#10b981'],
-        });
-      } catch {}
+      // Chuyển sang thẻ tiếp theo
+      if (currentIndex + 1 < reviewQueue.length) {
+        setIsFlipped(false);
+        setCurrentIndex((prev) => prev + 1);
+      } else {
+        setIsFinished(true);
+        // Bắn pháo hoa ăn mừng khi hoàn thành tất cả thẻ
+        try {
+          confetti({
+            particleCount: 100,
+            spread: 80,
+            origin: { y: 0.6 },
+            colors: ['#f97316', '#fbbf24', '#38bdf8', '#10b981'],
+          });
+        } catch {}
+      }
     }
   }, [currentCard, currentIndex, reviewQueue.length]);
 
