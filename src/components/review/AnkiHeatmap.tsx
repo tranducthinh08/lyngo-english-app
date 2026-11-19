@@ -13,17 +13,48 @@ import { getHeatmapStats, HeatmapStats, HeatmapDay } from '@/lib/heatmapService'
 interface AnkiHeatmapProps {
   onRefreshNeeded?: () => void;
   className?: string;
-  defaultTheme?: 'dark-anki' | 'meo-cam' | 'classic-anki';
+  defaultTheme?: 'meo-cam' | 'dark-anki' | 'classic-anki';
 }
 
-type ColorTheme = 'dark-anki' | 'meo-cam' | 'classic-anki';
+type ColorTheme = 'meo-cam' | 'dark-anki' | 'classic-anki';
 
-export default function AnkiHeatmap({ className = '', defaultTheme = 'dark-anki' }: AnkiHeatmapProps) {
+const THEME_STORAGE_KEY = 'lyngo_heatmap_theme';
+
+export default function AnkiHeatmap({ className = '', defaultTheme = 'meo-cam' }: AnkiHeatmapProps) {
   const currentYear = new Date().getFullYear();
   const [selectedYear, setSelectedYear] = useState<number>(currentYear);
   const [stats, setStats] = useState<HeatmapStats | null>(null);
   const [colorTheme, setColorTheme] = useState<ColorTheme>(defaultTheme);
   const [hoveredDay, setHoveredDay] = useState<{ day: HeatmapDay; x: number; y: number } | null>(null);
+
+  // Đọc theme đã lưu từ localStorage để luôn duy trì màu cam khi F5 hoặc đổi trang
+  useEffect(() => {
+    try {
+      const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) as ColorTheme | null;
+      if (savedTheme && (savedTheme === 'meo-cam' || savedTheme === 'dark-anki' || savedTheme === 'classic-anki')) {
+        setColorTheme(savedTheme);
+      }
+    } catch (e) {
+      console.warn('Lỗi đọc theme từ localStorage:', e);
+    }
+  }, []);
+
+  // Chuyển đổi và lưu vĩnh viễn theme được chọn
+  const handleToggleTheme = () => {
+    setColorTheme((prev) => {
+      let next: ColorTheme = 'meo-cam';
+      if (prev === 'meo-cam') next = 'dark-anki';
+      else if (prev === 'dark-anki') next = 'classic-anki';
+      else next = 'meo-cam';
+
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, next);
+      } catch (e) {
+        console.warn('Lỗi ghi theme vào localStorage:', e);
+      }
+      return next;
+    });
+  };
 
   const loadStats = useCallback(async () => {
     // Tải dữ liệu ôn tập thực tế 100% của Cô Ly (từ log ôn tập + từ vựng hiện có)
@@ -133,17 +164,13 @@ export default function AnkiHeatmap({ className = '', defaultTheme = 'dark-anki'
         <div className="flex items-center gap-1.5">
           <button
             type="button"
-            onClick={() => {
-              if (colorTheme === 'dark-anki') setColorTheme('meo-cam');
-              else if (colorTheme === 'meo-cam') setColorTheme('classic-anki');
-              else setColorTheme('dark-anki');
-            }}
+            onClick={handleToggleTheme}
             title={`Đang hiển thị: ${
-              colorTheme === 'dark-anki'
-                ? 'Anki Dark Chuẩn'
-                : colorTheme === 'meo-cam'
-                ? 'Tone Mèo Cam'
-                : 'Anki Classic Sáng'
+              colorTheme === 'meo-cam'
+                ? 'Tone Mèo Cam (Đã lưu) 🐾'
+                : colorTheme === 'dark-anki'
+                ? 'Anki Dark Chuẩn (Đã lưu) 🌙'
+                : 'Anki Classic Sáng (Đã lưu) 🌿'
             }. Bấm để đổi chủ đề!`}
             className={`p-1.5 rounded-lg border transition-all cursor-pointer ${
               isDark
