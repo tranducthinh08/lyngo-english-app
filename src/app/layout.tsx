@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import CatCursor from "@/components/common/CatCursor";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#faf7f2] text-amber-950 min-h-screen selection:bg-amber-200 selection:text-amber-950`}
       >
+        <CatCursor />
         <Navbar />
         <div className="min-h-[calc(100vh-4rem)]">
           {children}

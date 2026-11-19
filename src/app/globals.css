@@ -114,6 +114,95 @@ body {
     animation: popIn var(--duration-fast) var(--ease-out) forwards;
     will-change: transform, opacity;
   }
+
+  /* Card Lift elevation (200ms ease-out) */
+  .card-lift {
+    transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
+    will-change: transform;
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Dấu chân mèo bay khi click (380ms) */
+  .animate-paw-float {
+    animation: pawFloat 380ms var(--ease-out) forwards;
+    will-change: transform, opacity;
+  }
+
+  /* Tia laser quét sách AI (/scan) */
+  .animate-scan-laser {
+    animation: scanLaser 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    will-change: top, opacity;
+  }
+
+  /* Nhập cảnh so le (Staggered Cascades) */
+  .stagger-1 {
+    animation: modalEntrance 220ms var(--ease-out) 30ms both;
+  }
+  .stagger-2 {
+    animation: modalEntrance 220ms var(--ease-out) 65ms both;
+  }
+  .stagger-3 {
+    animation: modalEntrance 220ms var(--ease-out) 100ms both;
+  }
+  .stagger-4 {
+    animation: modalEntrance 220ms var(--ease-out) 135ms both;
+  }
+}
+
+@keyframes pawFloat {
+  0% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translate(-50%, -90%) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -140%) scale(0.9);
+  }
+}
+
+@keyframes catWiggle {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-6deg) scale(1.06);
+  }
+  50% {
+    transform: rotate(4deg) scale(1.08);
+  }
+  75% {
+    transform: rotate(-3deg) scale(1.06);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.cat-wiggle-hover:hover {
+  animation: catWiggle 450ms var(--ease-out);
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
 }
 
 @keyframes modalEntrance {

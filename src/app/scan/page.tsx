@@ -420,12 +420,16 @@ export default function ScanPage() {
             </div>
           ) : imagePreview ? (
             <div className="space-y-3">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-orange-300 bg-orange-50 max-h-80 flex items-center justify-center">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-orange-300 bg-orange-50 max-h-80 flex items-center justify-center group shadow-sm">
                 <img
                   src={imagePreview}
                   alt="Ảnh trang sách"
                   className="w-full h-auto max-h-80 object-contain"
                 />
+                {/* Dải laser quét sách AI (Emil Kowalski Atmospheric Scan Beam) */}
+                {isScanning && (
+                  <div className="absolute inset-x-0 h-1.5 bg-gradient-to-r from-transparent via-orange-500 to-transparent shadow-[0_0_14px_rgba(249,115,22,0.9)] animate-scan-laser pointer-events-none z-10" />
+                )}
               </div>
 
               {/* Thông báo nén ảnh thành công */}

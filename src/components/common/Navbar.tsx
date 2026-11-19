@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Logo Mèo Cam */}
           <Link href="/" className="flex items-center gap-2 group shrink-0">
             <div className="relative">
-              <CuteCat size={38} mood="reading" className="group-hover:scale-105 transition-transform" />
+              <CuteCat size={38} mood="reading" className="cat-wiggle-hover transition-transform" />
               <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"></span>

@@ -322,13 +322,14 @@ export default function NotesPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredNotes.map((note) => {
+          {filteredNotes.map((note, idx) => {
             const memoryConfig = MEMORY_TYPE_LABELS[note.memoryType] || MEMORY_TYPE_LABELS.other;
+            const staggerClass = idx < 8 ? (idx % 4 === 0 ? 'stagger-1' : idx % 4 === 1 ? 'stagger-2' : idx % 4 === 2 ? 'stagger-3' : 'stagger-4') : '';
 
             return (
               <div
                 key={note.id}
-                className="bg-white/95 rounded-3xl border-2 border-orange-200/90 shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between space-y-4 hover:-translate-y-1"
+                className={`bg-[#fffdfa] rounded-3xl border-2 border-orange-200/90 shadow-card hover:shadow-xl card-lift p-5 flex flex-col justify-between space-y-4 ${staggerClass}`}
               >
                 {/* Top: Word, Phonetic, Audio, Status */}
                 <div className="space-y-3">
