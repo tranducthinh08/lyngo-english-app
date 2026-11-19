@@ -1,0 +1,2226 @@
+{
+  "abandon": {
+    "word": "abandon",
+    "ipa": "/əˈbæn.dən/",
+    "pos": "động từ",
+    "vi": "từ bỏ, ruồng bỏ",
+    "enEx": "They had to abandon their car in the snow.",
+    "viEx": "Họ phải bỏ lại xe trong tuyết."
+  },
+  "ability": {
+    "word": "ability",
+    "ipa": "/əˈbɪl.ə.ti/",
+    "pos": "danh từ",
+    "vi": "khả năng, năng lực",
+    "enEx": "She has an extraordinary ability to learn languages.",
+    "viEx": "Cô ấy có khả năng học ngoại ngữ phi thường."
+  },
+  "absorb": {
+    "word": "absorb",
+    "ipa": "/əbˈzɔːb/",
+    "pos": "động từ",
+    "vi": "hấp thụ, say mê tiếp thu",
+    "enEx": "Plants absorb sunlight to produce energy.",
+    "viEx": "Cây cối hấp thụ ánh sáng mặt trời để tạo năng lượng."
+  },
+  "abundant": {
+    "word": "abundant",
+    "ipa": "/əˈbʌn.dənt/",
+    "pos": "tính từ",
+    "vi": "dồi dào, phong phú",
+    "enEx": "The region is abundant in natural resources.",
+    "viEx": "Khu vực này rất dồi dào tài nguyên thiên nhiên."
+  },
+  "accelerate": {
+    "word": "accelerate",
+    "ipa": "/əkˈsel.ə.reɪt/",
+    "pos": "động từ",
+    "vi": "tăng tốc, thúc đẩy nhanh",
+    "enEx": "The government plans to accelerate economic growth.",
+    "viEx": "Chính phủ dự kiến thúc đẩy tăng trưởng kinh tế."
+  },
+  "accomplish": {
+    "word": "accomplish",
+    "ipa": "/əˈkʌm.plɪʃ/",
+    "pos": "động từ",
+    "vi": "hoàn thành, đạt được",
+    "enEx": "You can accomplish anything if you focus.",
+    "viEx": "Bạn có thể đạt được bất cứ điều gì nếu tập trung."
+  },
+  "accurate": {
+    "word": "accurate",
+    "ipa": "/ˈæk.jə.rət/",
+    "pos": "tính từ",
+    "vi": "chính xác, đúng đắn",
+    "enEx": "The report provides an accurate summary of the event.",
+    "viEx": "Báo cáo cung cấp bản tóm tắt chính xác về sự kiện."
+  },
+  "achieve": {
+    "word": "achieve",
+    "ipa": "/əˈtʃiːv/",
+    "pos": "động từ",
+    "vi": "đạt được, gặt hái",
+    "enEx": "She worked hard to achieve her dreams.",
+    "viEx": "Cô ấy đã nỗ lực làm việc để đạt được ước mơ."
+  },
+  "acknowledge": {
+    "word": "acknowledge",
+    "ipa": "/əkˈnɒl.ɪdʒ/",
+    "pos": "động từ",
+    "vi": "công nhận, thừa nhận",
+    "enEx": "He refused to acknowledge his mistake.",
+    "viEx": "Anh ấy từ chối thừa nhận sai lầm của mình."
+  },
+  "acquire": {
+    "word": "acquire",
+    "ipa": "/əˈkwaɪər/",
+    "pos": "động từ",
+    "vi": "thu được, tích lũy được",
+    "enEx": "She has acquired extensive knowledge of English.",
+    "viEx": "Cô ấy đã tích lũy được kiến thức tiếng Anh sâu rộng."
+  },
+  "adapt": {
+    "word": "adapt",
+    "ipa": "/əˈdæpt/",
+    "pos": "động từ",
+    "vi": "thích nghi, phỏng theo",
+    "enEx": "It takes time to adapt to a new environment.",
+    "viEx": "Cần thời gian để thích nghi với môi trường mới."
+  },
+  "adequate": {
+    "word": "adequate",
+    "ipa": "/ˈæd.ə.kwət/",
+    "pos": "tính từ",
+    "vi": "đầy đủ, thỏa đáng",
+    "enEx": "The room was warm and had adequate lighting.",
+    "viEx": "Căn phòng ấm áp và có đủ ánh sáng."
+  },
+  "admire": {
+    "word": "admire",
+    "ipa": "/ədˈmaɪər/",
+    "pos": "động từ",
+    "vi": "ngưỡng mộ, khâm phục",
+    "enEx": "I truly admire your dedication to teaching.",
+    "viEx": "Tôi thực sự ngưỡng mộ sự tận tâm dạy học của bạn."
+  },
+  "advantage": {
+    "word": "advantage",
+    "ipa": "/ədˈvɑːn.tɪdʒ/",
+    "pos": "danh từ",
+    "vi": "lợi thế, ưu điểm",
+    "enEx": "Having good English is a huge advantage.",
+    "viEx": "Giỏi tiếng Anh là một lợi thế rất lớn."
+  },
+  "adventure": {
+    "word": "adventure",
+    "ipa": "/ədˈven.tʃər/",
+    "pos": "danh từ",
+    "vi": "cuộc phiêu lưu, chuyến thám hiểm",
+    "enEx": "Life is a bold adventure or nothing at all.",
+    "viEx": "Cuộc sống là một chuyến phiêu lưu táo bạo hoặc không là gì cả."
+  },
+  "advocate": {
+    "word": "advocate",
+    "ipa": "/ˈæd.və.keɪt/",
+    "pos": "động từ",
+    "vi": "ủng hộ, tán thành",
+    "enEx": "Many teachers advocate reading real books.",
+    "viEx": "Nhiều giáo viên ủng hộ việc đọc sách giấy thực tế."
+  },
+  "aesthetic": {
+    "word": "aesthetic",
+    "ipa": "/esˈθet.ɪk/",
+    "pos": "tính từ",
+    "vi": "mang tính thẩm mỹ, đẹp mắt",
+    "enEx": "The cafe has a lovely vintage aesthetic.",
+    "viEx": "Quán cà phê mang tính thẩm mỹ cổ điển rất đáng yêu."
+  },
+  "affection": {
+    "word": "affection",
+    "ipa": "/əˈfek.ʃən/",
+    "pos": "danh từ",
+    "vi": "tình cảm, lòng yêu thương",
+    "enEx": "She felt a deep affection for the little ginger cat.",
+    "viEx": "Cô cảm thấy một tình cảm sâu sắc dành cho chú mèo cam nhỏ."
+  },
+  "afford": {
+    "word": "afford",
+    "ipa": "/əˈfɔːd/",
+    "pos": "động từ",
+    "vi": "có đủ khả năng chi trả",
+    "enEx": "She couldn't afford to buy such an expensive book.",
+    "viEx": "Cô ấy không đủ tiền mua cuốn sách đắt đỏ như vậy."
+  },
+  "ambiguous": {
+    "word": "ambiguous",
+    "ipa": "/æmˈbɪɡ.ju.əs/",
+    "pos": "tính từ",
+    "vi": "mơ hồ, đa nghĩa, không rõ ràng",
+    "enEx": "The ending of the novel was intentionally ambiguous.",
+    "viEx": "Cái kết của cuốn tiểu thuyết cố tình được để mơ hồ."
+  },
+  "ambition": {
+    "word": "ambition",
+    "ipa": "/æmˈbɪʃ.ən/",
+    "pos": "danh từ",
+    "vi": "tham vọng, hoài bão lớn",
+    "enEx": "Her ambition is to become a wonderful educator.",
+    "viEx": "Hoài bão của cô là trở thành một nhà giáo dục tuyệt vời."
+  },
+  "analyze": {
+    "word": "analyze",
+    "ipa": "/ˈæn.əl.aɪz/",
+    "pos": "động từ",
+    "vi": "phân tích, mổ xẻ",
+    "enEx": "We need to analyze the data carefully.",
+    "viEx": "Chúng ta cần phân tích dữ liệu một cách cẩn thận."
+  },
+  "anticipate": {
+    "word": "anticipate",
+    "ipa": "/ænˈtɪs.ɪ.peɪt/",
+    "pos": "động từ",
+    "vi": "dự đoán trước, háo hức chờ đợi",
+    "enEx": "We anticipate that this new method will help students.",
+    "viEx": "Chúng tôi dự đoán phương pháp mới này sẽ giúp ích cho học sinh."
+  },
+  "anxious": {
+    "word": "anxious",
+    "ipa": "/ˈæŋk.ʃəs/",
+    "pos": "tính từ",
+    "vi": "lo âu, bồn chồn",
+    "enEx": "She felt anxious before the presentation.",
+    "viEx": "Cô ấy cảm thấy lo lắng trước buổi thuyết trình."
+  },
+  "apparent": {
+    "word": "apparent",
+    "ipa": "/əˈpær.ənt/",
+    "pos": "tính từ",
+    "vi": "rõ ràng, hiển nhiên",
+    "enEx": "It became apparent that she was right.",
+    "viEx": "Rõ ràng là cô ấy đã đúng."
+  },
+  "appeal": {
+    "word": "appeal",
+    "ipa": "/əˈpiːl/",
+    "pos": "danh từ / động từ",
+    "vi": "sức lôi cuốn, hấp dẫn",
+    "enEx": "The visual notes appeal to visual learners.",
+    "viEx": "Những ghi chú bằng hình ảnh rất lôi cuốn người học theo kiểu thị giác."
+  },
+  "appreciate": {
+    "word": "appreciate",
+    "ipa": "/əˈpriː.ʃi.eɪt/",
+    "pos": "động từ",
+    "vi": "trân trọng, đánh giá cao",
+    "enEx": "I deeply appreciate your kind assistance.",
+    "viEx": "Tôi vô cùng trân trọng sự giúp đỡ tốt bụng của bạn."
+  },
+  "approach": {
+    "word": "approach",
+    "ipa": "/əˈprəʊtʃ/",
+    "pos": "danh từ",
+    "vi": "cách tiếp cận, phương pháp",
+    "enEx": "Her approach to vocabulary learning is playful and fun.",
+    "viEx": "Cách tiếp cận học từ vựng của cô rất vui tươi và thú vị."
+  },
+  "appropriate": {
+    "word": "appropriate",
+    "ipa": "/əˈprəʊ.pri.ət/",
+    "pos": "tính từ",
+    "vi": "thích hợp, phù hợp",
+    "enEx": "Please wear appropriate clothing for the event.",
+    "viEx": "Vui lòng mặc trang phục phù hợp cho sự kiện."
+  },
+  "approximate": {
+    "word": "approximate",
+    "ipa": "/əˈprɒk.sɪ.mət/",
+    "pos": "tính từ",
+    "vi": "xấp xỉ, tương đối",
+    "enEx": "The approximate cost will be ten dollars.",
+    "viEx": "Chi phí ước tính khoảng mười đô la."
+  },
+  "articulate": {
+    "word": "articulate",
+    "ipa": "/ɑːˈtɪk.jə.lət/",
+    "pos": "tính từ / động từ",
+    "vi": "diễn đạt lưu loát, rõ ràng",
+    "enEx": "She gave an articulate and convincing speech.",
+    "viEx": "Cô ấy đã có bài phát biểu lưu loát và thuyết phục."
+  },
+  "aspire": {
+    "word": "aspire",
+    "ipa": "/əˈspaɪər/",
+    "pos": "động từ",
+    "vi": "khát khao, khao khát vươn tới",
+    "enEx": "He aspires to write a bestselling novel.",
+    "viEx": "Anh ấy khao khát viết được cuốn tiểu thuyết bán chạy nhất."
+  },
+  "astonishing": {
+    "word": "astonishing",
+    "ipa": "/əˈstɒn.ɪ.ʃɪŋ/",
+    "pos": "tính từ",
+    "vi": "đáng kinh ngạc, sững sờ",
+    "enEx": "Her vocabulary memory is truly astonishing.",
+    "viEx": "Trí nhớ từ vựng của cô ấy thật đáng kinh ngạc."
+  },
+  "attitude": {
+    "word": "attitude",
+    "ipa": "/ˈæt.ɪ.tʃuːd/",
+    "pos": "danh từ",
+    "vi": "thái độ, quan điểm",
+    "enEx": "A positive attitude makes learning easier.",
+    "viEx": "Thái độ tích cực giúp việc học trở nên dễ dàng hơn."
+  },
+  "authentic": {
+    "word": "authentic",
+    "ipa": "/ɔːˈθen.tɪk/",
+    "pos": "tính từ",
+    "vi": "đích thực, nguyên bản, chân thật",
+    "enEx": "This bookstore sells authentic vintage editions.",
+    "viEx": "Hiệu sách này bán những ấn bản cổ điển nguyên gốc."
+  },
+  "aware": {
+    "word": "aware",
+    "ipa": "/əˈweər/",
+    "pos": "tính từ",
+    "vi": "nhận thức được, có ý thức",
+    "enEx": "She is fully aware of the challenges ahead.",
+    "viEx": "Cô ấy nhận thức đầy đủ về những thử thách phía trước."
+  },
+  "barely": {
+    "word": "barely",
+    "ipa": "/ˈbeə.li/",
+    "pos": "phó từ",
+    "vi": "hầu như không, vừa đủ",
+    "enEx": "I could barely hear her voice over the crowd.",
+    "viEx": "Tôi hầu như không nghe thấy giọng cô ấy giữa đám đông."
+  },
+  "barrier": {
+    "word": "barrier",
+    "ipa": "/ˈbær.i.ər/",
+    "pos": "danh từ",
+    "vi": "rào cản, chướng ngại",
+    "enEx": "Lack of vocabulary is the biggest barrier in reading.",
+    "viEx": "Thiếu từ vựng là rào cản lớn nhất khi đọc sách."
+  },
+  "behalf": {
+    "word": "behalf",
+    "ipa": "/bɪˈhɑːf/",
+    "pos": "danh từ",
+    "vi": "thay mặt, đại diện",
+    "enEx": "On behalf of the school, I welcome you all.",
+    "viEx": "Thay mặt nhà trường, tôi chào đón tất cả các bạn."
+  },
+  "beneficial": {
+    "word": "beneficial",
+    "ipa": "/ˌben.ɪˈfɪʃ.əl/",
+    "pos": "tính từ",
+    "vi": "có lợi, hữu ích",
+    "enEx": "Spaced repetition is highly beneficial for memory.",
+    "viEx": "Lặp lại ngắt quãng cực kỳ có lợi cho trí nhớ."
+  },
+  "bewildered": {
+    "word": "bewildered",
+    "ipa": "/bɪˈwɪl.dəd/",
+    "pos": "tính từ",
+    "vi": "hoang mang, bối rối hoàn toàn",
+    "enEx": "She was bewildered by the complex grammar rules.",
+    "viEx": "Cô ấy hoàn toàn bối rối trước các quy tắc ngữ pháp phức tạp."
+  },
+  "bitter": {
+    "word": "bitter",
+    "ipa": "/ˈbɪt.ər/",
+    "pos": "tính từ",
+    "vi": "đắng, cay đắng",
+    "enEx": "The medicine tasted extremely bitter.",
+    "viEx": "Thuốc có vị vô cùng đắng."
+  },
+  "bizarre": {
+    "word": "bizarre",
+    "ipa": "/bɪˈzɑːr/",
+    "pos": "tính từ",
+    "vi": "kỳ dị, quái lạ",
+    "enEx": "He told a bizarre story about a talking cat.",
+    "viEx": "Anh ấy kể câu chuyện kỳ dị về một chú mèo biết nói."
+  },
+  "blend": {
+    "word": "blend",
+    "ipa": "/blend/",
+    "pos": "động từ / danh từ",
+    "vi": "pha trộn, hòa quyện",
+    "enEx": "Her lessons blend storytelling with English grammar.",
+    "viEx": "Các bài học của cô hòa quyện kể chuyện với ngữ pháp tiếng Anh."
+  },
+  "bold": {
+    "word": "bold",
+    "ipa": "/bəʊld/",
+    "pos": "tính từ",
+    "vi": "dũng cảm, táo bạo, in đậm",
+    "enEx": "It was a bold move to start her own academy.",
+    "viEx": "Đó là một quyết định táo bạo khi mở học viện riêng."
+  },
+  "bond": {
+    "word": "bond",
+    "ipa": "/bɒnd/",
+    "pos": "danh từ / động từ",
+    "vi": "sự gắn kết, mối liên kết",
+    "enEx": "There is a strong bond between the cat and its owner.",
+    "viEx": "Có một mối gắn kết bền chặt giữa chú mèo và chủ của nó."
+  },
+  "bound": {
+    "word": "bound",
+    "ipa": "/baʊnd/",
+    "pos": "tính từ",
+    "vi": "chắc chắn sẽ, bị ràng buộc",
+    "enEx": "With hard work, you are bound to succeed.",
+    "viEx": "Với sự chăm chỉ, bạn chắc chắn sẽ thành công."
+  },
+  "brave": {
+    "word": "brave",
+    "ipa": "/breɪv/",
+    "pos": "tính từ",
+    "vi": "dũng cảm, can đảm",
+    "enEx": "It was brave of her to speak in public.",
+    "viEx": "Cô ấy thật dũng cảm khi phát biểu trước đám đông."
+  },
+  "breeze": {
+    "word": "breeze",
+    "ipa": "/briːz/",
+    "pos": "danh từ",
+    "vi": "cơn gió nhẹ, điều dễ dàng",
+    "enEx": "The English exam was a breeze for her.",
+    "viEx": "Bài thi tiếng Anh đối với cô ấy dễ như một cơn gió."
+  },
+  "brilliant": {
+    "word": "brilliant",
+    "ipa": "/ˈbrɪl.jənt/",
+    "pos": "tính từ",
+    "vi": "xuất sắc, rực rỡ, thông minh",
+    "enEx": "That was a brilliant idea to memorize words.",
+    "viEx": "Đó là một ý tưởng xuất sắc để ghi nhớ từ vựng."
+  },
+  "broad": {
+    "word": "broad",
+    "ipa": "/brɔːd/",
+    "pos": "tính từ",
+    "vi": "rộng lớn, bao quát",
+    "enEx": "Reading expands your broad view of the world.",
+    "viEx": "Đọc sách mở rộng góc nhìn bao quát của bạn về thế giới."
+  },
+  "burden": {
+    "word": "burden",
+    "ipa": "/ˈbɜː.dən/",
+    "pos": "danh từ",
+    "vi": "gánh nặng, nỗi âu lo",
+    "enEx": "Learning should never be a heavy burden.",
+    "viEx": "Học tập không bao giờ nên là một gánh nặng nặng nề."
+  },
+  "calm": {
+    "word": "calm",
+    "ipa": "/kɑːm/",
+    "pos": "tính từ",
+    "vi": "bình tĩnh, điềm đạm, êm đềm",
+    "enEx": "Keep calm and read a good book.",
+    "viEx": "Hãy giữ bình tĩnh và đọc một cuốn sách hay."
+  },
+  "candid": {
+    "word": "candid",
+    "ipa": "/ˈkæn.dɪd/",
+    "pos": "tính từ",
+    "vi": "thẳng thắn, chân thành, tự nhiên",
+    "enEx": "She gave a candid reflection on her study habits.",
+    "viEx": "Cô ấy đã đưa ra lời chia sẻ thẳng thắn về thói quen học tập của mình."
+  },
+  "capable": {
+    "word": "capable",
+    "ipa": "/ˈkeɪ.pə.bəl/",
+    "pos": "tính từ",
+    "vi": "có năng lực, có thể làm được",
+    "enEx": "Every student is capable of mastering English.",
+    "viEx": "Mỗi học sinh đều có khả năng làm chủ tiếng Anh."
+  },
+  "captivating": {
+    "word": "captivating",
+    "ipa": "/ˈkæp.tɪ.veɪ.tɪŋ/",
+    "pos": "tính từ",
+    "vi": "say đắm, quyến rũ lòng người",
+    "enEx": "The author wrote a captivating first chapter.",
+    "viEx": "Tác giả đã viết một chương đầu đầy lôi cuốn say đắm."
+  },
+  "cater": {
+    "word": "cater",
+    "ipa": "/ˈkeɪ.tər/",
+    "pos": "động từ",
+    "vi": "phục vụ, đáp ứng nhu cầu",
+    "enEx": "Our app is designed to cater to visual learners.",
+    "viEx": "Ứng dụng được thiết kế để đáp ứng người học bằng thị giác."
+  },
+  "celebrate": {
+    "word": "celebrate",
+    "ipa": "/ˈsel.ə.breɪt/",
+    "pos": "động từ",
+    "vi": "ăn mừng, tôn vinh",
+    "enEx": "Let's celebrate every milestone in your vocabulary journey.",
+    "viEx": "Hãy ăn mừng từng cột mốc trong hành trình tích lũy từ vựng."
+  },
+  "challenge": {
+    "word": "challenge",
+    "ipa": "/ˈtʃæl.ɪndʒ/",
+    "pos": "danh từ",
+    "vi": "thử thách, thách thức",
+    "enEx": "Embrace every challenge as an opportunity to grow.",
+    "viEx": "Hãy đón nhận mỗi thử thách như một cơ hội để trưởng thành."
+  },
+  "cherish": {
+    "word": "cherish",
+    "ipa": "/ˈtʃer.ɪʃ/",
+    "pos": "động từ",
+    "vi": "nâng niu, trân quý",
+    "enEx": "Cherish the moments spent reading quiet books.",
+    "viEx": "Hãy trân quý những khoảnh khắc đọc những trang sách bình yên."
+  },
+  "clarify": {
+    "word": "clarify",
+    "ipa": "/ˈklær.ɪ.faɪ/",
+    "pos": "động từ",
+    "vi": "làm rõ, giải thích sáng tỏ",
+    "enEx": "Could you clarify the meaning of this phrase?",
+    "viEx": "Cô có thể làm rõ nghĩa của cụm từ này được không?"
+  },
+  "cohesive": {
+    "word": "cohesive",
+    "ipa": "/kəʊˈhiː.sɪv/",
+    "pos": "tính từ",
+    "vi": "gắn kết chặt chẽ, mạch lạc",
+    "enEx": "Her essay was cohesive and well-structured.",
+    "viEx": "Bài luận của cô ấy rất mạch lạc và có cấu trúc tốt."
+  },
+  "collaborate": {
+    "word": "collaborate",
+    "ipa": "/kəˈlæb.ə.reɪt/",
+    "pos": "động từ",
+    "vi": "hợp tác, cùng làm việc",
+    "enEx": "Students collaborate to build a shared vocabulary list.",
+    "viEx": "Các học sinh hợp tác xây dựng danh sách từ vựng chung."
+  },
+  "comfort": {
+    "word": "comfort",
+    "ipa": "/ˈkʌm.fət/",
+    "pos": "danh từ / động từ",
+    "vi": "sự thoải mái, an ủi",
+    "enEx": "Reading by the fireplace brings immense comfort.",
+    "viEx": "Đọc sách bên lò sưởi mang lại cảm giác thoải mái vô cùng."
+  },
+  "commence": {
+    "word": "commence",
+    "ipa": "/kəˈmens/",
+    "pos": "động từ",
+    "vi": "bắt đầu, khởi sự",
+    "enEx": "The lecture will commence promptly at eight.",
+    "viEx": "Bài giảng sẽ bắt đầu đúng lúc tám giờ."
+  },
+  "compassion": {
+    "word": "compassion",
+    "ipa": "/kəmˈpæʃ.ən/",
+    "pos": "danh từ",
+    "vi": "lòng trắc ẩn, lòng thương xót",
+    "enEx": "Great literature teaches empathy and compassion.",
+    "viEx": "Văn học lớn dạy chúng ta sự thấu cảm và lòng trắc ẩn."
+  },
+  "compelling": {
+    "word": "compelling",
+    "ipa": "/kəmˈpel.ɪŋ/",
+    "pos": "tính từ",
+    "vi": "thuyết phục, hấp dẫn khó cưỡng",
+    "enEx": "She gave a compelling reason to read every day.",
+    "viEx": "Cô ấy đã đưa ra lý do đầy thuyết phục để đọc sách mỗi ngày."
+  },
+  "competence": {
+    "word": "competence",
+    "ipa": "/ˈkɒm.pɪ.təns/",
+    "pos": "danh từ",
+    "vi": "năng lực, sự thành thạo",
+    "enEx": "Fluency reflects your communicative competence.",
+    "viEx": "Sự trôi chảy phản ánh năng lực giao tiếp của bạn."
+  },
+  "complex": {
+    "word": "complex",
+    "ipa": "/ˈkɒm.pleks/",
+    "pos": "tính từ",
+    "vi": "phức tạp, rắc rối",
+    "enEx": "Don't worry about complex grammatical structures at first.",
+    "viEx": "Ban đầu đừng quá lo lắng về các cấu trúc ngữ pháp phức tạp."
+  },
+  "comprehensive": {
+    "word": "comprehensive",
+    "ipa": "/ˌkɒm.prɪˈhen.sɪv/",
+    "pos": "tính từ",
+    "vi": "toàn diện, bao quát",
+    "enEx": "This notebook is a comprehensive vocabulary guide.",
+    "viEx": "Cuốn sổ này là cuốn cẩm nang từ vựng toàn diện."
+  },
+  "concept": {
+    "word": "concept",
+    "ipa": "/ˈkɒn.sept/",
+    "pos": "danh từ",
+    "vi": "khái niệm, ý tưởng",
+    "enEx": "Spaced repetition is a proven scientific concept.",
+    "viEx": "Lặp lại ngắt quãng là một khái niệm khoa học đã được chứng minh."
+  },
+  "conclude": {
+    "word": "conclude",
+    "ipa": "/kənˈkluːd/",
+    "pos": "động từ",
+    "vi": "kết luận, kết thúc",
+    "enEx": "We can conclude that consistent practice is essential.",
+    "viEx": "Chúng ta có thể kết luận rằng luyện tập đều đặn là điều tất yếu."
+  },
+  "confident": {
+    "word": "confident",
+    "ipa": "/ˈkɒn.fɪ.dənt/",
+    "pos": "tính từ",
+    "vi": "tự tin, quả quyết",
+    "enEx": "She feels confident when speaking English now.",
+    "viEx": "Bây giờ cô ấy cảm thấy rất tự tin khi nói tiếng Anh."
+  },
+  "conform": {
+    "word": "conform",
+    "ipa": "/kənˈfɔːm/",
+    "pos": "động từ",
+    "vi": "tuân theo, phù hợp quy chuẩn",
+    "enEx": "Creative thinkers rarely conform to outdated rules.",
+    "viEx": "Những người tư duy sáng tạo hiếm khi tuân theo những quy tắc lỗi thời."
+  },
+  "conscious": {
+    "word": "conscious",
+    "ipa": "/ˈkɒn.ʃəs/",
+    "pos": "tính từ",
+    "vi": "có ý thức, tỉnh táo",
+    "enEx": "Make a conscious effort to review words every morning.",
+    "viEx": "Hãy có ý thức chủ động ôn tập từ vựng mỗi buổi sáng."
+  },
+  "consistent": {
+    "word": "consistent",
+    "ipa": "/kənˈsɪs.tənt/",
+    "pos": "tính từ",
+    "vi": "kiên định, nhất quán, đều đặn",
+    "enEx": "Consistent effort brings extraordinary results.",
+    "viEx": "Nỗ lực đều đặn sẽ mang lại kết quả phi thường."
+  },
+  "contemplate": {
+    "word": "contemplate",
+    "ipa": "/ˈkɒn.təm.pleɪt/",
+    "pos": "động từ",
+    "vi": "suy ngẫm, trầm ngâm suy tư",
+    "enEx": "She sat by the window to contemplate life.",
+    "viEx": "Cô ngồi bên cửa sổ trầm ngâm suy ngẫm về cuộc sống."
+  },
+  "convenient": {
+    "word": "convenient",
+    "ipa": "/kənˈviː.ni.ənt/",
+    "pos": "tính từ",
+    "vi": "tiện lợi, thuận tiện",
+    "enEx": "Scanning book pages with camera is very convenient.",
+    "viEx": "Quét trang sách bằng máy ảnh rất thuận tiện."
+  },
+  "convey": {
+    "word": "convey",
+    "ipa": "/kənˈveɪ/",
+    "pos": "động từ",
+    "vi": "truyền tải, truyền đạt",
+    "enEx": "Words convey thoughts and delicate emotions.",
+    "viEx": "Ngôn từ truyền tải suy nghĩ và những cảm xúc tinh tế."
+  },
+  "courage": {
+    "word": "courage",
+    "ipa": "/ˈkʌr.ɪdʒ/",
+    "pos": "danh từ",
+    "vi": "lòng dũng cảm, sự can đảm",
+    "enEx": "It takes courage to speak a new language.",
+    "viEx": "Cần lòng dũng cảm để nói một ngôn ngữ mới."
+  },
+  "crucial": {
+    "word": "crucial",
+    "ipa": "/ˈkruː.ʃəl/",
+    "pos": "tính từ",
+    "vi": "then chốt, cốt yếu",
+    "enEx": "Vocabulary is crucial for fluent reading comprehension.",
+    "viEx": "Từ vựng là yếu tố then chốt cho việc đọc hiểu trôi chảy."
+  },
+  "cultivate": {
+    "word": "cultivate",
+    "ipa": "/ˈkʌl.tɪ.veɪt/",
+    "pos": "động từ",
+    "vi": "nuôi dưỡng, trau dồi",
+    "enEx": "Reading helps cultivate a curious mind.",
+    "viEx": "Đọc sách giúp nuôi dưỡng một tâm hồn ham học hỏi."
+  },
+  "curious": {
+    "word": "curious",
+    "ipa": "/ˈkjʊə.ri.əs/",
+    "pos": "tính từ",
+    "vi": "tò mò, hiếu kỳ, ham hiểu biết",
+    "enEx": "The ginger cat is naturally curious about everything.",
+    "viEx": "Chú mèo cam vốn tò mò với mọi thứ xung quanh."
+  },
+  "dazzling": {
+    "word": "dazzling",
+    "ipa": "/ˈdæz.lɪŋ/",
+    "pos": "tính từ",
+    "vi": "chói lòa, lộng lẫy, rực rỡ",
+    "enEx": "She achieved dazzling results in her English test.",
+    "viEx": "Cô ấy đã đạt được kết quả rực rỡ trong bài kiểm tra tiếng Anh."
+  },
+  "decisive": {
+    "word": "decisive",
+    "ipa": "/dɪˈsaɪ.sɪv/",
+    "pos": "tính từ",
+    "vi": "quyết đoán, mang tính quyết định",
+    "enEx": "Her decisive action helped solve the issue immediately.",
+    "viEx": "Hành động quyết đoán của cô ấy đã giúp giải quyết vấn đề ngay."
+  },
+  "dedicate": {
+    "word": "dedicate",
+    "ipa": "/ˈded.ɪ.keɪt/",
+    "pos": "động từ",
+    "vi": "cống hiến, dành trọn tâm huyết",
+    "enEx": "She dedicates two hours every day to learning.",
+    "viEx": "Cô ấy dành trọn hai tiếng mỗi ngày để học tập."
+  },
+  "deliberate": {
+    "word": "deliberate",
+    "ipa": "/dɪˈlɪb.ər.ət/",
+    "pos": "tính từ",
+    "vi": "có chủ đích, thận trọng kỹ càng",
+    "enEx": "Deliberate practice is the key to mastering English.",
+    "viEx": "Luyện tập có chủ đích là chìa khóa để làm chủ tiếng Anh."
+  },
+  "delight": {
+    "word": "delight",
+    "ipa": "/dɪˈlaɪt/",
+    "pos": "danh từ / động từ",
+    "vi": "niềm hân hoan, vui sướng",
+    "enEx": "Reading cute stories brings boundless delight.",
+    "viEx": "Đọc những câu chuyện dễ thương mang lại niềm vui sướng vô bờ."
+  },
+  "demonstrate": {
+    "word": "demonstrate",
+    "ipa": "/ˈdem.ən.streɪt/",
+    "pos": "động từ",
+    "vi": "chứng minh, biểu thị rõ",
+    "enEx": "Her progress demonstrates the power of persistence.",
+    "viEx": "Sự tiến bộ của cô ấy chứng minh sức mạnh của sự kiên trì."
+  },
+  "dense": {
+    "word": "dense",
+    "ipa": "/dens/",
+    "pos": "tính từ",
+    "vi": "dày đặc, đậm đặc",
+    "enEx": "The forest was covered in dense morning fog.",
+    "viEx": "Khu rừng bị bao phủ trong màn sương sớm dày đặc."
+  },
+  "deserve": {
+    "word": "deserve",
+    "ipa": "/dɪˈzɜːv/",
+    "pos": "động từ",
+    "vi": "xứng đáng",
+    "enEx": "You deserve a tasty treat for finishing your study!",
+    "viEx": "Cô xứng đáng được thưởng một món ngon sau khi học xong!"
+  },
+  "desperate": {
+    "word": "desperate",
+    "ipa": "/ˈdes.pər.ət/",
+    "pos": "tính từ",
+    "vi": "tuyệt vọng, liều lĩnh",
+    "enEx": "They made a desperate attempt to catch the train.",
+    "viEx": "Họ đã nỗ lực trong tuyệt vọng để đuổi kịp chuyến tàu."
+  },
+  "determine": {
+    "word": "determine",
+    "ipa": "/dɪˈtɜː.mɪn/",
+    "pos": "động từ",
+    "vi": "xác định, quyết tâm",
+    "enEx": "She is determined to read ten English novels this year.",
+    "viEx": "Cô ấy quyết tâm đọc mười cuốn tiểu thuyết tiếng Anh năm nay."
+  },
+  "diligent": {
+    "word": "diligent",
+    "ipa": "/ˈdɪl.ɪ.dʒənt/",
+    "pos": "tính từ",
+    "vi": "chăm chỉ, siêng năng, cần mẫn",
+    "enEx": "A diligent student will always make steady progress.",
+    "viEx": "Một học sinh siêng năng sẽ luôn đạt tiến bộ vững chắc."
+  },
+  "diminish": {
+    "word": "diminish",
+    "ipa": "/dɪˈmɪn.ɪʃ/",
+    "pos": "động từ",
+    "vi": "giảm bớt, suy giảm",
+    "enEx": "Her fears began to diminish as she practiced more.",
+    "viEx": "Nỗi sợ của cô ấy bắt đầu giảm bớt khi cô luyện tập nhiều hơn."
+  },
+  "discern": {
+    "word": "discern",
+    "ipa": "/dɪˈsɜːn/",
+    "pos": "động từ",
+    "vi": "nhận thức rõ, phân biệt thấu đáo",
+    "enEx": "It is hard to discern the subtle difference between them.",
+    "viEx": "Rất khó để nhận ra sự khác biệt tinh tế giữa chúng."
+  },
+  "diverse": {
+    "word": "diverse",
+    "ipa": "/daɪˈvɜːs/",
+    "pos": "tính từ",
+    "vi": "đa dạng, phong phú",
+    "enEx": "She reads books on diverse topics.",
+    "viEx": "Cô ấy đọc sách về nhiều chủ đề đa dạng."
+  },
+  "dominant": {
+    "word": "dominant",
+    "ipa": "/ˈdɒm.ɪ.nənt/",
+    "pos": "tính từ",
+    "vi": "chiếm ưu thế, vượt trội",
+    "enEx": "English has become the dominant international language.",
+    "viEx": "Tiếng Anh đã trở thành ngôn ngữ quốc tế thống trị."
+  },
+  "dramatic": {
+    "word": "dramatic",
+    "ipa": "/drəˈmæt.ɪk/",
+    "pos": "tính từ",
+    "vi": "ấn tượng, ngoạn mục, kịch tính",
+    "enEx": "There was a dramatic improvement in her pronunciation.",
+    "viEx": "Có một sự cải thiện ngoạn mục trong phát âm của cô ấy."
+  },
+  "dynamic": {
+    "word": "dynamic",
+    "ipa": "/daɪˈnæm.ɪk/",
+    "pos": "tính từ",
+    "vi": "năng động, linh hoạt",
+    "enEx": "The classroom atmosphere was lively and dynamic.",
+    "viEx": "Không khí lớp học rất sống động và năng động."
+  },
+  "eager": {
+    "word": "eager",
+    "ipa": "/ˈiː.ɡər/",
+    "pos": "tính từ",
+    "vi": "háo hức, tha thiết mong chờ",
+    "enEx": "The children were eager to hear the cat story.",
+    "viEx": "Những đứa trẻ háo hức lắng nghe câu chuyện về chú mèo."
+  },
+  "elaborate": {
+    "word": "elaborate",
+    "ipa": "/ɪˈlæb.ər.ət/",
+    "pos": "tính từ / động từ",
+    "vi": "tỉ mỉ, trau chuốt, chi tiết",
+    "enEx": "She gave an elaborate explanation of the word's origin.",
+    "viEx": "Cô ấy giải thích rất tỉ mỉ về nguồn gốc của từ."
+  },
+  "elegant": {
+    "word": "elegant",
+    "ipa": "/ˈel.ɪ.ɡənt/",
+    "pos": "tính từ",
+    "vi": "tao nhã, thanh lịch",
+    "enEx": "Her writing style is simple yet remarkably elegant.",
+    "viEx": "Phong cách viết của cô ấy đơn giản nhưng vô cùng tao nhã."
+  },
+  "eloquent": {
+    "word": "eloquent",
+    "ipa": "/ˈel.ə.kwənt/",
+    "pos": "tính từ",
+    "vi": "hùng hồn, lưu loát, giàu biểu cảm",
+    "enEx": "The author gave an eloquent defense of literature.",
+    "viEx": "Tác giả đã có bài bảo vệ đầy hùng hồn về văn học."
+  },
+  "embrace": {
+    "word": "embrace",
+    "ipa": "/ɪmˈbreɪs/",
+    "pos": "động từ",
+    "vi": "đón nhận, ôm lấy, trân trọng",
+    "enEx": "Embrace your mistakes as valuable learning steps.",
+    "viEx": "Hãy đón nhận những lỗi sai như những bước học hỏi quý báu."
+  },
+  "emerge": {
+    "word": "emerge",
+    "ipa": "/ɪˈmɜːdʒ/",
+    "pos": "động từ",
+    "vi": "xuất hiện, nổi lên",
+    "enEx": "New ideas emerge when you read thoughtful books.",
+    "viEx": "Những ý tưởng mới xuất hiện khi bạn đọc những cuốn sách sâu sắc."
+  },
+  "empathy": {
+    "word": "empathy",
+    "ipa": "/ˈem.pə.θi/",
+    "pos": "danh từ",
+    "vi": "sự thấu cảm, khả năng đồng cảm",
+    "enEx": "Reading fiction builds profound empathy for others.",
+    "viEx": "Đọc tiểu thuyết giúp xây dựng sự thấu cảm sâu sắc với người khác."
+  },
+  "emphasize": {
+    "word": "emphasize",
+    "ipa": "/ˈem.fə.saɪz/",
+    "pos": "động từ",
+    "vi": "nhấn mạnh, làm nổi bật",
+    "enEx": "The teacher emphasized the importance of regular review.",
+    "viEx": "Giáo viên nhấn mạnh tầm quan trọng của việc ôn tập đều đặn."
+  },
+  "empower": {
+    "word": "empower",
+    "ipa": "/ɪmˈpaʊ.ər/",
+    "pos": "động từ",
+    "vi": "tiếp thêm sức mạnh, trao quyền",
+    "enEx": "Learning English empowers you to connect with the world.",
+    "viEx": "Học tiếng Anh tiếp thêm sức mạnh để bạn kết nối với thế giới."
+  },
+  "encourage": {
+    "word": "encourage",
+    "ipa": "/ɪnˈkʌr.ɪdʒ/",
+    "pos": "động từ",
+    "vi": "khích lệ, động viên",
+    "enEx": "She always encourages her students to speak up.",
+    "viEx": "Cô luôn khuyến khích học sinh của mình mạnh dạn phát biểu."
+  },
+  "endure": {
+    "word": "endure",
+    "ipa": "/ɪnˈdʒʊər/",
+    "pos": "động từ",
+    "vi": "kiên trì chịu đựng, trường tồn",
+    "enEx": "True masterpieces endure across centuries.",
+    "viEx": "Những kiệt tác thực sự trường tồn qua nhiều thế kỷ."
+  },
+  "enhance": {
+    "word": "enhance",
+    "ipa": "/ɪnˈhɑːns/",
+    "pos": "động từ",
+    "vi": "nâng cao, cải thiện, tăng cường",
+    "enEx": "Visual images enhance vocabulary retention.",
+    "viEx": "Hình ảnh trực quan nâng cao khả năng ghi nhớ từ vựng."
+  },
+  "enormous": {
+    "word": "enormous",
+    "ipa": "/ɪˈnɔː.məs/",
+    "pos": "tính từ",
+    "vi": "to lớn, khổng lồ",
+    "enEx": "She made an enormous progress in just two months.",
+    "viEx": "Cô ấy đã đạt được tiến bộ khổng lồ chỉ trong hai tháng."
+  },
+  "enrich": {
+    "word": "enrich",
+    "ipa": "/ɪnˈrɪtʃ/",
+    "pos": "động từ",
+    "vi": "làm giàu, bồi dưỡng phong phú",
+    "enEx": "Reading books will enrich your mind and spirit.",
+    "viEx": "Đọc sách sẽ làm giàu tâm trí và tâm hồn bạn."
+  },
+  "enthusiasm": {
+    "word": "enthusiasm",
+    "ipa": "/ɪnˈθjuː.zi.æz.əm/",
+    "pos": "danh từ",
+    "vi": "sự nhiệt huyết, hào hứng",
+    "enEx": "Her enthusiasm for English is truly contagious.",
+    "viEx": "Sự nhiệt huyết với tiếng Anh của cô thực sự lan tỏa."
+  },
+  "ephemeral": {
+    "word": "ephemeral",
+    "ipa": "/ɪˈfem.ər.əl/",
+    "pos": "tính từ",
+    "vi": "phù du, sớm nở tối tàn, ngắn ngủi",
+    "enEx": "Fame can be ephemeral, but genuine knowledge lasts.",
+    "viEx": "Danh vọng có thể phù du, nhưng tri thức chân thực sẽ trường tồn."
+  },
+  "epiphany": {
+    "word": "epiphany",
+    "ipa": "/ɪˈpɪf.ən.i/",
+    "pos": "danh từ",
+    "vi": "sự giác ngộ, khoảnh khắc bừng sáng",
+    "enEx": "She had an epiphany while walking in the park.",
+    "viEx": "Cô ấy bỗng có một khoảnh khắc giác ngộ khi dạo bước trong công viên."
+  },
+  "essential": {
+    "word": "essential",
+    "ipa": "/ɪˈsen.ʃəl/",
+    "pos": "tính từ",
+    "vi": "thiết yếu, cốt lõi, cơ bản",
+    "enEx": "Patience is essential when learning a foreign language.",
+    "viEx": "Sự kiên nhẫn là thiết yếu khi học một ngoại ngữ."
+  },
+  "evaluate": {
+    "word": "evaluate",
+    "ipa": "/ɪˈvæl.ju.eɪt/",
+    "pos": "động từ",
+    "vi": "đánh giá, định lượng",
+    "enEx": "Tests help evaluate your current reading level.",
+    "viEx": "Các bài kiểm tra giúp đánh giá trình độ đọc hiện tại của bạn."
+  },
+  "evident": {
+    "word": "evident",
+    "ipa": "/ˈev.ɪ.dənt/",
+    "pos": "tính từ",
+    "vi": "rõ ràng, rành rành",
+    "enEx": "Her passion for teaching is evident in every class.",
+    "viEx": "Niềm đam mê giảng dạy của cô rõ ràng trong từng buổi học."
+  },
+  "evolve": {
+    "word": "evolve",
+    "ipa": "/ɪˈvɒlv/",
+    "pos": "động từ",
+    "vi": "tiến hóa, phát triển không ngừng",
+    "enEx": "Languages constantly evolve over time.",
+    "viEx": "Ngôn ngữ không ngừng phát triển và tiến hóa theo thời gian."
+  },
+  "excel": {
+    "word": "excel",
+    "ipa": "/ɪkˈsel/",
+    "pos": "động từ",
+    "vi": "xuất sắc, vượt trội",
+    "enEx": "She excels in creative writing and storytelling.",
+    "viEx": "Cô ấy xuất sắc trong việc viết sáng tạo và kể chuyện."
+  },
+  "exemplary": {
+    "word": "exemplary",
+    "ipa": "/ɪɡˈzem.plər.i/",
+    "pos": "tính từ",
+    "vi": "gương mẫu, mẫu mực",
+    "enEx": "Her study habits are exemplary for everyone.",
+    "viEx": "Thói quen học tập của cô ấy là mẫu mực cho mọi người."
+  },
+  "explicit": {
+    "word": "explicit",
+    "ipa": "/ɪkˈsplɪs.ɪt/",
+    "pos": "tính từ",
+    "vi": "rõ ràng, dứt khoát, không mập mờ",
+    "enEx": "The instructions were clear and explicit.",
+    "viEx": "Các chỉ dẫn rất rõ ràng và dứt khoát."
+  },
+  "explore": {
+    "word": "explore",
+    "ipa": "/ɪkˈsplɔːr/",
+    "pos": "động từ",
+    "vi": "khám phá, tìm hiểu",
+    "enEx": "Let's explore new words together with LyngoCat!",
+    "viEx": "Hãy cùng LyngoCat khám phá những từ mới nhé!"
+  },
+  "extraordinary": {
+    "word": "extraordinary",
+    "ipa": "/ɪkˈstrɔː.dɪn.ər.i/",
+    "pos": "tính từ",
+    "vi": "phi thường, xuất sắc đặc biệt",
+    "enEx": "She has an extraordinary talent for remembering words.",
+    "viEx": "Cô ấy có tài năng phi thường trong việc ghi nhớ từ vựng."
+  },
+  "fabulous": {
+    "word": "fabulous",
+    "ipa": "/ˈfæb.jə.ləs/",
+    "pos": "tính từ",
+    "vi": "tuyệt vời, thần kỳ",
+    "enEx": "We had a fabulous time reading the story aloud.",
+    "viEx": "Chúng tôi đã có khoảng thời gian tuyệt vời khi đọc to câu chuyện."
+  },
+  "facilitate": {
+    "word": "facilitate",
+    "ipa": "/fəˈsɪl.ɪ.teɪt/",
+    "pos": "động từ",
+    "vi": "tạo điều kiện thuận lợi, hỗ trợ",
+    "enEx": "Technology can facilitate autonomous language learning.",
+    "viEx": "Công nghệ có thể tạo điều kiện thuận lợi cho việc tự học ngôn ngữ."
+  },
+  "fascinating": {
+    "word": "fascinating",
+    "ipa": "/ˈfæs.ən.eɪ.tɪŋ/",
+    "pos": "tính từ",
+    "vi": "lôi cuốn, hấp dẫn mê hoặc",
+    "enEx": "The history of English words is absolutely fascinating.",
+    "viEx": "Lịch sử các từ tiếng Anh tuyệt đối mê hoặc và hấp dẫn."
+  },
+  "feasible": {
+    "word": "feasible",
+    "ipa": "/ˈfiː.zə.bəl/",
+    "pos": "tính từ",
+    "vi": "khả thi, có thể thực hiện được",
+    "enEx": "Learning ten words a day is completely feasible.",
+    "viEx": "Học mười từ mỗi ngày là điều hoàn toàn khả thi."
+  },
+  "fierce": {
+    "word": "fierce",
+    "ipa": "/fɪəs/",
+    "pos": "tính từ",
+    "vi": "mãnh liệt, dữ dội, quyết liệt",
+    "enEx": "She has a fierce determination to master English.",
+    "viEx": "Cô ấy có một quyết tâm mãnh liệt để làm chủ tiếng Anh."
+  },
+  "flourish": {
+    "word": "flourish",
+    "ipa": "/ˈflʌr.ɪʃ/",
+    "pos": "động từ",
+    "vi": "hưng thịnh, phát triển rực rỡ",
+    "enEx": "Her vocabulary began to flourish after daily reading.",
+    "viEx": "Vốn từ của cô ấy bắt đầu nở rộ rực rỡ sau khi đọc sách hàng ngày."
+  },
+  "fluent": {
+    "word": "fluent",
+    "ipa": "/ˈfluː.ənt/",
+    "pos": "tính từ",
+    "vi": "trôi chảy, lưu loát",
+    "enEx": "Practice speaking daily to become truly fluent.",
+    "viEx": "Luyện nói hàng ngày để trở nên thực sự trôi chảy."
+  },
+  "focus": {
+    "word": "focus",
+    "ipa": "/ˈfəʊ.kəs/",
+    "pos": "động từ / danh từ",
+    "vi": "tập trung, tiêu điểm",
+    "enEx": "Focus on high-frequency words first.",
+    "viEx": "Hãy tập trung vào những từ tần suất cao trước tiên."
+  },
+  "fond": {
+    "word": "fond",
+    "ipa": "/fɒnd/",
+    "pos": "tính từ",
+    "vi": "yêu mến, chuộng",
+    "enEx": "She is very fond of cats and illustrated books.",
+    "viEx": "Cô ấy rất chuộng mèo và những cuốn sách tranh."
+  },
+  "fortune": {
+    "word": "fortune",
+    "ipa": "/ˈfɔː.tʃuːn/",
+    "pos": "danh từ",
+    "vi": "vận may, gia tài lớn",
+    "enEx": "I had the good fortune to find this wonderful app.",
+    "viEx": "Tôi đã có may mắn tìm được ứng dụng tuyệt vời này."
+  },
+  "foster": {
+    "word": "foster",
+    "ipa": "/ˈfɒs.tər/",
+    "pos": "động từ",
+    "vi": "nuôi dưỡng, thúc đẩy",
+    "enEx": "Teachers foster a love of lifelong reading.",
+    "viEx": "Các thầy cô nuôi dưỡng tình yêu đọc sách suốt đời."
+  },
+  "fragile": {
+    "word": "fragile",
+    "ipa": "/ˈfrædʒ.aɪl/",
+    "pos": "tính từ",
+    "vi": "mong manh, dễ vỡ",
+    "enEx": "The old book's pages were delicate and fragile.",
+    "viEx": "Những trang sách cũ rất mỏng manh và dễ rách."
+  },
+  "fundamental": {
+    "word": "fundamental",
+    "ipa": "/ˌfʌn.dəˈmen.təl/",
+    "pos": "tính từ",
+    "vi": "cơ bản, nền tảng cốt yếu",
+    "enEx": "Phonics and vocabulary are fundamental skills.",
+    "viEx": "Ngữ âm và từ vựng là những kỹ năng nền tảng."
+  },
+  "gaze": {
+    "word": "gaze",
+    "ipa": "/ɡeɪz/",
+    "pos": "động từ / danh từ",
+    "vi": "nhìn chăm chú, ngắm nhìn đăm chiêu",
+    "enEx": "She gazed out of the window while sipping warm tea.",
+    "viEx": "Cô ngắm nhìn đăm chiêu ra ngoài cửa sổ trong khi nhấp trà ấm."
+  },
+  "generous": {
+    "word": "generous",
+    "ipa": "/ˈdʒen.ər.əs/",
+    "pos": "tính từ",
+    "vi": "hào phóng, rộng lượng",
+    "enEx": "She is always generous with her encouraging praise.",
+    "viEx": "Cô luôn hào phóng với những lời khen khích lệ."
+  },
+  "genuine": {
+    "word": "genuine",
+    "ipa": "/ˈdʒen.ju.ɪn/",
+    "pos": "tính từ",
+    "vi": "chân thật, thành thật, chính hãng",
+    "enEx": "She showed genuine enthusiasm for the project.",
+    "viEx": "Cô ấy đã thể hiện sự nhiệt huyết chân thành đối với dự án."
+  },
+  "glimpse": {
+    "word": "glimpse",
+    "ipa": "/ɡlɪmps/",
+    "pos": "danh từ / động từ",
+    "vi": "cái nhìn thoáng qua",
+    "enEx": "I caught a brief glimpse of the cat hiding under the bed.",
+    "viEx": "Tôi thoáng thấy chú mèo đang trốn dưới gầm giường."
+  },
+  "glorious": {
+    "word": "glorious",
+    "ipa": "/ˈɡlɔː.ri.əs/",
+    "pos": "tính từ",
+    "vi": "huy hoàng, rực rỡ tuyệt đẹp",
+    "enEx": "The morning sun cast a glorious light over the room.",
+    "viEx": "Ánh nắng ban mai tỏa ánh sáng rực rỡ khắp căn phòng."
+  },
+  "graceful": {
+    "word": "graceful",
+    "ipa": "/ˈɡreɪs.fəl/",
+    "pos": "tính từ",
+    "vi": "duyên dáng, thanh thoát",
+    "enEx": "The cat moved with graceful and silent steps.",
+    "viEx": "Chú mèo bước đi với những bước duyên dáng và êm ru."
+  },
+  "gradual": {
+    "word": "gradual",
+    "ipa": "/ˈɡrædʒ.u.əl/",
+    "pos": "tính từ",
+    "vi": "dần dần, từ từ từng bước",
+    "enEx": "Fluency is a gradual and rewarding journey.",
+    "viEx": "Sự trôi chảy là một hành trình từ từ và đầy phần thưởng."
+  },
+  "gratitude": {
+    "word": "gratitude",
+    "ipa": "/ˈɡræt.ɪ.tʃuːd/",
+    "pos": "danh từ",
+    "vi": "lòng biết ơn sâu sắc",
+    "enEx": "She expressed her gratitude to the helpful teacher.",
+    "viEx": "Cô ấy bày tỏ lòng biết ơn sâu sắc tới người thầy tận tâm."
+  },
+  "harmony": {
+    "word": "harmony",
+    "ipa": "/ˈhɑː.mə.ni/",
+    "pos": "danh từ",
+    "vi": "sự hòa hợp, êm ấm",
+    "enEx": "The illustrations and text work in perfect harmony.",
+    "viEx": "Hình minh họa và văn bản kết hợp với nhau trong sự hòa hợp hoàn hảo."
+  },
+  "hesitate": {
+    "word": "hesitate",
+    "ipa": "/ˈhez.ɪ.teɪt/",
+    "pos": "động từ",
+    "vi": "ngập ngừng, do dự",
+    "enEx": "Don't hesitate to ask questions when in doubt.",
+    "viEx": "Đừng do dự đặt câu hỏi khi còn băn khoăn."
+  },
+  "horizon": {
+    "word": "horizon",
+    "ipa": "/həˈraɪ.zən/",
+    "pos": "danh từ",
+    "vi": "chân trời, tầm nhìn",
+    "enEx": "Reading broadens your intellectual horizons.",
+    "viEx": "Đọc sách mở rộng tầm nhìn trí tuệ của bạn."
+  },
+  "hostile": {
+    "word": "hostile",
+    "ipa": "/ˈhɒs.taɪl/",
+    "pos": "tính từ",
+    "vi": "thù địch, không thân thiện",
+    "enEx": "The cold weather made the outdoors feel hostile.",
+    "viEx": "Thời tiết giá lạnh làm không gian bên ngoài có vẻ khắc nghiệt."
+  },
+  "humble": {
+    "word": "humble",
+    "ipa": "/ˈhʌm.bəl/",
+    "pos": "tính từ",
+    "vi": "khiêm tốn, giản dị",
+    "enEx": "Despite her immense success, she remained humble.",
+    "viEx": "Dù thành công lớn, cô ấy vẫn luôn khiêm tốn."
+  },
+  "illuminate": {
+    "word": "illuminate",
+    "ipa": "/ɪˈluː.mɪ.neɪt/",
+    "pos": "động từ",
+    "vi": "soi sáng, làm sáng tỏ",
+    "enEx": "The teacher's explanation helped illuminate the dark point.",
+    "viEx": "Lời giải thích của cô giáo đã soi sáng điểm tối trong bài."
+  },
+  "illustrate": {
+    "word": "illustrate",
+    "ipa": "/ˈɪl.ə.streɪt/",
+    "pos": "động từ",
+    "vi": "minh họa, làm mẫu",
+    "enEx": "Examples illustrate how the word is used in real life.",
+    "viEx": "Các ví dụ minh họa cách từ được dùng trong thực tế."
+  },
+  "immense": {
+    "word": "immense",
+    "ipa": "/ɪˈmens/",
+    "pos": "tính từ",
+    "vi": "mênh mông, bao la, to lớn",
+    "enEx": "She felt immense satisfaction after mastering 500 words.",
+    "viEx": "Cô cảm thấy sự thỏa mãn bao la sau khi thuộc 500 từ."
+  },
+  "impact": {
+    "word": "impact",
+    "ipa": "/ˈɪm.pækt/",
+    "pos": "danh từ / động từ",
+    "vi": "tác động, ảnh hưởng sâu sắc",
+    "enEx": "Reading habit has a positive impact on life.",
+    "viEx": "Thói quen đọc sách có tác động tích cực đến cuộc sống."
+  },
+  "implement": {
+    "word": "implement",
+    "ipa": "/ˈɪm.plɪ.ment/",
+    "pos": "động từ",
+    "vi": "thực hiện, triển khai",
+    "enEx": "We will implement the spaced repetition schedule today.",
+    "viEx": "Chúng ta sẽ triển khai lịch ôn tập ngắt quãng ngay hôm nay."
+  },
+  "imply": {
+    "word": "imply",
+    "ipa": "/ɪmˈplaɪ/",
+    "pos": "động từ",
+    "vi": "ngụ ý, hàm ý",
+    "enEx": "His silence seemed to imply agreement.",
+    "viEx": "Sự im lặng của anh dường như ngụ ý đồng tình."
+  },
+  "inevitable": {
+    "word": "inevitable",
+    "ipa": "/ɪnˈev.ɪ.tə.bəl/",
+    "pos": "tính từ",
+    "vi": "tất yếu, không thể tránh khỏi",
+    "enEx": "Mistakes are inevitable, but giving up is optional.",
+    "viEx": "Sai lầm là tất yếu, nhưng từ bỏ là do bạn chọn."
+  },
+  "infinite": {
+    "word": "infinite",
+    "ipa": "/ˈɪn.fɪ.nət/",
+    "pos": "tính từ",
+    "vi": "vô tận, vô hạn",
+    "enEx": "There is infinite joy in discovering great books.",
+    "viEx": "Có niềm vui vô tận khi khám phá những cuốn sách hay."
+  },
+  "ingenious": {
+    "word": "ingenious",
+    "ipa": "/ɪnˈdʒiː.ni.əs/",
+    "pos": "tính từ",
+    "vi": "khéo léo, tài tình, thông minh",
+    "enEx": "That mnemonic trick was truly ingenious.",
+    "viEx": "Mẹo nhớ đó thực sự tài tình và thông minh."
+  },
+  "inherit": {
+    "word": "inherit",
+    "ipa": "/ɪnˈher.ɪt/",
+    "pos": "động từ",
+    "vi": "thừa kế, kế thừa",
+    "enEx": "She inherited a passion for books from her grandmother.",
+    "viEx": "Cô ấy kế thừa niềm say mê sách từ bà ngoại."
+  },
+  "innovate": {
+    "word": "innovate",
+    "ipa": "/ˈɪn.ə.veɪt/",
+    "pos": "động từ",
+    "vi": "đổi mới, cách tân sáng tạo",
+    "enEx": "We must innovate our teaching methods continuously.",
+    "viEx": "Chúng ta phải liên tục đổi mới phương pháp giảng dạy."
+  },
+  "insight": {
+    "word": "insight",
+    "ipa": "/ˈɪn.saɪt/",
+    "pos": "danh từ",
+    "vi": "cái nhìn sâu sắc, sự thấu triệt",
+    "enEx": "The book gave me deep insight into human nature.",
+    "viEx": "Cuốn sách cho tôi cái nhìn sâu sắc về bản tính con người."
+  },
+  "inspire": {
+    "word": "inspire",
+    "ipa": "/ɪnˈspaɪər/",
+    "pos": "động từ",
+    "vi": "truyền cảm hứng, khơi gợi",
+    "enEx": "Her journey inspired hundreds of English learners.",
+    "viEx": "Hành trình của cô đã truyền cảm hứng cho hàng trăm người học tiếng Anh."
+  },
+  "integrate": {
+    "word": "integrate",
+    "ipa": "/ˈɪn.tɪ.ɡreɪt/",
+    "pos": "động từ",
+    "vi": "tích hợp, hòa nhập",
+    "enEx": "We integrate AI to support students better.",
+    "viEx": "Chúng tôi tích hợp AI để hỗ trợ học sinh tốt hơn."
+  },
+  "integrity": {
+    "word": "integrity",
+    "ipa": "/ɪnˈteɡ.rə.ti/",
+    "pos": "danh từ",
+    "vi": "sự liêm chính, chính trực",
+    "enEx": "She is respected for her honesty and integrity.",
+    "viEx": "Cô ấy được kính trọng vì lòng trung thực và sự chính trực."
+  },
+  "intense": {
+    "word": "intense",
+    "ipa": "/ɪnˈtens/",
+    "pos": "tính từ",
+    "vi": "mãnh liệt, dữ dội, nồng nhiệt",
+    "enEx": "She felt intense joy when she understood the poem.",
+    "viEx": "Cô cảm thấy niềm vui mãnh liệt khi hiểu được bài thơ."
+  },
+  "interpret": {
+    "word": "interpret",
+    "ipa": "/ɪnˈtɜː.prɪt/",
+    "pos": "động từ",
+    "vi": "thông dịch, diễn giải",
+    "enEx": "How do you interpret the ending of this story?",
+    "viEx": "Cô diễn giải thế nào về cái kết của câu chuyện này?"
+  },
+  "interval": {
+    "word": "interval",
+    "ipa": "/ˈɪn.tə.vəl/",
+    "pos": "danh từ",
+    "vi": "khoảng thời gian ngắt quãng",
+    "enEx": "Review intervals increase as memory strengthens.",
+    "viEx": "Khoảng thời gian ôn tập giãn dài khi trí nhớ mạnh dần lên."
+  },
+  "intricate": {
+    "word": "intricate",
+    "ipa": "/ˈɪn.trɪ.kət/",
+    "pos": "tính từ",
+    "vi": "tinh xảo, phức tạp tỉ mỉ",
+    "enEx": "The plot had an intricate web of relationships.",
+    "viEx": "Cốt truyện có mạng lưới mối quan hệ rất tinh xảo."
+  },
+  "intrinsic": {
+    "word": "intrinsic",
+    "ipa": "/ɪnˈtrɪn.zɪk/",
+    "pos": "tính từ",
+    "vi": "bản chất, nội tại",
+    "enEx": "Curiosity is an intrinsic part of human learning.",
+    "viEx": "Tò mò là phần bản chất nội tại của sự học ở con người."
+  },
+  "intuitive": {
+    "word": "intuitive",
+    "ipa": "/ɪnˈtʃuː.ɪ.tɪv/",
+    "pos": "tính từ",
+    "vi": "trực quan, dễ cảm nhận",
+    "enEx": "The app interface is clean and intuitive to use.",
+    "viEx": "Giao diện ứng dụng rất tinh gọn và trực quan dễ dùng."
+  },
+  "invaluable": {
+    "word": "invaluable",
+    "ipa": "/ɪnˈvæl.jə.bəl/",
+    "pos": "tính từ",
+    "vi": "vô giá, quý báu tột bậc",
+    "enEx": "Her advice proved invaluable for my studies.",
+    "viEx": "Lời khuyên của cô đã chứng minh là vô giá đối với việc học của tôi."
+  },
+  "isolate": {
+    "word": "isolate",
+    "ipa": "/ˈaɪ.sə.leɪt/",
+    "pos": "động từ",
+    "vi": "cô lập, tách biệt",
+    "enEx": "Don't isolate words from their natural context.",
+    "viEx": "Đừng cô lập từ vựng khỏi ngữ cảnh tự nhiên của chúng."
+  },
+  "joyful": {
+    "word": "joyful",
+    "ipa": "/ˈdʒɔɪ.fəl/",
+    "pos": "tính từ",
+    "vi": "hân hoan, ngập tràn niềm vui",
+    "enEx": "Learning English with cats is a joyful experience.",
+    "viEx": "Học tiếng Anh cùng mèo là một trải nghiệm hân hoan."
+  },
+  "keen": {
+    "word": "keen",
+    "ipa": "/kiːn/",
+    "pos": "tính từ",
+    "vi": "sắc sảo, say mê, thiết tha",
+    "enEx": "She has a keen interest in English literature.",
+    "viEx": "Cô ấy có niềm say mê sâu sắc với văn học tiếng Anh."
+  },
+  "legacy": {
+    "word": "legacy",
+    "ipa": "/ˈleɡ.ə.si/",
+    "pos": "danh từ",
+    "vi": "di sản, gia tài tinh thần",
+    "enEx": "Great books leave an enduring legacy for generations.",
+    "viEx": "Những cuốn sách lớn để lại di sản trường tồn cho các thế hệ."
+  },
+  "liberty": {
+    "word": "liberty",
+    "ipa": "/ˈlɪb.ə.ti/",
+    "pos": "danh từ",
+    "vi": "sự tự do",
+    "enEx": "Knowledge gives you the liberty to think independently.",
+    "viEx": "Tri thức cho bạn sự tự do để suy nghĩ độc lập."
+  },
+  "linger": {
+    "word": "linger",
+    "ipa": "/ˈlɪŋ.ɡər/",
+    "pos": "động từ",
+    "vi": "nán lại, vương vấn",
+    "enEx": "The scent of old paper lingered in the quiet library.",
+    "viEx": "Mùi giấy cũ vương vấn trong thư viện yên tĩnh."
+  },
+  "literary": {
+    "word": "literary",
+    "ipa": "/ˈlɪt.ər.ər.i/",
+    "pos": "tính từ",
+    "vi": "mang tính văn học, văn chương",
+    "enEx": "She enjoys reading classic literary masterpieces.",
+    "viEx": "Cô ấy thích đọc những kiệt tác văn học kinh điển."
+  },
+  "logical": {
+    "word": "logical",
+    "ipa": "/ˈlɒdʒ.ɪ.kəl/",
+    "pos": "tính từ",
+    "vi": "hợp lý, lô-gích",
+    "enEx": "Her explanation was clear and logical.",
+    "viEx": "Lời giải thích của cô ấy rất rõ ràng và hợp lý."
+  },
+  "loyal": {
+    "word": "loyal",
+    "ipa": "/ˈlɔɪ.əl/",
+    "pos": "tính từ",
+    "vi": "trung thành, thủy chung",
+    "enEx": "The ginger cat is a loyal companion while studying.",
+    "viEx": "Chú mèo cam là người bạn đồng hành trung thành khi học tập."
+  },
+  "lucid": {
+    "word": "lucid",
+    "ipa": "/ˈluː.sɪd/",
+    "pos": "tính từ",
+    "vi": "sáng rõ, minh mẫn, dễ hiểu",
+    "enEx": "She gave a lucid explanation of a tricky concept.",
+    "viEx": "Cô ấy đã đưa ra lời giải thích sáng rõ về một khái niệm hóc búa."
+  },
+  "luminous": {
+    "word": "luminous",
+    "ipa": "/ˈluː.mɪ.nəs/",
+    "pos": "tính từ",
+    "vi": "sáng rực rỡ, tỏa sáng",
+    "enEx": "Her eyes were luminous with excitement.",
+    "viEx": "Ánh mắt cô tỏa sáng rực rỡ với sự hào hứng."
+  },
+  "magnificent": {
+    "word": "magnificent",
+    "ipa": "/mæɡˈnɪf.ɪ.sənt/",
+    "pos": "tính từ",
+    "vi": "tráng lệ, nguy nga, cực kỳ ấn tượng",
+    "enEx": "The view from the castle was magnificent.",
+    "viEx": "Khung cảnh nhìn từ lâu đài đẹp tráng lệ và ấn tượng."
+  },
+  "masterpiece": {
+    "word": "masterpiece",
+    "ipa": "/ˈmɑː.stə.piːs/",
+    "pos": "danh từ",
+    "vi": "kiệt tác, tác phẩm xuất chúng",
+    "enEx": "The novel is widely considered a literary masterpiece.",
+    "viEx": "Cuốn tiểu thuyết được coi rộng rãi là một kiệt tác văn học."
+  },
+  "melancholy": {
+    "word": "melancholy",
+    "ipa": "/ˈmel.əŋ.kɒl.i/",
+    "pos": "tính từ / danh từ",
+    "vi": "u sầu, u hoài trầm lắng",
+    "enEx": "The autumn rain brought a gentle melancholy mood.",
+    "viEx": "Cơn mưa mùa thu mang lại một nỗi u hoài dịu êm."
+  },
+  "memorize": {
+    "word": "memorize",
+    "ipa": "/ˈmem.ə.raɪz/",
+    "pos": "động từ",
+    "vi": "ghi nhớ, học thuộc lòng",
+    "enEx": "Use mnemonic tricks to memorize vocabulary effortlessly.",
+    "viEx": "Hãy dùng mẹo nhớ để thuộc từ vựng một cách nhẹ nhàng."
+  },
+  "metaphor": {
+    "word": "metaphor",
+    "ipa": "/ˈmet.ə.fɔːr/",
+    "pos": "danh từ",
+    "vi": "phép ẩn dụ",
+    "enEx": "Life is a journey is a common metaphor.",
+    "viEx": "'Cuộc đời là một chuyến đi' là một phép ẩn dụ phổ biến."
+  },
+  "mindful": {
+    "word": "mindful",
+    "ipa": "/ˈmaɪnd.fəl/",
+    "pos": "tính từ",
+    "vi": "chánh niệm, chú tâm cẩn thận",
+    "enEx": "Be mindful of your daily review habits.",
+    "viEx": "Hãy chú tâm đến thói quen ôn tập hàng ngày của bạn."
+  },
+  "minimal": {
+    "word": "minimal",
+    "ipa": "/ˈmɪn.ɪ.məl/",
+    "pos": "tính từ",
+    "vi": "tối thiểu, tinh giản",
+    "enEx": "The app has a clean and minimal design.",
+    "viEx": "Ứng dụng có thiết kế tinh gọn và tối giản."
+  },
+  "mnemonic": {
+    "word": "mnemonic",
+    "ipa": "/nɪˈmɒn.ɪk/",
+    "pos": "danh từ / tính từ",
+    "vi": "mẹo ghi nhớ, thuật nhớ",
+    "enEx": "A funny mnemonic helps you remember words for years.",
+    "viEx": "Một mẹo nhớ vui giúp bạn nhớ từ vựng trong nhiều năm."
+  },
+  "modest": {
+    "word": "modest",
+    "ipa": "/ˈmɒd.ɪst/",
+    "pos": "tính từ",
+    "vi": "khiêm tốn, giản dị, vừa phải",
+    "enEx": "She achieved modest yet steady gains each week.",
+    "viEx": "Cô đạt được những tiến bộ khiêm tốn nhưng vững vàng mỗi tuần."
+  },
+  "motivate": {
+    "word": "motivate",
+    "ipa": "/ˈməʊ.tɪ.veɪt/",
+    "pos": "động từ",
+    "vi": "thúc đẩy, truyền động lực",
+    "enEx": "Cute cats motivate students to learn English.",
+    "viEx": "Những chú mèo đáng yêu truyền động lực cho học sinh học tiếng Anh."
+  },
+  "multitude": {
+    "word": "multitude",
+    "ipa": "/ˈmʌl.tɪ.tʃuːd/",
+    "pos": "danh từ",
+    "vi": "vô số, đám đông",
+    "enEx": "Books open a multitude of perspectives.",
+    "viEx": "Sách mở ra vô số những góc nhìn mới."
+  },
+  "murmur": {
+    "word": "murmur",
+    "ipa": "/ˈmɜː.mər/",
+    "pos": "động từ / danh từ",
+    "vi": "thì thầm, râm ran",
+    "enEx": "She murmured the new English words to practice pronunciation.",
+    "viEx": "Cô thì thầm những từ tiếng Anh mới để luyện phát âm."
+  },
+  "navigate": {
+    "word": "navigate",
+    "ipa": "/ˈnæv.ɪ.ɡeɪt/",
+    "pos": "động từ",
+    "vi": "định hướng, tìm đường, điều hướng",
+    "enEx": "Good vocabulary helps you navigate English literature.",
+    "viEx": "Vốn từ tốt giúp bạn định hướng và đọc sách văn học tiếng Anh dễ dàng."
+  },
+  "nostalgic": {
+    "word": "nostalgic",
+    "ipa": "/nɒsˈtæl.dʒɪk/",
+    "pos": "tính từ",
+    "vi": "hoài niệm, nhớ về quá khứ",
+    "enEx": "Old book smell makes her feel nostalgic.",
+    "viEx": "Mùi sách cũ khiến cô cảm thấy thật hoài niệm."
+  },
+  "notable": {
+    "word": "notable",
+    "ipa": "/ˈnəʊ.tə.bəl/",
+    "pos": "tính từ",
+    "vi": "đáng chú ý, nổi bật",
+    "enEx": "There is a notable improvement in her test score.",
+    "viEx": "Có một sự cải thiện đáng chú ý trong điểm kiểm tra của cô."
+  },
+  "nurture": {
+    "word": "nurture",
+    "ipa": "/ˈnɜː.tʃər/",
+    "pos": "động từ",
+    "vi": "nuôi dưỡng, bồi đắp",
+    "enEx": "Nurture your curiosity every single day.",
+    "viEx": "Hãy nuôi dưỡng tính tò mò của bạn mỗi ngày."
+  },
+  "obliged": {
+    "word": "obliged",
+    "ipa": "/əˈblaɪdʒd/",
+    "pos": "tính từ",
+    "vi": "biết ơn, bắt buộc",
+    "enEx": "I am deeply obliged to you for your kindness.",
+    "viEx": "Tôi vô cùng biết ơn bạn vì lòng tốt bụng."
+  },
+  "oblivious": {
+    "word": "oblivious",
+    "ipa": "/əˈblɪv.i.əs/",
+    "pos": "tính từ",
+    "vi": "không để ý, lãng quên lơ đễnh",
+    "enEx": "The cat slept peacefully, oblivious to the noise outside.",
+    "viEx": "Chú mèo ngủ say sưa, không mảy may để ý tiếng ồn bên ngoài."
+  },
+  "obstacle": {
+    "word": "obstacle",
+    "ipa": "/ˈɒb.stə.kəl/",
+    "pos": "danh từ",
+    "vi": "trở ngại, chướng ngại vật",
+    "enEx": "Every obstacle is an opportunity to learn.",
+    "viEx": "Mỗi trở ngại là một cơ hội để học hỏi."
+  },
+  "obtain": {
+    "word": "obtain",
+    "ipa": "/əbˈteɪn/",
+    "pos": "động từ",
+    "vi": "đạt được, thu thập được",
+    "enEx": "You can obtain great results through daily reading.",
+    "viEx": "Bạn có thể đạt được kết quả tuyệt vời qua việc đọc sách hàng ngày."
+  },
+  "optimum": {
+    "word": "optimum",
+    "ipa": "/ˈɒp.tɪ.məm/",
+    "pos": "tính từ",
+    "vi": "tối ưu, tốt nhất",
+    "enEx": "Spaced repetition ensures optimum memory retention.",
+    "viEx": "Lặp lại ngắt quãng đảm bảo khả năng ghi nhớ tối ưu."
+  },
+  "overcome": {
+    "word": "overcome",
+    "ipa": "/ˌəʊ.vəˈkʌm/",
+    "pos": "động từ",
+    "vi": "vượt qua, khắc phục",
+    "enEx": "With perseverance, she overcame her fear of English.",
+    "viEx": "Với sự kiên trì, cô đã vượt qua nỗi sợ tiếng Anh."
+  },
+  "passion": {
+    "word": "passion",
+    "ipa": "/ˈpæʃ.ən/",
+    "pos": "danh từ",
+    "vi": "niềm đam mê, nhiệt huyết",
+    "enEx": "Her passion for literature shines through her teaching.",
+    "viEx": "Niềm đam mê văn học của cô tỏa sáng qua từng bài giảng."
+  },
+  "patience": {
+    "word": "patience",
+    "ipa": "/ˈpeɪ.ʃəns/",
+    "pos": "danh từ",
+    "vi": "sự kiên nhẫn, nhẫn nại",
+    "enEx": "Learning a language requires patience and consistent practice.",
+    "viEx": "Học một ngôn ngữ đòi hỏi sự kiên nhẫn và luyện tập đều đặn."
+  },
+  "perceive": {
+    "word": "perceive",
+    "ipa": "/pəˈsiːv/",
+    "pos": "động từ",
+    "vi": "nhận thức, cảm nhận",
+    "enEx": "How we perceive words shapes our understanding.",
+    "viEx": "Cách chúng ta cảm nhận từ ngữ định hình sự hiểu biết của ta."
+  },
+  "perseverance": {
+    "word": "perseverance",
+    "ipa": "/ˌpɜː.sɪˈvɪə.rəns/",
+    "pos": "danh từ",
+    "vi": "sự kiên trì, bền chí",
+    "enEx": "Perseverance is the secret of all triumphs.",
+    "viEx": "Kiên trì là bí quyết của mọi chiến thắng."
+  },
+  "persist": {
+    "word": "persist",
+    "ipa": "/pəˈsɪst/",
+    "pos": "động từ",
+    "vi": "kiên trì, bền bỉ theo đuổi",
+    "enEx": "If you persist, English will become second nature.",
+    "viEx": "Nếu bạn kiên trì, tiếng Anh sẽ trở thành bản năng thứ hai."
+  },
+  "phenomenon": {
+    "word": "phenomenon",
+    "ipa": "/fəˈnɒm.ɪ.nən/",
+    "pos": "danh từ",
+    "vi": "hiện tượng",
+    "enEx": "Spaced repetition is a fascinating psychological phenomenon.",
+    "viEx": "Lặp lại ngắt quãng là một hiện tượng tâm lý học thú vị."
+  },
+  "ponder": {
+    "word": "ponder",
+    "ipa": "/ˈpɒn.dər/",
+    "pos": "động từ",
+    "vi": "suy ngẫm sâu sắc, đắn đo",
+    "enEx": "She sat quietly to ponder the meaning of the poem.",
+    "viEx": "Cô ngồi yên lặng để suy ngẫm về ý nghĩa bài thơ."
+  },
+  "potential": {
+    "word": "potential",
+    "ipa": "/pəˈten.ʃəl/",
+    "pos": "danh từ / tính từ",
+    "vi": "tiềm năng, khả năng tiềm ẩn",
+    "enEx": "Every student has unlimited potential to grow.",
+    "viEx": "Mỗi học sinh đều có tiềm năng vô hạn để phát triển."
+  },
+  "praise": {
+    "word": "praise",
+    "ipa": "/preɪz/",
+    "pos": "động từ / danh từ",
+    "vi": "khen ngợi, ca tụng",
+    "enEx": "The teacher praised her for consistent progress.",
+    "viEx": "Cô giáo đã khen ngợi cô vì sự tiến bộ đều đặn."
+  },
+  "precious": {
+    "word": "precious",
+    "ipa": "/ˈpreʃ.əs/",
+    "pos": "tính từ",
+    "vi": "quý giá, quý báu",
+    "enEx": "Time spent reading good books is precious.",
+    "viEx": "Thời gian đọc những cuốn sách hay thật quý giá."
+  },
+  "precise": {
+    "word": "precise",
+    "ipa": "/prɪˈsaɪs/",
+    "pos": "tính từ",
+    "vi": "chính xác, tỉ mỉ",
+    "enEx": "Use precise words to express nuanced thoughts.",
+    "viEx": "Hãy dùng từ ngữ chính xác để diễn đạt suy nghĩ tinh tế."
+  },
+  "pristine": {
+    "word": "pristine",
+    "ipa": "/ˈprɪs.tiːn/",
+    "pos": "tính từ",
+    "vi": "nguyên sơ, tinh khôi, hoàn hảo",
+    "enEx": "The book was kept in pristine condition.",
+    "viEx": "Cuốn sách được giữ gìn trong tình trạng nguyên sơ hoàn hảo."
+  },
+  "profound": {
+    "word": "profound",
+    "ipa": "/prəˈfaʊnd/",
+    "pos": "tính từ",
+    "vi": "sâu sắc, uyên thâm",
+    "enEx": "A single good sentence can have a profound impact.",
+    "viEx": "Một câu văn hay có thể tạo nên tác động sâu sắc."
+  },
+  "progress": {
+    "word": "progress",
+    "ipa": "/ˈprəʊ.ɡres/",
+    "pos": "danh từ / động từ",
+    "vi": "tiến bộ, tiến trình",
+    "enEx": "Celebrate every small step of progress.",
+    "viEx": "Hãy ăn mừng từng bước tiến bộ nhỏ của bạn."
+  },
+  "prompt": {
+    "word": "prompt",
+    "ipa": "/prɒmpt/",
+    "pos": "tính từ / động từ",
+    "vi": "mau lẹ, kịp thời, gợi mở",
+    "enEx": "A prompt review keeps memories fresh.",
+    "viEx": "Việc ôn tập kịp thời giúp trí nhớ luôn tươi mới."
+  },
+  "prosper": {
+    "word": "prosper",
+    "ipa": "/ˈprɒs.pər/",
+    "pos": "động từ",
+    "vi": "phát đạt, thịnh vượng, nở rộ",
+    "enEx": "With good vocabulary, your communication will prosper.",
+    "viEx": "Với vốn từ tốt, khả năng giao tiếp của bạn sẽ nở rộ."
+  },
+  "radiant": {
+    "word": "radiant",
+    "ipa": "/ˈreɪ.di.ənt/",
+    "pos": "tính từ",
+    "vi": "rạng rỡ, tỏa sáng",
+    "enEx": "She flashed a radiant smile upon learning the word.",
+    "viEx": "Cô nở một nụ cười rạng rỡ khi nhớ được từ này."
+  },
+  "reclaim": {
+    "word": "reclaim",
+    "ipa": "/rɪˈkleɪm/",
+    "pos": "động từ",
+    "vi": "giành lại, tái khẳng định",
+    "enEx": "Reading helped her reclaim her love for literature.",
+    "viEx": "Đọc sách giúp cô tìm lại tình yêu với văn học."
+  },
+  "refine": {
+    "word": "refine",
+    "ipa": "/rɪˈfaɪn/",
+    "pos": "động từ",
+    "vi": "trau chuốt, gọt giũa",
+    "enEx": "Writing essays helps refine your vocabulary usage.",
+    "viEx": "Viết luận giúp trau chuốt cách dùng từ vựng."
+  },
+  "reflect": {
+    "word": "reflect",
+    "ipa": "/rɪˈflekt/",
+    "pos": "động từ",
+    "vi": "phản ánh, suy ngẫm lắng đọng",
+    "enEx": "Take a quiet moment to reflect on what you read.",
+    "viEx": "Hãy dành khoảnh khắc yên bình suy ngẫm về những gì vừa đọc."
+  },
+  "relentless": {
+    "word": "relentless",
+    "ipa": "/rɪˈlent.ləs/",
+    "pos": "tính từ",
+    "vi": "không ngừng nghỉ, bền bỉ",
+    "enEx": "Her relentless pursuit of knowledge is admirable.",
+    "viEx": "Sự theo đuổi tri thức không ngừng nghỉ của cô thật đáng ngưỡng mộ."
+  },
+  "reliable": {
+    "word": "reliable",
+    "ipa": "/rɪˈlaɪ.ə.bəl/",
+    "pos": "tính từ",
+    "vi": "đáng tin cậy, chắc chắn",
+    "enEx": "Cambridge Dictionary is a reliable source for English learners.",
+    "viEx": "Từ điển Cambridge là nguồn đáng tin cậy cho người học tiếng Anh."
+  },
+  "remarkable": {
+    "word": "remarkable",
+    "ipa": "/rɪˈmɑː.kə.bəl/",
+    "pos": "tính từ",
+    "vi": "đáng chú ý, xuất sắc phi thường",
+    "enEx": "She made remarkable progress in reading speed.",
+    "viEx": "Cô ấy đã đạt được sự tiến bộ đáng chú ý về tốc độ đọc."
+  },
+  "resilience": {
+    "word": "resilience",
+    "ipa": "/rɪˈzɪl.i.əns/",
+    "pos": "danh từ",
+    "vi": "sự kiên cường, khả năng phục hồi nhanh chóng",
+    "enEx": "Her resilience in the face of failure inspired everyone.",
+    "viEx": "Sự kiên cường của cô ấy trước thất bại đã truyền cảm hứng cho mọi người."
+  },
+  "resilient": {
+    "word": "resilient",
+    "ipa": "/rɪˈzɪl.i.ənt/",
+    "pos": "tính từ",
+    "vi": "kiên cường, dẻo dai",
+    "enEx": "Resilient learners never give up when faced with hard words.",
+    "viEx": "Những người học kiên cường không bao giờ bỏ cuộc khi gặp từ khó."
+  },
+  "resolve": {
+    "word": "resolve",
+    "ipa": "/rɪˈzɒlv/",
+    "pos": "động từ / danh từ",
+    "vi": "giải quyết, quyết tâm sắt đá",
+    "enEx": "She resolved to study English with joy and ease.",
+    "viEx": "Cô quyết tâm học tiếng Anh với niềm vui và sự nhẹ nhàng."
+  },
+  "restore": {
+    "word": "restore",
+    "ipa": "/rɪˈstɔːr/",
+    "pos": "động từ",
+    "vi": "khôi phục, phục hồi",
+    "enEx": "Reading restores peace and clarity to the mind.",
+    "viEx": "Đọc sách khôi phục sự bình yên và sáng suốt cho tâm trí."
+  },
+  "reveal": {
+    "word": "reveal",
+    "ipa": "/rɪˈviːl/",
+    "pos": "động từ",
+    "vi": "hé lộ, tiết lộ",
+    "enEx": "The story reveals a surprising truth at the end.",
+    "viEx": "Câu chuyện hé lộ một sự thật bất ngờ ở phần kết."
+  },
+  "rewarding": {
+    "word": "rewarding",
+    "ipa": "/rɪˈwɔː.dɪŋ/",
+    "pos": "tính từ",
+    "vi": "đáng giá, bổ ích, mang lại phần thưởng",
+    "enEx": "Teaching English is a deeply rewarding profession.",
+    "viEx": "Dạy tiếng Anh là một nghề nghiệp vô cùng đáng giá và bổ ích."
+  },
+  "robust": {
+    "word": "robust",
+    "ipa": "/rəʊˈbʌst/",
+    "pos": "tính từ",
+    "vi": "vững chắc, mạnh mẽ",
+    "enEx": "Our database system is fast, offline-first, and robust.",
+    "viEx": "Hệ thống cơ sở dữ liệu của chúng ta nhanh, ưu tiên offline và rất vững chắc."
+  },
+  "sacred": {
+    "word": "sacred",
+    "ipa": "/ˈseɪ.krɪd/",
+    "pos": "tính từ",
+    "vi": "thiêng liêng, trang trọng",
+    "enEx": "Quiet reading time is sacred to her morning routine.",
+    "viEx": "Giờ đọc sách yên tĩnh là điều thiêng liêng trong thói quen buổi sáng của cô."
+  },
+  "scenic": {
+    "word": "scenic",
+    "ipa": "/ˈsiː.nɪk/",
+    "pos": "tính từ",
+    "vi": "danh lam thắng cảnh, tuyệt đẹp",
+    "enEx": "They took a scenic walk through the quiet autumn forest.",
+    "viEx": "Họ đi dạo qua khung cảnh tuyệt đẹp của khu rừng mùa thu."
+  },
+  "serendipity": {
+    "word": "serendipity",
+    "ipa": "/ˌser.ənˈdɪp.ə.ti/",
+    "pos": "danh từ",
+    "vi": "sự tình cờ may mắn đầy kỳ diệu",
+    "enEx": "Finding this cozy bookstore was pure serendipity.",
+    "viEx": "Tìm thấy hiệu sách ấm cúng này là sự tình cờ may mắn kỳ diệu."
+  },
+  "serenity": {
+    "word": "serenity",
+    "ipa": "/səˈren.ə.ti/",
+    "pos": "danh từ",
+    "vi": "sự thanh thản, bình yên trong tâm",
+    "enEx": "Reading books with a cat brings deep serenity.",
+    "viEx": "Đọc sách cùng chú mèo mang lại sự thanh thản sâu lắng."
+  },
+  "significance": {
+    "word": "significance",
+    "ipa": "/sɪɡˈnɪf.ɪ.kəns/",
+    "pos": "danh từ",
+    "vi": "tầm quan trọng, ý nghĩa lớn",
+    "enEx": "The discovery of reading was of great significance in her life.",
+    "viEx": "Khám phá việc đọc sách có ý nghĩa to lớn trong đời cô."
+  },
+  "simplicity": {
+    "word": "simplicity",
+    "ipa": "/sɪmˈplɪs.ə.ti/",
+    "pos": "danh từ",
+    "vi": "sự giản dị, đơn giản",
+    "enEx": "There is elegance in simplicity.",
+    "viEx": "Có nét thanh lịch trong sự giản dị."
+  },
+  "sincere": {
+    "word": "sincere",
+    "ipa": "/sɪnˈsɪər/",
+    "pos": "tính từ",
+    "vi": "chân thành, thật lòng",
+    "enEx": "Please accept my sincere thanks for your help.",
+    "viEx": "Xin hãy nhận lời cảm ơn chân thành của tôi vì sự giúp đỡ của bạn."
+  },
+  "solitude": {
+    "word": "solitude",
+    "ipa": "/ˈsɒl.ɪ.tʃuːd/",
+    "pos": "danh từ",
+    "vi": "sự tĩnh mịch, một mình thanh tịnh",
+    "enEx": "She enjoyed the peaceful solitude of her study room.",
+    "viEx": "Cô tận hưởng sự tĩnh mịch bình yên của phòng đọc sách."
+  },
+  "sparkle": {
+    "word": "sparkle",
+    "ipa": "/ˈspɑː.kəl/",
+    "pos": "động từ / danh từ",
+    "vi": "lấp lánh, lóng lánh",
+    "enEx": "Her eyes sparkle when she talks about teaching.",
+    "viEx": "Ánh mắt cô lấp lánh khi nói về việc dạy học."
+  },
+  "splendid": {
+    "word": "splendid",
+    "ipa": "/ˈsplen.dɪd/",
+    "pos": "tính từ",
+    "vi": "lộng lẫy, tuyệt vời",
+    "enEx": "You did a splendid job with today's reading session!",
+    "viEx": "Cô đã làm một công việc tuyệt vời với buổi đọc hôm nay!"
+  },
+  "spontaneous": {
+    "word": "spontaneous",
+    "ipa": "/spɒnˈteɪ.ni.əs/",
+    "pos": "tính từ",
+    "vi": "tự nhiên, ngẫu hứng",
+    "enEx": "A spontaneous story made learning English so fun.",
+    "viEx": "Một câu chuyện ngẫu hứng khiến việc học tiếng Anh thật vui."
+  },
+  "steadfast": {
+    "word": "steadfast",
+    "ipa": "/ˈsted.fɑːst/",
+    "pos": "tính từ",
+    "vi": "kiên định, vững vàng",
+    "enEx": "She remained steadfast in her dedication to her goal.",
+    "viEx": "Cô vẫn kiên định với sự tận tâm hướng tới mục tiêu của mình."
+  },
+  "stimulate": {
+    "word": "stimulate",
+    "ipa": "/ˈstɪm.jə.leɪt/",
+    "pos": "động từ",
+    "vi": "kích thích, khơi gợi",
+    "enEx": "Interesting stories stimulate active thinking.",
+    "viEx": "Những câu chuyện thú vị khơi gợi tư duy tích cực."
+  },
+  "strive": {
+    "word": "strive",
+    "ipa": "/straɪv/",
+    "pos": "động từ",
+    "vi": "phấn đấu, nỗ lực hết mình",
+    "enEx": "Always strive to become a better version of yourself.",
+    "viEx": "Hãy luôn phấn đấu để trở thành phiên bản tốt hơn của chính mình."
+  },
+  "subtle": {
+    "word": "subtle",
+    "ipa": "/ˈsʌt.əl/",
+    "pos": "tính từ",
+    "vi": "tinh tế, phảng phất, khó nhận ra",
+    "enEx": "There is a subtle difference between these two synonyms.",
+    "viEx": "Có một sự khác biệt tinh tế giữa hai từ đồng nghĩa này."
+  },
+  "sustainable": {
+    "word": "sustainable",
+    "ipa": "/səˈsteɪ.nə.bəl/",
+    "pos": "tính từ",
+    "vi": "bền vững, lâu dài",
+    "enEx": "Building a daily micro-habit is sustainable and effective.",
+    "viEx": "Xây dựng thói quen nhỏ hàng ngày là cách bền vững và hiệu quả."
+  },
+  "tenacious": {
+    "word": "tenacious",
+    "ipa": "/təˈneɪ.ʃəs/",
+    "pos": "tính từ",
+    "vi": "ngoan cường, kiên trì bền bỉ",
+    "enEx": "She has a tenacious spirit that never gives up.",
+    "viEx": "Cô ấy có một tinh thần ngoan cường không bao giờ bỏ cuộc."
+  },
+  "thrive": {
+    "word": "thrive",
+    "ipa": "/θraɪv/",
+    "pos": "động từ",
+    "vi": "phát triển mạnh mẽ, nở rộ",
+    "enEx": "With proper guidance, students thrive in English reading.",
+    "viEx": "Với sự hướng dẫn đúng đắn, học sinh sẽ tiến bộ vượt bậc khi đọc tiếng Anh."
+  },
+  "timeless": {
+    "word": "timeless",
+    "ipa": "/ˈtaɪm.ləs/",
+    "pos": "tính từ",
+    "vi": "vượt thời gian, trường tồn",
+    "enEx": "Classic books carry timeless wisdom for every generation.",
+    "viEx": "Những cuốn sách kinh điển chứa đựng trí tuệ vượt thời gian."
+  },
+  "tranquil": {
+    "word": "tranquil",
+    "ipa": "/ˈtræŋ.kwɪl/",
+    "pos": "tính từ",
+    "vi": "thanh bình, yên ả",
+    "enEx": "The quiet afternoon was peaceful and tranquil.",
+    "viEx": "Buổi chiều yên ắng thật thanh bình và êm ả."
+  },
+  "transform": {
+    "word": "transform",
+    "ipa": "/trænsˈfɔːm/",
+    "pos": "động từ",
+    "vi": "chuyển hóa, biến đổi",
+    "enEx": "Reading books can completely transform your mindset.",
+    "viEx": "Đọc sách có thể chuyển hóa hoàn toàn tư duy của bạn."
+  },
+  "treasure": {
+    "word": "treasure",
+    "ipa": "/ˈtreʒ.ər/",
+    "pos": "danh từ / động từ",
+    "vi": "kho báu, trân quý",
+    "enEx": "Every new English word is a precious treasure.",
+    "viEx": "Mỗi từ tiếng Anh mới là một kho báu quý giá."
+  },
+  "triumph": {
+    "word": "triumph",
+    "ipa": "/ˈtraɪ.əmf/",
+    "pos": "danh từ / động từ",
+    "vi": "chiến thắng vang dội, thành tựu lớn",
+    "enEx": "Finishing her first English novel was a great triumph.",
+    "viEx": "Đọc xong cuốn tiểu thuyết tiếng Anh đầu tiên là một chiến thắng lớn."
+  },
+  "trustworthy": {
+    "word": "trustworthy",
+    "ipa": "/ˈtrʌstˌwɜː.ði/",
+    "pos": "tính từ",
+    "vi": "đáng tin cậy, trung thực",
+    "enEx": "She is a trustworthy friend and mentor.",
+    "viEx": "Cô ấy là một người bạn và người hướng dẫn đáng tin cậy."
+  },
+  "ultimate": {
+    "word": "ultimate",
+    "ipa": "/ˈʌl.tɪ.mət/",
+    "pos": "tính từ",
+    "vi": "tối hậu, cao nhất, cốt lõi",
+    "enEx": "The ultimate goal of language is genuine connection.",
+    "viEx": "Mục tiêu tối thượng của ngôn ngữ là sự kết nối chân thực."
+  },
+  "unanimous": {
+    "word": "unanimous",
+    "ipa": "/juːˈnæn.ɪ.məs/",
+    "pos": "tính từ",
+    "vi": "nhất trí, đồng thuận hoàn toàn",
+    "enEx": "The team was unanimous in choosing this design.",
+    "viEx": "Nhóm đã nhất trí hoàn toàn trong việc chọn thiết kế này."
+  },
+  "unique": {
+    "word": "unique",
+    "ipa": "/juːˈniːk/",
+    "pos": "tính từ",
+    "vi": "độc đáo, duy nhất",
+    "enEx": "Every cat has a unique and endearing personality.",
+    "viEx": "Mỗi chú mèo đều có cá tính độc đáo và đáng yêu."
+  },
+  "unravel": {
+    "word": "unravel",
+    "ipa": "/ʌnˈræv.əl/",
+    "pos": "động từ",
+    "vi": "tháo gỡ, làm sáng tỏ bí ẩn",
+    "enEx": "The detective slowly unraveled the mystery.",
+    "viEx": "Vị thám tử đã từ từ tháo gỡ điều bí ẩn."
+  },
+  "utilize": {
+    "word": "utilize",
+    "ipa": "/ˈjuː.təl.aɪz/",
+    "pos": "động từ",
+    "vi": "tận dụng, sử dụng hữu ích",
+    "enEx": "Utilize flashcards to boost memory retention.",
+    "viEx": "Hãy tận dụng thẻ flashcard để nâng cao khả năng ghi nhớ."
+  },
+  "valuable": {
+    "word": "valuable",
+    "ipa": "/ˈvæl.jə.bəl/",
+    "pos": "tính từ",
+    "vi": "quý giá, có giá trị",
+    "enEx": "Books offer valuable lessons for life.",
+    "viEx": "Sách mang lại những bài học quý giá cho cuộc đời."
+  },
+  "versatile": {
+    "word": "versatile",
+    "ipa": "/ˈvɜː.sə.taɪl/",
+    "pos": "tính từ",
+    "vi": "linh hoạt, đa năng",
+    "enEx": "She is a versatile teacher capable of handling all levels.",
+    "viEx": "Cô là một giáo viên đa năng có thể đảm nhận mọi cấp độ."
+  },
+  "vibrant": {
+    "word": "vibrant",
+    "ipa": "/ˈvaɪ.brənt/",
+    "pos": "tính từ",
+    "vi": "sôi động, rực rỡ, đầy sức sống",
+    "enEx": "The community is vibrant and enthusiastic.",
+    "viEx": "Cộng đồng rất sôi động và nhiệt huyết."
+  },
+  "visionary": {
+    "word": "visionary",
+    "ipa": "/ˈvɪʒ.ən.ər.i/",
+    "pos": "tính từ / danh từ",
+    "vi": "có tầm nhìn xa trông rộng",
+    "enEx": "A visionary educator inspires students beyond exams.",
+    "viEx": "Một nhà giáo dục có tầm nhìn truyền cảm hứng vượt ra khỏi các kỳ thi."
+  },
+  "vivid": {
+    "word": "vivid",
+    "ipa": "/ˈvɪv.ɪd/",
+    "pos": "tính từ",
+    "vi": "sống động, rõ nét",
+    "enEx": "The author painted a vivid picture of the countryside.",
+    "viEx": "Tác giả đã vẽ nên một bức tranh sống động về miền quê."
+  },
+  "vulnerable": {
+    "word": "vulnerable",
+    "ipa": "/ˈvʌl.nər.ə.bəl/",
+    "pos": "tính từ",
+    "vi": "dễ bị tổn thương, mong manh",
+    "enEx": "It takes bravery to be open and vulnerable.",
+    "viEx": "Cần sự dũng cảm để mở lòng và đón nhận sự mong manh."
+  },
+  "wander": {
+    "word": "wander",
+    "ipa": "/ˈwɒn.dər/",
+    "pos": "động từ",
+    "vi": "dạo bước, lang thang",
+    "enEx": "She loved to wander through antique bookstores.",
+    "viEx": "Cô thích dạo bước qua những hiệu sách cổ kính."
+  },
+  "whisper": {
+    "word": "whisper",
+    "ipa": "/ˈwɪs.pər/",
+    "pos": "động từ / danh từ",
+    "vi": "thì thầm, xì xào",
+    "enEx": "The wind whispered softly through the green leaves.",
+    "viEx": "Cơn gió thì thầm êm ái qua những vòm lá xanh."
+  },
+  "wisdom": {
+    "word": "wisdom",
+    "ipa": "/ˈwɪz.dəm/",
+    "pos": "danh từ",
+    "vi": "trí tuệ, sự thông thái",
+    "enEx": "True wisdom comes from reflection and experience.",
+    "viEx": "Trí tuệ thực sự đến từ sự suy ngẫm và trải nghiệm."
+  },
+  "witty": {
+    "word": "witty",
+    "ipa": "/ˈwɪt.i/",
+    "pos": "tính từ",
+    "vi": "dí dỏm, thông minh hóm hỉnh",
+    "enEx": "She shared a witty mnemonic story about the cat.",
+    "viEx": "Cô chia sẻ câu chuyện mẹo nhớ dí dỏm về chú mèo."
+  },
+  "yearn": {
+    "word": "yearn",
+    "ipa": "/jɜːn/",
+    "pos": "động từ",
+    "vi": "khao khát, mong mỏi tha thiết",
+    "enEx": "She yearned to speak English as fluently as a native.",
+    "viEx": "Cô khao khát được nói tiếng Anh trôi chảy như người bản xứ."
+  },
+  "zenith": {
+    "word": "zenith",
+    "ipa": "/ˈzen.ɪθ/",
+    "pos": "danh từ",
+    "vi": "đỉnh cao, thời kỳ hoàng kim",
+    "enEx": "Her career reached its zenith with this publication.",
+    "viEx": "Sự nghiệp của cô đã đạt tới đỉnh cao với ấn phẩm này."
+  }
+}
