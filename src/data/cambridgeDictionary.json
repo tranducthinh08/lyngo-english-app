@@ -115,9 +115,10 @@
     "word": "adventure",
     "ipa": "/ədˈven.tʃər/",
     "pos": "danh từ",
-    "vi": "cuộc phiêu lưu, chuyến thám hiểm",
-    "enEx": "Life is a bold adventure or nothing at all.",
-    "viEx": "Cuộc sống là một chuyến phiêu lưu táo bạo hoặc không là gì cả."
+    "vi": "cuộc phiêu lưu, chuyến mạo hiểm",
+    "enDef": "an unusual, exciting, and possibly dangerous activity, trip, or experience",
+    "enEx": "The adventures of the jungle.",
+    "viEx": "Những cuộc phiêu lưu nơi rừng thẳm."
   },
   "advocate": {
     "word": "advocate",
@@ -939,9 +940,10 @@
     "word": "essential",
     "ipa": "/ɪˈsen.ʃəl/",
     "pos": "tính từ",
-    "vi": "thiết yếu, cốt lõi, cơ bản",
-    "enEx": "Patience is essential when learning a foreign language.",
-    "viEx": "Sự kiên nhẫn là thiết yếu khi học một ngoại ngữ."
+    "vi": "cốt lõi, thiết yếu, quan trọng nhất",
+    "enDef": "necessary or needed in a fundamental way",
+    "enEx": "What is essential is invisible to the eye.",
+    "viEx": "Điều cốt lõi thì vô hình trong mắt trần."
   },
   "evaluate": {
     "word": "evaluate",
@@ -1491,9 +1493,10 @@
     "word": "masterpiece",
     "ipa": "/ˈmɑː.stə.piːs/",
     "pos": "danh từ",
-    "vi": "kiệt tác, tác phẩm xuất chúng",
-    "enEx": "The novel is widely considered a literary masterpiece.",
-    "viEx": "Cuốn tiểu thuyết được coi rộng rãi là một kiệt tác văn học."
+    "vi": "kiệt tác, tác phẩm để đời",
+    "enDef": "a work of art such as a painting, film, or book that is made with great skill",
+    "enEx": "I showed my masterpiece to the grown-ups.",
+    "viEx": "Tôi đã cho những người lớn xem kiệt tác của mình."
   },
   "melancholy": {
     "word": "melancholy",
@@ -1708,8 +1711,9 @@
     "ipa": "/ˈpɒn.dər/",
     "pos": "động từ",
     "vi": "suy ngẫm sâu sắc, đắn đo",
-    "enEx": "She sat quietly to ponder the meaning of the poem.",
-    "viEx": "Cô ngồi yên lặng để suy ngẫm về ý nghĩa bài thơ."
+    "enDef": "to think carefully about something, especially for a noticeable length of time",
+    "enEx": "I pondered deeply over the adventures of the jungle.",
+    "viEx": "Tôi đã suy ngẫm sâu sắc về những cuộc phiêu lưu trong rừng sâu."
   },
   "potential": {
     "word": "potential",
@@ -2222,5 +2226,491 @@
     "vi": "đỉnh cao, thời kỳ hoàng kim",
     "enEx": "Her career reached its zenith with this publication.",
     "viEx": "Sự nghiệp của cô đã đạt tới đỉnh cao với ấn phẩm này."
+  },
+  "picture": {
+    "word": "picture",
+    "ipa": "/ˈpɪk.tʃər/",
+    "pos": "danh từ / động từ",
+    "vi": "bức tranh, bức ảnh, hình ảnh",
+    "enDef": "a drawing, painting, or photograph of something or someone",
+    "enEx": "I saw a magnificent picture in a book called True Stories from Nature.",
+    "viEx": "Tôi đã thấy một bức tranh tráng lệ trong cuốn sách có tựa đề Những Câu Chuyện Thật Từ Tự Nhiên."
+  },
+  "pictures": {
+    "word": "picture",
+    "ipa": "/ˈpɪk.tʃər/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "các bức tranh, hình ảnh, phim ảnh",
+    "enDef": "drawings, paintings, or photographs; cinema film",
+    "enEx": "The book is full of colorful pictures.",
+    "viEx": "Cuốn sách chứa đầy những hình ảnh rực rỡ sắc màu."
+  },
+  "book": {
+    "word": "book",
+    "ipa": "/bʊk/",
+    "pos": "danh từ",
+    "vi": "cuốn sách, quyển sách",
+    "enDef": "a written text that can be published in printed or electronic form",
+    "enEx": "She was reading a fascinating book about nature.",
+    "viEx": "Cô ấy đang đọc một cuốn sách hấp dẫn về tự nhiên."
+  },
+  "story": {
+    "word": "story",
+    "ipa": "/ˈstɔː.ri/",
+    "pos": "danh từ",
+    "vi": "câu chuyện, truyện kể",
+    "enDef": "a description, either true or imagined, of a connected series of events",
+    "enEx": "Tell me a bedtime story about the stars.",
+    "viEx": "Kể cho em nghe một câu chuyện trước khi ngủ về các vì sao đi."
+  },
+  "stories": {
+    "word": "story",
+    "ipa": "/ˈstɔː.ri/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "những câu chuyện, truyện kể",
+    "enDef": "descriptions of true or imagined events",
+    "enEx": "True Stories from Nature about the primeval forest.",
+    "viEx": "Những Câu Chuyện Thật Từ Tự Nhiên về khu rừng nguyên sinh."
+  },
+  "forest": {
+    "word": "forest",
+    "ipa": "/ˈfɒr.ɪst/",
+    "pos": "danh từ",
+    "vi": "khu rừng, rừng già",
+    "enDef": "a large area of land covered with trees and plants",
+    "enEx": "It was a picture of the primeval forest.",
+    "viEx": "Đó là một bức tranh về khu rừng nguyên sinh."
+  },
+  "swallow": {
+    "word": "swallow",
+    "ipa": "/ˈswɒl.əʊ/",
+    "pos": "động từ",
+    "vi": "nuốt, nuốt trọn",
+    "enDef": "to cause food or drink to move down your throat into your stomach",
+    "enEx": "Boa constrictors swallow their prey whole, without chewing it.",
+    "viEx": "Trăn khổng lồ nuốt trọn con mồi mà không cần nhai."
+  },
+  "swallowing": {
+    "word": "swallow",
+    "ipa": "/ˈswɒl.əʊ.ɪŋ/",
+    "pos": "danh động từ",
+    "vi": "hành động nuốt trọn con mồi",
+    "enDef": "the act of swallowing food or prey",
+    "enEx": "A boa constrictor in the act of swallowing an animal.",
+    "viEx": "Một con trăn khổng lồ đang trong hành động nuốt trọn một con vật."
+  },
+  "animal": {
+    "word": "animal",
+    "ipa": "/ˈæn.ɪ.məl/",
+    "pos": "danh từ",
+    "vi": "động vật, muông thú",
+    "enDef": "something that lives and moves but is not a human, bird, fish, or insect",
+    "enEx": "Animals need food, water, and shelter to survive.",
+    "viEx": "Động vật cần thức ăn, nước uống và nơi trú ẩn để sinh tồn."
+  },
+  "prey": {
+    "word": "prey",
+    "ipa": "/preɪ/",
+    "pos": "danh từ",
+    "vi": "con mồi",
+    "enDef": "an animal that is hunted and killed for food by another animal",
+    "enEx": "The owl swooped down on its prey.",
+    "viEx": "Con cú sà xuống quắp lấy con mồi."
+  },
+  "whole": {
+    "word": "whole",
+    "ipa": "/həʊl/",
+    "pos": "tính từ / phó từ",
+    "vi": "toàn bộ, nguyên vẹn, trọn vẹn",
+    "enDef": "complete or not divided into parts",
+    "enEx": "They swallow their prey whole.",
+    "viEx": "Chúng nuốt toàn bộ con mồi."
+  },
+  "chew": {
+    "word": "chew",
+    "ipa": "/tʃuː/",
+    "pos": "động từ",
+    "vi": "nhai thức ăn",
+    "enDef": "to crush food with your teeth before you swallow it",
+    "enEx": "Without chewing it at all.",
+    "viEx": "Mà không nhai nó một chút nào."
+  },
+  "chewing": {
+    "word": "chew",
+    "ipa": "/ˈtʃuː.ɪŋ/",
+    "pos": "danh động từ",
+    "vi": "việc nhai thức ăn",
+    "enDef": "the action of crushing food with teeth",
+    "enEx": "Chewing thoroughly helps digestion.",
+    "viEx": "Nhai kỹ giúp ích cho việc tiêu hóa."
+  },
+  "move": {
+    "word": "move",
+    "ipa": "/muːv/",
+    "pos": "động từ",
+    "vi": "di chuyển, cử động",
+    "enDef": "to change position or go from one place to another",
+    "enEx": "They are not able to move after eating.",
+    "viEx": "Chúng không thể cử động sau khi ăn."
+  },
+  "sleep": {
+    "word": "sleep",
+    "ipa": "/sliːp/",
+    "pos": "động từ / danh từ",
+    "vi": "ngủ, giấc ngủ",
+    "enDef": "to rest your body and mind in the natural state of sleep",
+    "enEx": "They sleep through the six months that they need for digestion.",
+    "viEx": "Chúng ngủ suốt sáu tháng để tiêu hóa thức ăn."
+  },
+  "digestion": {
+    "word": "digestion",
+    "ipa": "/daɪˈdʒes.tʃən/",
+    "pos": "danh từ",
+    "vi": "sự tiêu hóa thức ăn",
+    "enDef": "the process by which your body digests food",
+    "enEx": "Six months that they need for digestion.",
+    "viEx": "Sáu tháng mà chúng cần cho quá trình tiêu hóa."
+  },
+  "pondered": {
+    "word": "ponder",
+    "ipa": "/ˈpɒn.dəd/",
+    "pos": "động từ (quá khứ)",
+    "vi": "đã suy ngẫm, đã đắn đo",
+    "enDef": "thought carefully about something",
+    "enEx": "I pondered deeply, then, over the adventures of the jungle.",
+    "viEx": "Lúc đó, tôi đã suy ngẫm sâu sắc về những cuộc phiêu lưu trong rừng già."
+  },
+  "deeply": {
+    "word": "deeply",
+    "ipa": "/ˈdiːp.li/",
+    "pos": "phó từ",
+    "vi": "sâu sắc, tận đáy lòng",
+    "enDef": "very much, or to a great extent or depth",
+    "enEx": "She was deeply touched by his kindness.",
+    "viEx": "Cô ấy đã vô cùng xúc động trước lòng tốt của anh."
+  },
+  "adventures": {
+    "word": "adventure",
+    "ipa": "/ədˈven.tʃəz/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "những chuyến phiêu lưu mạo hiểm",
+    "enDef": "exciting or dangerous experiences or journeys",
+    "enEx": "He wrote a book about his adventures in Africa.",
+    "viEx": "Ông đã viết một cuốn sách về những chuyến phiêu lưu ở châu Phi."
+  },
+  "jungle": {
+    "word": "jungle",
+    "ipa": "/ˈdʒʌŋ.ɡəl/",
+    "pos": "danh từ",
+    "vi": "rừng rậm nhiệt đới",
+    "enDef": "a tropical forest in which trees and plants grow very closely together",
+    "enEx": "The dense jungle was home to countless wild creatures.",
+    "viEx": "Khu rừng rậm rạp là nơi cư ngụ của vô số sinh vật hoang dã."
+  },
+  "work": {
+    "word": "work",
+    "ipa": "/wɜːk/",
+    "pos": "danh từ / động từ",
+    "vi": "công việc, tác phẩm, làm việc",
+    "enDef": "an activity that a person does in order to achieve a purpose or earn money",
+    "enEx": "After some work with a colored pencil I succeeded.",
+    "viEx": "Sau một hồi miệt mài với cây bút chì màu, tôi đã thành công."
+  },
+  "pencil": {
+    "word": "pencil",
+    "ipa": "/ˈpen.səl/",
+    "pos": "danh từ",
+    "vi": "cây bút chì",
+    "enDef": "a long, thin wooden object with a black or coloured centre, used for writing or drawing",
+    "enEx": "I succeeded in making my first drawing with a colored pencil.",
+    "viEx": "Tôi đã thành công tạo nên bức vẽ đầu tiên bằng chiếc bút chì màu."
+  },
+  "drawing": {
+    "word": "drawing",
+    "ipa": "/ˈdrɔː.ɪŋ/",
+    "pos": "danh từ",
+    "vi": "bức vẽ, bức họa, bản vẽ",
+    "enDef": "a picture made using a pencil or pen rather than paint",
+    "enEx": "My Drawing Number One looked something like this.",
+    "viEx": "Bức Vẽ Số Một của tôi trông đại loại như thế này."
+  },
+  "frighten": {
+    "word": "frighten",
+    "ipa": "/ˈfraɪ.tən/",
+    "pos": "động từ",
+    "vi": "làm hoảng sợ, dọa sợ",
+    "enDef": "to make someone feel fear or panic",
+    "enEx": "Why should anyone be frightened by a hat?",
+    "viEx": "Tại sao lại có ai có thể sợ một chiếc mũ cơ chứ?"
+  },
+  "frightened": {
+    "word": "frighten",
+    "ipa": "/ˈfraɪ.tənd/",
+    "pos": "tính từ / quá khứ",
+    "vi": "sợ hãi, khiếp sợ, bị dọa sợ",
+    "enDef": "feeling fear or worry",
+    "enEx": "I asked them whether the drawing frightened them.",
+    "viEx": "Tôi hỏi họ liệu bức vẽ có làm họ sợ không."
+  },
+  "hat": {
+    "word": "hat",
+    "ipa": "/hæt/",
+    "pos": "danh từ",
+    "vi": "cái mũ, chiếc nón",
+    "enDef": "a covering for the head, often worn outdoors",
+    "enEx": "Why should anyone be frightened by a hat?",
+    "viEx": "Tại sao lại có người sợ một cái mũ?"
+  },
+  "elephant": {
+    "word": "elephant",
+    "ipa": "/ˈel.ɪ.fənt/",
+    "pos": "danh từ",
+    "vi": "con voi",
+    "enDef": "a very large grey mammal that has a trunk with which it can pick things up",
+    "enEx": "A picture of a boa constrictor digesting an elephant.",
+    "viEx": "Bức tranh vẽ một con trăn đang tiêu hóa một con voi."
+  },
+  "understand": {
+    "word": "understand",
+    "ipa": "/ˌʌn.dəˈstænd/",
+    "pos": "động từ",
+    "vi": "hiểu, thấu hiểu",
+    "enDef": "to know the meaning of what someone is saying, or the way something works",
+    "enEx": "The grown-ups were not able to understand it.",
+    "viEx": "Những người lớn đã không thể nào hiểu được."
+  },
+  "inside": {
+    "word": "inside",
+    "ipa": "/ɪnˈsaɪd/",
+    "pos": "danh từ / giới từ",
+    "vi": "bên trong, phía trong",
+    "enDef": "the inner part, space, or side of something",
+    "enEx": "I drew the inside of a boa constrictor.",
+    "viEx": "Tôi đã vẽ bên trong của một con trăn khổng lồ."
+  },
+  "clearly": {
+    "word": "clearly",
+    "ipa": "/ˈklɪə.li/",
+    "pos": "phó từ",
+    "vi": "rõ ràng, tường minh",
+    "enDef": "in a way that is easy to see, hear, read, or understand",
+    "enEx": "So that the grown-ups could see clearly.",
+    "viEx": "Để cho những người lớn có thể nhìn thấy thật rõ ràng."
+  },
+  "explain": {
+    "word": "explain",
+    "ipa": "/ɪkˈspleɪn/",
+    "pos": "động từ",
+    "vi": "giải thích, bày tỏ",
+    "enDef": "to make something clear or easy to understand by giving detail about it",
+    "enEx": "They always need to have things explained.",
+    "viEx": "Họ luôn luôn cần mọi thứ phải được giải thích cặn kẽ."
+  },
+  "explained": {
+    "word": "explain",
+    "ipa": "/ɪkˈspleɪnd/",
+    "pos": "động từ (quá khứ)",
+    "vi": "đã giải thích",
+    "enDef": "made clear or easy to understand",
+    "enEx": "They always need to have things explained to them.",
+    "viEx": "Lúc nào họ cũng cần phải được giải thích."
+  },
+  "nature": {
+    "word": "nature",
+    "ipa": "/ˈneɪ.tʃər/",
+    "pos": "danh từ",
+    "vi": "tự nhiên, thiên nhiên",
+    "enDef": "all the animals, plants, rocks, etc. in the world and all the features and processes not made by people",
+    "enEx": "True Stories from Nature.",
+    "viEx": "Những Câu Chuyện Thật Từ Tự Nhiên."
+  },
+  "primeval": {
+    "word": "primeval",
+    "ipa": "/praɪˈmiː.vəl/",
+    "pos": "tính từ",
+    "vi": "nguyên sinh, nguyên thủy, ban sơ",
+    "enDef": "ancient, earliest, existing from the beginning of time",
+    "enEx": "A magnificent picture about the primeval forest.",
+    "viEx": "Một bức tranh tuyệt mỹ về khu rừng nguyên sinh."
+  },
+  "boa": {
+    "word": "boa",
+    "ipa": "/ˈbəʊ.ə/",
+    "pos": "danh từ",
+    "vi": "trăn xiết mồi (trăn Nam Mỹ)",
+    "enDef": "a large snake that kills animals by squeezing them with its body",
+    "enEx": "A boa constrictor swallowing an animal.",
+    "viEx": "Một con trăn xiết mồi đang nuốt trọn một con vật."
+  },
+  "constrictor": {
+    "word": "constrictor",
+    "ipa": "/kənˈstrɪk.tər/",
+    "pos": "danh từ",
+    "vi": "loài trăn siết mồi (boa constrictor)",
+    "enDef": "a snake that kills by wrapping itself around prey and crushing it",
+    "enEx": "The boa constrictor coiled tightly around the branch.",
+    "viEx": "Con trăn siết mồi quấn chặt lấy cành cây."
+  },
+  "succeeded": {
+    "word": "succeed",
+    "ipa": "/səkˈsiː.dɪd/",
+    "pos": "động từ (quá khứ)",
+    "vi": "đã thành công, đã làm được",
+    "enDef": "achieved something that you have been trying to do",
+    "enEx": "I succeeded in making my first drawing.",
+    "viEx": "Tôi đã thành công trong việc vẽ nên bức tranh đầu tiên."
+  },
+  "succeed": {
+    "word": "succeed",
+    "ipa": "/səkˈsiːd/",
+    "pos": "động từ",
+    "vi": "thành công, đạt được mục tiêu",
+    "enDef": "to achieve something that you have been aiming for",
+    "enEx": "If you work hard, you will succeed.",
+    "viEx": "Nếu chăm chỉ, bạn sẽ thành công."
+  },
+  "grown-up": {
+    "word": "grown-up",
+    "ipa": "/ˌɡrəʊnˈʌp/",
+    "pos": "danh từ",
+    "vi": "người lớn, người trưởng thành",
+    "enDef": "an adult person",
+    "enEx": "I showed my masterpiece to the grown-ups.",
+    "viEx": "Tôi đã khoe kiệt tác của mình cho những người lớn xem."
+  },
+  "grown-ups": {
+    "word": "grown-up",
+    "ipa": "/ˌɡrəʊnˈʌps/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "những người lớn",
+    "enDef": "adults or older people",
+    "enEx": "Grown-ups never understand anything by themselves.",
+    "viEx": "Người lớn chẳng bao giờ tự mình hiểu được điều gì."
+  },
+  "little": {
+    "word": "little",
+    "ipa": "/ˈlɪt.əl/",
+    "pos": "tính từ",
+    "vi": "nhỏ bé, bé bỏng",
+    "enDef": "small in size or amount",
+    "enEx": "The Little Prince lived on a tiny asteroid.",
+    "viEx": "Hoàng Tử Bé sống trên một tiểu hành tinh nhỏ."
+  },
+  "prince": {
+    "word": "prince",
+    "ipa": "/prɪns/",
+    "pos": "danh từ",
+    "vi": "hoàng tử",
+    "enDef": "the son of a king or queen, or a male member of a royal family",
+    "enEx": "The Little Prince had golden hair and a pure heart.",
+    "viEx": "Hoàng Tử Bé có mái tóc vàng óng và một trái tim thuần khiết."
+  },
+  "flower": {
+    "word": "flower",
+    "ipa": "/ˈflaʊ.ər/",
+    "pos": "danh từ",
+    "vi": "bông hoa",
+    "enDef": "the attractive coloured part of a plant that produces seeds or fruit",
+    "enEx": "The stars are beautiful because of a flower that cannot be seen.",
+    "viEx": "Các vì sao đẹp là nhờ một bông hoa mà mắt thường không thể thấy."
+  },
+  "rose": {
+    "word": "rose",
+    "ipa": "/rəʊz/",
+    "pos": "danh từ",
+    "vi": "hoa hồng",
+    "enDef": "a garden plant with thorns on its stem and pleasant-smelling flowers",
+    "enEx": "You become responsible forever for what you have tamed. You are responsible for your rose.",
+    "viEx": "Bạn phải chịu trách nhiệm mãi mãi với những gì bạn đã cảm hóa. Bạn chịu trách nhiệm với bông hồng của mình."
+  },
+  "heart": {
+    "word": "heart",
+    "ipa": "/hɑːt/",
+    "pos": "danh từ",
+    "vi": "trái tim, tấm lòng",
+    "enDef": "the organ in your chest that pumps blood; or the centre of human emotion and love",
+    "enEx": "It is only with the heart that one can see rightly; what is essential is invisible to the eye.",
+    "viEx": "Chỉ có bằng trái tim người ta mới thấy được rõ ràng; điều cốt lõi thì mắt thường vô hình."
+  },
+  "secret": {
+    "word": "secret",
+    "ipa": "/ˈsiː.krət/",
+    "pos": "danh từ / tính từ",
+    "vi": "bí mật, điều thầm kín",
+    "enDef": "a piece of information that is only known by one person or a few people",
+    "enEx": "Here is my secret, a very simple secret.",
+    "viEx": "Đây là bí mật của tôi, một bí mật vô cùng đơn giản."
+  },
+  "invisible": {
+    "word": "invisible",
+    "ipa": "/ɪnˈvɪz.ə.bəl/",
+    "pos": "tính từ",
+    "vi": "vô hình, không nhìn thấy được",
+    "enDef": "impossible to see with the eyes",
+    "enEx": "The wind is invisible, but we feel its gentle breath.",
+    "viEx": "Cơn gió là vô hình, nhưng ta cảm nhận được hơi thở dịu êm của nó."
+  },
+  "tame": {
+    "word": "tame",
+    "ipa": "/teɪm/",
+    "pos": "động từ",
+    "vi": "cảm hóa, thuần hóa, tạo mối gắn kết",
+    "enDef": "to make an animal wild no longer, or to create ties and deep connection with another",
+    "enEx": "To me, you are still nothing more than a little boy... but if you tame me, we shall need each other.",
+    "viEx": "Đối với tôi, bạn cũng chỉ là một cậu bé... nhưng nếu bạn cảm hóa tôi, chúng ta sẽ cần đến nhau."
+  },
+  "responsible": {
+    "word": "responsible",
+    "ipa": "/rɪˈspɒn.sə.bəl/",
+    "pos": "tính từ",
+    "vi": "có trách nhiệm, chịu trách nhiệm",
+    "enDef": "having good judgment and the ability to act correctly and make decisions on your own",
+    "enEx": "You become responsible forever for your rose.",
+    "viEx": "Bạn chịu trách nhiệm mãi mãi đối với bông hồng của mình."
+  },
+  "desert": {
+    "word": "desert",
+    "ipa": "/ˈdez.ət/",
+    "pos": "danh từ",
+    "vi": "sa mạc",
+    "enDef": "an area, often covered with sand or rocks, where there is very little rain and not many plants",
+    "enEx": "What makes the desert beautiful is that somewhere it hides a well.",
+    "viEx": "Điều làm cho sa mạc trở nên tuyệt đẹp là nơi nào đó nó đang ẩn giấu một giếng nước."
+  },
+  "star": {
+    "word": "star",
+    "ipa": "/stɑːr/",
+    "pos": "danh từ",
+    "vi": "ngôi sao",
+    "enDef": "a very large ball of burning gas in space that is usually seen from the earth as a point of light in the night sky",
+    "enEx": "All men have stars, but they are not the same things for different people.",
+    "viEx": "Mọi người đều có những vì sao, nhưng chúng mang ý nghĩa khác nhau với mỗi người."
+  },
+  "stars": {
+    "word": "star",
+    "ipa": "/stɑːz/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "những vì sao đêm",
+    "enDef": "points of light in the night sky",
+    "enEx": "The stars are beautiful because of a hidden flower.",
+    "viEx": "Những vì sao thật đẹp bởi vì một bông hoa ẩn mình."
+  },
+  "water": {
+    "word": "water",
+    "ipa": "/ˈwɔː.tər/",
+    "pos": "danh từ",
+    "vi": "nước, dòng nước",
+    "enDef": "a clear liquid, without colour or taste, that falls from the sky as rain and is necessary for animal and plant life",
+    "enEx": "Water may also be good for the heart.",
+    "viEx": "Nước ngọt ngào cũng có thể tốt cho cả trái tim."
+  },
+  "well": {
+    "word": "well",
+    "ipa": "/wel/",
+    "pos": "danh từ",
+    "vi": "giếng nước",
+    "enDef": "a deep hole in the ground from which you can get water, oil, or gas",
+    "enEx": "Somewhere the desert hides a well.",
+    "viEx": "Đâu đó nơi sa mạc ẩn giấu một giếng nước trong veo."
   }
 }

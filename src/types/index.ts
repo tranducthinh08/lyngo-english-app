@@ -75,6 +75,7 @@ export interface DictionaryData {
   audio?: string;
   vietnamese?: string;
   partOfSpeech?: string;
+  englishDefinition?: string;
   example?: string;
   exampleVi?: string;
   meanings: DictionaryMeaning[];

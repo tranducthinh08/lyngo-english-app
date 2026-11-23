@@ -6,6 +6,7 @@ export interface DictCacheItem {
   phonetic: string;
   partOfSpeech: string;
   meaning: string;
+  englishDefinition?: string;
   exampleEn?: string;
   exampleVi?: string;
   cambridgeUrl: string;
