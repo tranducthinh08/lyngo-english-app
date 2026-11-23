@@ -3,6 +3,26 @@
 const GEMINI_KEY_STORAGE = 'lyngo_gemini_api_key';
 const FONT_SIZE_STORAGE = 'lyngo_reader_font_size';
 const SERIF_MODE_STORAGE = 'lyngo_reader_serif_mode';
+const CURSOR_SIZE_STORAGE = 'lyngo_cat_cursor_size';
+
+export const DEFAULT_CURSOR_SIZE = 32;
+export const MIN_CURSOR_SIZE = 20;
+export const MAX_CURSOR_SIZE = 48;
+
+export function getCursorSize(): number {
+  if (typeof window === 'undefined') return DEFAULT_CURSOR_SIZE;
+  const val = localStorage.getItem(CURSOR_SIZE_STORAGE);
+  if (!val) return DEFAULT_CURSOR_SIZE;
+  const parsed = parseInt(val, 10);
+  return isNaN(parsed) ? DEFAULT_CURSOR_SIZE : Math.min(Math.max(parsed, MIN_CURSOR_SIZE), MAX_CURSOR_SIZE);
+}
+
+export function setCursorSize(size: number) {
+  if (typeof window === 'undefined') return;
+  const clamped = Math.min(Math.max(size, MIN_CURSOR_SIZE), MAX_CURSOR_SIZE);
+  localStorage.setItem(CURSOR_SIZE_STORAGE, clamped.toString());
+  window.dispatchEvent(new CustomEvent('lyngo_cursor_size_change', { detail: clamped }));
+}
 
 export function getStoredGeminiKey(): string {
   if (typeof window === 'undefined') return '';

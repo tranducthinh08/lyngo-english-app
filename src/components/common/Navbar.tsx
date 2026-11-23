@@ -1,19 +1,48 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Camera, BookmarkCheck, Settings, BookOpen, Cloud, CloudOff, Loader2, HardDrive, Sparkles } from 'lucide-react';
+import { Camera, BookmarkCheck, Settings, BookOpen, Cloud, CloudOff, Loader2, HardDrive, Sparkles, MousePointer2 } from 'lucide-react';
 import { db } from '@/lib/db';
 import { useSyncStatus } from '@/hooks/useSyncStatus';
 import SettingsModal from './SettingsModal';
 import CuteCat from './CuteCat';
+import CursorSizeControl from './CursorSizeControl';
 
 export default function Navbar() {
   const pathname = usePathname();
   const [showSettings, setShowSettings] = useState(false);
+  const [showCursorMenu, setShowCursorMenu] = useState(false);
+  const cursorMenuRef = useRef<HTMLDivElement>(null);
   const [dueCount, setDueCount] = useState<number>(0);
   const { status, runFullSync, isConfigured, errorMessage } = useSyncStatus();
+
+  // Đóng menu chỉnh cỡ chuột khi nhấp ra ngoài hoặc ấn Esc
+  useEffect(() => {
+    if (!showCursorMenu) return;
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+      if (cursorMenuRef.current && !cursorMenuRef.current.contains(e.target as Node)) {
+        setShowCursorMenu(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowCursorMenu(false);
+    };
+
+    const timer = setTimeout(() => {
+      document.addEventListener('mousedown', handleClickOutside, true);
+      document.addEventListener('touchstart', handleClickOutside, true);
+      window.addEventListener('keydown', handleKeyDown);
+    }, 50);
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('mousedown', handleClickOutside, true);
+      document.removeEventListener('touchstart', handleClickOutside, true);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [showCursorMenu]);
 
   // Kiểm tra số lượng thẻ cần ôn hôm nay (tối ưu đếm trực tiếp từ IndexedDB, không nạp toàn bộ mảng vào RAM)
   useEffect(() => {
@@ -137,6 +166,32 @@ export default function Navbar() {
                 <HardDrive className="w-4 h-4 text-orange-600" />
               </button>
             )}
+
+            {/* Nút Điều chỉnh độ to bé của con trỏ chuột Mèo */}
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setShowCursorMenu(!showCursorMenu)}
+                title="Chỉnh độ to bé của con trỏ chuột Mèo 🐾"
+                className={`p-2 rounded-2xl border transition-all shadow-2xs shrink-0 cursor-pointer press-spring flex items-center justify-center ${
+                  showCursorMenu
+                    ? 'bg-orange-500 text-white border-orange-600 shadow-md scale-105'
+                    : 'text-orange-800 hover:bg-orange-100/70 hover:text-orange-950 border-orange-200/80 bg-white/80'
+                }`}
+              >
+                <MousePointer2 className="w-4 h-4" />
+              </button>
+
+              {/* Popover Chỉnh Nhanh Kích Thước Con Trỏ */}
+              {showCursorMenu && (
+                <div
+                  ref={cursorMenuRef}
+                  className="absolute right-0 top-full mt-2 z-50 animate-in fade-in zoom-in-95 duration-100"
+                >
+                  <CursorSizeControl variant="compact" onClose={() => setShowCursorMenu(false)} />
+                </div>
+              )}
+            </div>
 
             {/* Nút Cài đặt */}
             <button

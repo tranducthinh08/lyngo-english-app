@@ -6,6 +6,7 @@ import { getStoredGeminiKey, setStoredGeminiKey, getReaderFontSize, setReaderFon
 import { getSupabaseConfig, saveSupabaseConfig, testSupabaseConnection } from '@/lib/supabase';
 import { syncService } from '@/lib/syncService';
 import CuteCat from '@/components/common/CuteCat';
+import CursorSizeControl from '@/components/common/CursorSizeControl';
 
 interface SettingsModalProps {
   onClose: () => void;
@@ -426,6 +427,11 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
                 </button>
               </div>
             </div>
+
+            <hr className="border-orange-200" />
+
+            {/* Kích thước con trỏ chuột Mèo Con */}
+            <CursorSizeControl variant="modal" />
           </div>
         </div>
 
