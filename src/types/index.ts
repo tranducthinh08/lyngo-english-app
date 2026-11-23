@@ -14,6 +14,7 @@ export interface VocabNote {
   audioUrl?: string;        // Link audio phát âm
   partOfSpeech?: string;    // noun, verb, adj, phrase...
   meaning: string;          // Định nghĩa tiếng Việt súc tích
+  englishDefinition?: string; // Định nghĩa tiếng Anh chuẩn Cambridge
   memoryType: MemoryType;   // Kiểu nhớ của cô Ly
   note: string;             // Mẹo liên tưởng / ghi chú cá nhân (mnemonic)
 

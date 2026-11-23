@@ -4,7 +4,7 @@ import { generateVocabImageUrl } from '@/lib/imageGenerator';
 
 export const dynamic = 'force-dynamic';
 
-const MODELS = ['gemini-3.1-flash-lite', 'gemini-3.5-flash', 'gemini-flash-latest'];
+const MODELS = ['gemini-3.5-flash-lite', 'gemini-flash-latest'];
 
 export async function POST(req: NextRequest) {
   try {
@@ -27,19 +27,20 @@ export async function POST(req: NextRequest) {
 
     // 1. NẾU CÓ GEMINI API KEY: TỰ ĐỘNG SÁNG TẠO ĐẦY ĐỦ BẰNG AI
     if (apiKey) {
-      const prompt = `You are an expert English mnemonic coach for Vietnamese students.
+      const prompt = `You are an expert Cambridge English-Vietnamese lexicographer and mnemonic coach for Cô Ly.
 For the English word/phrase "${word}"${contextSentence ? ` (used in this context: "${contextSentence}")` : ''},
-generate a complete flashcard in JSON for a student named Cô Ly.
+generate a complete, rich Cambridge flashcard in JSON.
 
 Return ONLY a single valid JSON object between { and } with these exact keys:
 {
   "word": "${word}",
-  "phonetic": "Standard IPA phonetic transcription, e.g. /ˈstæɡ.nənt/",
-  "partOfSpeech": "Vietnamese part of speech, e.g. danh từ, tính từ, động từ",
+  "phonetic": "Standard Cambridge IPA phonetic transcription, e.g. /ˈhəˈləʊ/",
+  "partOfSpeech": "Vietnamese part of speech, e.g. thán từ, danh từ, tính từ, động từ, trạng từ",
   "meaning": "Concise natural Vietnamese definition",
-  "mnemonic": "A witty, creative Vietnamese mnemonic story or sound-alike wordplay to make this word memorable",
+  "englishDefinition": "Authentic Cambridge-style clear English definition",
+  "mnemonic": "A witty, creative Vietnamese mnemonic story or sound-alike wordplay to make this word memorable for Cô Ly",
   "exampleEn": "A clear, natural English sentence demonstrating usage",
-  "exampleVi": "Vietnamese translation of the example sentence",
+  "exampleVi": "Accurate Vietnamese translation of the example sentence",
   "memoryType": "mnemonic"
 }`;
 
@@ -61,7 +62,7 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
                   thinkingConfig: { thinkingBudget: 0 }
                 }
               }),
-              signal: AbortSignal.timeout(7500)
+              signal: AbortSignal.timeout(6000)
             }
           );
 
@@ -77,6 +78,7 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
               const exampleEn = parsed.exampleEn || '';
               const exampleVi = parsed.exampleVi || '';
               const finalMeaning = parsed.meaning || '';
+              const englishDefinition = parsed.englishDefinition || '';
               const imageUrl = generateVocabImageUrl({
                 word: parsed.word || word,
                 meaning: finalMeaning,
@@ -88,6 +90,7 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
                 word: parsed.word || word,
                 phonetic: parsed.phonetic || '',
                 meaning: finalMeaning,
+                englishDefinition,
                 note: mnemonic.trim(),
                 mnemonic: mnemonic.trim(),
                 partOfSpeech: parsed.partOfSpeech || '',
@@ -109,9 +112,13 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
 
     // 2. FALLBACK SANG TỪ ĐIỂN NẾU AI TẠM BẬN
     const dict = await lookupDictionaryWord(word);
-    const meaning = dict?.meanings?.[0]?.definitions?.[0]?.definition || '';
-    const example = dict?.meanings?.[0]?.definitions?.[0]?.example || '';
-    const partOfSpeech = dict?.meanings?.[0]?.partOfSpeech || '';
+    const meaning = dict?.vietnamese || dict?.meanings?.[0]?.definitions?.[0]?.definition || '';
+    const example = dict?.example || dict?.meanings?.[0]?.definitions?.[0]?.example || '';
+    const exampleVi = dict?.exampleVi || '';
+    const partOfSpeech = dict?.partOfSpeech || '';
+    const englishDefinition = dict?.englishDefinition || '';
+    const defaultMnemonic = `Mẹo nhớ: Hãy đặt câu với "${word}" (${partOfSpeech}) để ghi nhớ lâu hơn nhé Cô Ly!`;
+
     const imageUrl = generateVocabImageUrl({
       word,
       meaning,
@@ -122,11 +129,12 @@ Return ONLY a single valid JSON object between { and } with these exact keys:
       word,
       phonetic: dict?.phonetic || '',
       meaning: meaning || 'Đang cập nhật nghĩa...',
+      englishDefinition,
       partOfSpeech,
-      note: 'Mẹo nhớ: Đặt một câu với từ này để nhớ lâu hơn.',
-      mnemonic: 'Mẹo nhớ: Đặt một câu với từ này để nhớ lâu hơn.',
+      note: defaultMnemonic,
+      mnemonic: defaultMnemonic,
       exampleEn: example || '',
-      exampleVi: '',
+      exampleVi: exampleVi || '',
       contextSentence: contextSentence.trim(),
       memoryType: 'context',
       imageUrl,

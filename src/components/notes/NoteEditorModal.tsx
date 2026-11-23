@@ -35,6 +35,7 @@ interface NoteEditorModalProps {
     phonetic?: string;
     partOfSpeech?: string;
     meaning?: string;
+    englishDefinition?: string;
     note?: string;
     exampleEn?: string;
     exampleVi?: string;
@@ -65,6 +66,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
   const [phonetic, setPhonetic] = useState(existing?.phonetic || initialData.phonetic || '');
   const [partOfSpeech, setPartOfSpeech] = useState(existing?.partOfSpeech || initialData.partOfSpeech || '');
   const [meaning, setMeaning] = useState(existing?.meaning || initialData.meaning || '');
+  const [englishDefinition, setEnglishDefinition] = useState(existing?.englishDefinition || initialData.englishDefinition || '');
   const [exampleEn, setExampleEn] = useState(existing?.exampleEn || initialData.exampleEn || '');
   const [exampleVi, setExampleVi] = useState(existing?.exampleVi || initialData.exampleVi || '');
   const [contextSentence, setContextSentence] = useState(existing?.contextSentence || initialData.contextSentence || '');
@@ -171,8 +173,10 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
         if (data.phonetic) setPhonetic(data.phonetic);
         if (data.partOfSpeech) setPartOfSpeech(data.partOfSpeech);
         if (data.meaning) setMeaning(data.meaning);
+        if (data.englishDefinition) setEnglishDefinition(data.englishDefinition);
         if (data.exampleEn) setExampleEn(data.exampleEn);
         if (data.exampleVi) setExampleVi(data.exampleVi);
+        if (data.mnemonic && !note) setNote(data.mnemonic);
         setCambridgeUrl(data.cambridgeUrl);
         setGoogleTranslateUrl(data.googleTranslateUrl);
         setDictSource(data.source);
@@ -185,7 +189,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
     } finally {
       setIsInstantLoading(false);
     }
-  }, [handleFetchRealPhotos]);
+  }, [handleFetchRealPhotos, note]);
 
   // AI Mèo Cam sáng tạo mẹo nhớ liên tưởng theo yêu cầu (On-Demand)
   const handleGenerateAIMnemonic = useCallback(async (targetWord: string) => {
@@ -219,7 +223,9 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
       if (cleanWord.toLowerCase() === currentWordRef.current.trim().toLowerCase()) {
         if (data.note || data.mnemonic) setNote(data.note || data.mnemonic);
         if (!phonetic && data.phonetic) setPhonetic(data.phonetic);
+        if (!partOfSpeech && data.partOfSpeech) setPartOfSpeech(data.partOfSpeech);
         if (!meaning && data.meaning) setMeaning(data.meaning);
+        if (!englishDefinition && data.englishDefinition) setEnglishDefinition(data.englishDefinition);
         if (!exampleEn && data.exampleEn) setExampleEn(data.exampleEn);
         if (!exampleVi && data.exampleVi) setExampleVi(data.exampleVi);
         if (data.imageUrl) setImageUrl((prev) => prev || data.imageUrl);
@@ -232,7 +238,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
     } finally {
       setIsGeneratingAI(false);
     }
-  }, [contextSentence, initialData.contextSentence, phonetic, meaning, exampleEn, exampleVi]);
+  }, [contextSentence, initialData.contextSentence, phonetic, partOfSpeech, meaning, englishDefinition, exampleEn, exampleVi]);
 
   // Nạp tức thì từ điển Cambridge ngay khi mở modal (0.001s, không phải chờ AI)
   useEffect(() => {
@@ -287,6 +293,7 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
         phonetic: phonetic.trim(),
         partOfSpeech: partOfSpeech.trim() || undefined,
         meaning: meaning.trim(),
+        englishDefinition: englishDefinition.trim() || undefined,
         exampleEn: exampleEn.trim() || undefined,
         exampleVi: exampleVi.trim() || undefined,
         contextSentence: contextSentence.trim() || undefined,
@@ -484,23 +491,46 @@ export default function NoteEditorModal({ initialData, onClose, onSaved }: NoteE
             />
           </div>
 
-          {/* 3. VÍ DỤ CÂU ANH - VIỆT (TEMPLATE CHUẨN) */}
+          {/* 3. ĐỊNH NGHĨA TIẾNG ANH CHUẨN CAMBRIDGE */}
+          <div>
+            <label className="block text-xs font-bold text-orange-950 mb-1 flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <BookOpen className="w-3.5 h-3.5 text-orange-600" />
+                Định nghĩa tiếng Anh Cambridge (English Definition)
+              </span>
+              <span className="text-[10px] font-mono font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md border border-amber-300">
+                Cambridge 📖
+              </span>
+            </label>
+            <input
+              type="text"
+              value={englishDefinition}
+              onChange={(e) => setEnglishDefinition(e.target.value)}
+              placeholder="Ví dụ: used when meeting or greeting someone, or answering the telephone..."
+              className="w-full px-3.5 py-2 rounded-2xl border-2 border-orange-200 bg-white text-orange-950 text-xs font-medium focus:ring-2 focus:ring-orange-500 focus:outline-none"
+            />
+          </div>
+
+          {/* 4. VÍ DỤ CÂU THỰC TẾ CHUẨN CAMBRIDGE (ANH - VIỆT) */}
           <div className="space-y-2 p-3 bg-orange-50/70 rounded-2xl border border-orange-200">
-            <span className="text-xs font-bold text-orange-950 flex items-center gap-1">
-              <BookOpen className="w-3.5 h-3.5 text-orange-600" /> Ví dụ câu thực tế (Anh - Việt):
-            </span>
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-orange-950 flex items-center gap-1">
+                <BookOpen className="w-3.5 h-3.5 text-orange-600" /> Ví dụ câu thực tế chuẩn Cambridge:
+              </span>
+              <span className="text-[10px] text-orange-700 font-semibold">Anh - Việt</span>
+            </div>
             <input
               type="text"
               value={exampleEn}
               onChange={(e) => setExampleEn(e.target.value)}
-              placeholder="English example: She has an extraordinary talent."
+              placeholder="English example: Hello, Paul! Haven't seen you for ages."
               className="w-full px-3 py-1.5 rounded-xl border border-orange-200 bg-white text-orange-950 text-xs font-medium focus:ring-2 focus:ring-orange-500 focus:outline-none"
             />
             <input
               type="text"
               value={exampleVi}
               onChange={(e) => setExampleVi(e.target.value)}
-              placeholder="Bản dịch tiếng Việt: Cô ấy có một tài năng phi thường."
+              placeholder="Bản dịch tiếng Việt: Xin chào Paul! Đã lâu lắm rồi không gặp."
               className="w-full px-3 py-1.5 rounded-xl border border-orange-200 bg-white text-orange-900 text-xs font-medium focus:ring-2 focus:ring-orange-500 focus:outline-none"
             />
           </div>

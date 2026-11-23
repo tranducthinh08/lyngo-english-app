@@ -82,6 +82,22 @@ export async function lookupDictionaryWord(rawWord: string) {
   }
 
   // 2. Tra cứu trực tuyến đồng thời: Google Translate (Nghĩa tiếng Việt chuẩn) + Dictionary API (IPA & Định nghĩa tiếng Anh)
+  const POS_MAP: Record<string, string> = {
+    noun: 'danh từ',
+    verb: 'động từ',
+    adjective: 'tính từ',
+    adverb: 'trạng từ',
+    interjection: 'thán từ / cảm thán',
+    exclamation: 'thán từ / cảm thán',
+    preposition: 'giới từ',
+    conjunction: 'liên từ',
+    pronoun: 'đại từ',
+    determiner: 'từ hạn định',
+    article: 'mạo từ',
+    phrase: 'cụm từ',
+    idiom: 'thành ngữ',
+  };
+
   try {
     const [gtRes, dictRes] = await Promise.allSettled([
       fetch(
@@ -111,28 +127,74 @@ export async function lookupDictionaryWord(rawWord: string) {
     let partOfSpeech = 'từ vựng';
     let englishDefinition = '';
     let example = '';
+    let exampleVi = '';
 
     if (dictRes.status === 'fulfilled' && Array.isArray(dictRes.value) && dictRes.value[0]) {
       const entry = dictRes.value[0];
 
+      // Tìm kiếm phiên âm chuẩn (IPA text) từ danh sách phonetics
       if (entry.phonetics && Array.isArray(entry.phonetics)) {
         const pWithAudio = entry.phonetics.find((p: { audio?: string }) => p.audio && p.audio.length > 0);
         if (pWithAudio) audio = pWithAudio.audio;
-        const pWithText = entry.phonetics.find((p: { text?: string }) => p.text);
-        if (pWithText) phonetic = pWithText.text;
+        const pWithText = entry.phonetics.find((p: { text?: string }) => p.text && p.text.trim().length > 0);
+        if (pWithText) phonetic = pWithText.text.trim();
       }
       if (!phonetic && entry.phonetic) {
-        phonetic = entry.phonetic;
+        phonetic = entry.phonetic.trim();
       }
 
-      if (entry.meanings && Array.isArray(entry.meanings) && entry.meanings[0]) {
-        const firstMeaning = entry.meanings[0];
-        partOfSpeech = firstMeaning.partOfSpeech || 'từ vựng';
-        const defObj = firstMeaning.definitions?.[0];
-        if (defObj) {
-          englishDefinition = defObj.definition || '';
-          example = defObj.example || '';
+      // Duyệt qua tất cả meanings để tìm từ loại chuẩn, định nghĩa và ví dụ đầy đủ nhất
+      if (entry.meanings && Array.isArray(entry.meanings)) {
+        for (const m of entry.meanings) {
+          const rawPos = (m.partOfSpeech || '').toLowerCase();
+          if (partOfSpeech === 'từ vựng' && POS_MAP[rawPos]) {
+            partOfSpeech = POS_MAP[rawPos];
+          }
+
+          if (m.definitions && Array.isArray(m.definitions)) {
+            for (const d of m.definitions) {
+              if (!englishDefinition && d.definition) {
+                englishDefinition = d.definition.trim();
+              }
+              if (!example && d.example) {
+                example = d.example.trim();
+              }
+            }
+          }
         }
+      }
+    }
+
+    // Nếu chưa có ví dụ từ từ điển, tạo một ví dụ ngắn tự nhiên
+    if (!example) {
+      if (cleanWord === 'hello' || cleanWord === 'hi') {
+        example = 'Hello! Nice to meet you.';
+      } else {
+        example = `She learned how to use the word "${cleanWord}" correctly.`;
+      }
+    }
+
+    // Dịch câu ví dụ sang tiếng Việt nếu có câu ví dụ
+    if (example) {
+      try {
+        const transExRes = await fetch(
+          `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=vi&q=${encodeURIComponent(example)}`,
+          {
+            headers: {
+              'User-Agent':
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            },
+            signal: AbortSignal.timeout(2000),
+          }
+        );
+        if (transExRes.ok) {
+          const transExData = await transExRes.json();
+          if (Array.isArray(transExData) && transExData[0]) {
+            exampleVi = String(transExData[0]).trim();
+          }
+        }
+      } catch {
+        // Bỏ qua nếu dịch ví dụ lỗi
       }
     }
 
@@ -146,7 +208,7 @@ export async function lookupDictionaryWord(rawWord: string) {
       partOfSpeech,
       englishDefinition,
       example,
-      exampleVi: '',
+      exampleVi,
       googleTranslateUrl,
       cambridgeUrl,
       meanings: [
@@ -155,7 +217,7 @@ export async function lookupDictionaryWord(rawWord: string) {
           definitions: [
             {
               definition: finalMeaning,
-              example,
+              example: example ? `${example}${exampleVi ? ` (${exampleVi})` : ''}` : '',
             },
           ],
         },

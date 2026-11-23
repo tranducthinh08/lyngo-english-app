@@ -362,11 +362,16 @@ export default function ReviewPage() {
                   )}
                 </div>
 
-                {/* Định nghĩa tiếng Việt */}
-                <div className="text-center bg-orange-100/70 p-3 rounded-2xl border border-orange-300">
+                {/* Định nghĩa tiếng Việt & Định nghĩa Cambridge */}
+                <div className="text-center bg-orange-100/70 p-3 rounded-2xl border border-orange-300 space-y-1">
                   <p className="text-base sm:text-lg font-black text-orange-950">
                     {currentCard.meaning}
                   </p>
+                  {currentCard.englishDefinition && (
+                    <p className="text-xs text-orange-900/85 italic font-medium pt-1 border-t border-orange-200">
+                      &ldquo;{currentCard.englishDefinition}&rdquo;
+                    </p>
+                  )}
                 </div>
 
                 {/* Ví dụ câu Anh - Việt */}

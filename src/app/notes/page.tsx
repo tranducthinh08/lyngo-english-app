@@ -364,9 +364,14 @@ export default function NotesPage() {
                     </span>
                   </div>
 
-                  {/* Nghĩa của từ */}
-                  <div className="p-3 rounded-2xl bg-orange-50/80 border border-orange-200 text-xs text-orange-950 font-bold leading-relaxed">
-                    {note.meaning || 'Chưa có nghĩa tóm tắt'}
+                  {/* Nghĩa của từ & Định nghĩa Cambridge */}
+                  <div className="p-3 rounded-2xl bg-orange-50/80 border border-orange-200 text-xs text-orange-950 font-bold leading-relaxed space-y-1">
+                    <p>{note.meaning || 'Chưa có nghĩa tóm tắt'}</p>
+                    {note.englishDefinition && (
+                      <p className="text-[11px] font-normal italic text-slate-700 pt-1 border-t border-orange-200/80">
+                        &ldquo;{note.englishDefinition}&rdquo;
+                      </p>
+                    )}
                   </div>
 
                   {/* Mẹo nhớ của Cô Ly */}
@@ -499,10 +504,15 @@ export default function NotesPage() {
                       <span className="text-[11px] text-purple-700 font-black uppercase tracking-wider flex items-center justify-center gap-1">
                         <span>🐟</span> Mặt sau (Kiểu nhớ của Cô Ly)
                       </span>
-                      <div className="p-4 bg-orange-50 rounded-2xl border-2 border-orange-200">
+                      <div className="p-4 bg-orange-50 rounded-2xl border-2 border-orange-200 space-y-1">
                         <p className="font-serif font-black text-xl text-orange-950">
                           {currentNote.meaning}
                         </p>
+                        {currentNote.englishDefinition && (
+                          <p className="text-xs text-orange-900/80 italic font-medium pt-1 border-t border-orange-200">
+                            &ldquo;{currentNote.englishDefinition}&rdquo;
+                          </p>
+                        )}
                       </div>
                       {currentNote.note && (
                         <p className="text-xs text-slate-800 italic bg-purple-50 p-3 rounded-2xl border-2 border-purple-200 font-medium leading-relaxed">

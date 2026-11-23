@@ -9,6 +9,7 @@ export interface DictCacheItem {
   englishDefinition?: string;
   exampleEn?: string;
   exampleVi?: string;
+  mnemonic?: string;
   cambridgeUrl: string;
   googleTranslateUrl: string;
   cachedAt: number;

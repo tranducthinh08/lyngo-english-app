@@ -47,7 +47,12 @@ export default function ReaderPage() {
   const [editingNoteData, setEditingNoteData] = useState<{
     word: string;
     phonetic?: string;
+    partOfSpeech?: string;
     meaning?: string;
+    englishDefinition?: string;
+    exampleEn?: string;
+    exampleVi?: string;
+    contextSentence?: string;
     cambridgeUrl?: string;
     googleTranslateUrl?: string;
     albumId?: string;
@@ -313,7 +318,12 @@ export default function ReaderPage() {
             setEditingNoteData({
               word: wordData.word,
               phonetic: wordData.phonetic,
+              partOfSpeech: wordData.partOfSpeech,
               meaning: wordData.meaning,
+              englishDefinition: wordData.englishDefinition,
+              exampleEn: wordData.exampleEn,
+              exampleVi: wordData.exampleVi,
+              contextSentence: currentSentenceText || undefined,
               cambridgeUrl: wordData.cambridgeUrl,
               googleTranslateUrl: wordData.googleTranslateUrl,
               albumId: page.albumId,

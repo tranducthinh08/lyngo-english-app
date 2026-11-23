@@ -11,6 +11,7 @@ export interface InstantLookupResult {
   englishDefinition?: string;
   exampleEn: string;
   exampleVi: string;
+  mnemonic?: string;
   cambridgeUrl: string;
   googleTranslateUrl: string;
   source: 'cambridge-offline' | 'indexeddb-cache' | 'online-fallback';
@@ -46,6 +47,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
       englishDefinition: '',
       exampleEn: '',
       exampleVi: '',
+      mnemonic: '',
       cambridgeUrl: getCambridgeDictionaryUrl(rawWord),
       googleTranslateUrl: getGoogleTranslateUrl(rawWord),
       source: 'cambridge-offline',
@@ -75,6 +77,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
         englishDefinition: offlineEntry.enDef || '',
         exampleEn: offlineEntry.enEx || '',
         exampleVi: offlineEntry.viEx || '',
+        mnemonic: `Mẹo Mèo Cam: Nhớ từ "${cleanWord}" (${offlineEntry.pos}) nghĩa là "${offlineEntry.vi}" qua câu ví dụ: "${offlineEntry.enEx}"!`,
         cambridgeUrl,
         googleTranslateUrl,
         source: 'cambridge-offline',
@@ -97,6 +100,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
           englishDefinition: cached.englishDefinition || '',
           exampleEn: cached.exampleEn || '',
           exampleVi: cached.exampleVi || '',
+          mnemonic: cached.mnemonic || '',
           cambridgeUrl: cached.cambridgeUrl || cambridgeUrl,
           googleTranslateUrl: cached.googleTranslateUrl || googleTranslateUrl,
           source: 'indexeddb-cache',
@@ -127,6 +131,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
         const englishDefinition = data.englishDefinition || '';
         const exampleEn = data.example || (data.meanings?.[0]?.definitions?.[0]?.example) || '';
         const exampleVi = data.exampleVi || '';
+        const mnemonic = data.mnemonic || '';
 
         const item: DictCacheItem = {
           word: cleanWord,
@@ -136,6 +141,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
           englishDefinition,
           exampleEn,
           exampleVi,
+          mnemonic,
           cambridgeUrl,
           googleTranslateUrl,
           cachedAt: Date.now(),
@@ -152,6 +158,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
           englishDefinition,
           exampleEn,
           exampleVi,
+          mnemonic,
           cambridgeUrl,
           googleTranslateUrl,
           source: 'online-fallback',
@@ -171,6 +178,7 @@ export async function lookupCambridgeInstant(rawWord: string): Promise<InstantLo
     englishDefinition: '',
     exampleEn: '',
     exampleVi: '',
+    mnemonic: '',
     cambridgeUrl,
     googleTranslateUrl,
     source: 'online-fallback',

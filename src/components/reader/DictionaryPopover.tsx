@@ -13,7 +13,11 @@ interface DictionaryPopoverProps {
   onAddNote: (wordData: {
     word: string;
     phonetic?: string;
+    partOfSpeech?: string;
     meaning?: string;
+    englishDefinition?: string;
+    exampleEn?: string;
+    exampleVi?: string;
     cambridgeUrl: string;
     googleTranslateUrl?: string;
   }) => void;
@@ -260,7 +264,11 @@ export default function DictionaryPopover({ word, position, onClose, onAddNote }
             onAddNote({
               word: data?.word || word,
               phonetic: data?.phonetic || '',
+              partOfSpeech: data?.partOfSpeech || '',
               meaning: primaryMeaning,
+              englishDefinition: data?.englishDefinition || '',
+              exampleEn: data?.example || '',
+              exampleVi: data?.exampleVi || '',
               cambridgeUrl,
               googleTranslateUrl: googleUrl,
             });

@@ -2549,7 +2549,7 @@
     "vi": "loài trăn siết mồi (boa constrictor)",
     "enDef": "a snake that kills by wrapping itself around prey and crushing it",
     "enEx": "The boa constrictor coiled tightly around the branch.",
-    "viEx": "Con trăn siết mồi quấn chặt lấy cành cây."
+    "viEx": "Con trăn siết mồi cuộn chặt quanh cành cây."
   },
   "succeeded": {
     "word": "succeed",
@@ -2712,5 +2712,77 @@
     "enDef": "a deep hole in the ground from which you can get water, oil, or gas",
     "enEx": "Somewhere the desert hides a well.",
     "viEx": "Đâu đó nơi sa mạc ẩn giấu một giếng nước trong veo."
+  },
+  "hello": {
+    "word": "hello",
+    "ipa": "/həˈləʊ/",
+    "pos": "thán từ / danh từ",
+    "vi": "xin chào, lời chào hỏi",
+    "enDef": "used when meeting or greeting someone, or answering the telephone",
+    "enEx": "Hello, Paul! Haven't seen you for ages.",
+    "viEx": "Xin chào Paul! Đã lâu lắm rồi không gặp."
+  },
+  "hi": {
+    "word": "hi",
+    "ipa": "/haɪ/",
+    "pos": "thán từ",
+    "vi": "chào, xin chào thân mật",
+    "enDef": "used as an informal greeting",
+    "enEx": "Hi there! How are you doing today?",
+    "viEx": "Chào bạn! Hôm nay bạn thế nào?"
+  },
+  "welcome": {
+    "word": "welcome",
+    "ipa": "/ˈwel.kəm/",
+    "pos": "thán từ / động từ / tính từ",
+    "vi": "chào mừng, hoan nghênh",
+    "enDef": "said as a greeting to someone arriving at a place",
+    "enEx": "Welcome to our English learning app!",
+    "viEx": "Chào mừng bạn đến với ứng dụng học tiếng Anh của chúng tôi!"
+  },
+  "constrictors": {
+    "word": "constrictors",
+    "ipa": "/kənˈstrɪk.tərz/",
+    "pos": "danh từ (số nhiều)",
+    "vi": "các loài trăn siết mồi",
+    "enDef": "snakes that kill by wrapping themselves around prey and crushing it",
+    "enEx": "Boa constrictors swallow their prey whole, without chewing it.",
+    "viEx": "Các loài trăn boa nuốt chửng con mồi mà không cần nhai."
+  },
+  "friend": {
+    "word": "friend",
+    "ipa": "/frend/",
+    "pos": "danh từ",
+    "vi": "người bạn, bạn bè",
+    "enDef": "a person who you know well and who you like a lot",
+    "enEx": "A friend in need is a friend indeed.",
+    "viEx": "Một người bạn khi hoạn nạn mới là bạn thật sự."
+  },
+  "cat": {
+    "word": "cat",
+    "ipa": "/kæt/",
+    "pos": "danh từ",
+    "vi": "con mèo, mèo cưng",
+    "enDef": "a small animal with fur, four legs, and a tail, kept as a pet",
+    "enEx": "The orange cat is sleeping peacefully on the bookshelf.",
+    "viEx": "Chú mèo cam đang ngủ say sưa trên giá sách."
+  },
+  "learn": {
+    "word": "learn",
+    "ipa": "/lɜːn/",
+    "pos": "động từ",
+    "vi": "học tập, tiếp thu kiến thức",
+    "enDef": "to get knowledge or a skill in a new subject or activity",
+    "enEx": "She loves to learn new English vocabulary every day.",
+    "viEx": "Cô ấy thích học từ vựng tiếng Anh mới mỗi ngày."
+  },
+  "read": {
+    "word": "read",
+    "ipa": "/riːd/",
+    "pos": "động từ",
+    "vi": "đọc sách, đọc hiểu",
+    "enDef": "to look at words and understand what they mean",
+    "enEx": "Reading books every day improves memory and vocabulary.",
+    "viEx": "Đọc sách mỗi ngày giúp cải thiện trí nhớ và vốn từ vựng."
   }
 }
