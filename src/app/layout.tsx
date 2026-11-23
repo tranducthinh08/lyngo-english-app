@@ -19,7 +19,13 @@ export const metadata: Metadata = {
   title: "Lyngo - Đọc Sách Giấy & Ghi Nhớ Kiểu Cô Ly",
   description: "Ứng dụng quét sách giấy bằng AI, tra cứu Cambridge Dictionary, ghi chú cá nhân hóa kèm ảnh và trợ lý đọc giọng tiếng Anh bản ngữ.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "256x256" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
