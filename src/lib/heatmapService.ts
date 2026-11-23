@@ -24,8 +24,27 @@ export interface HeatmapStats {
   dailyAverage: number;
   longestStreak: number;
   currentStreak: number;
+  learnedToday: boolean;
+  todayCount: number;
   weeks: HeatmapWeek[];
   monthsLabels: { label: string; weekIndex: number }[];
+}
+
+export interface StreakData {
+  currentStreak: number;
+  longestStreak: number;
+  learnedToday: boolean;
+  todayCount: number;
+}
+
+export async function getStreakData(): Promise<StreakData> {
+  const stats = await getHeatmapStats();
+  return {
+    currentStreak: stats.currentStreak,
+    longestStreak: stats.longestStreak,
+    learnedToday: stats.learnedToday,
+    todayCount: stats.todayCount,
+  };
 }
 
 function formatDateStr(d: Date): string {
@@ -53,6 +72,9 @@ export async function recordReviewActivity(noteId: string, rating: number): Prom
 
   try {
     await db.reviewLogs.add(log);
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('lyngo_streak_updated'));
+    }
   } catch (err) {
     console.warn('Lỗi ghi review log:', err);
   }
@@ -251,6 +273,8 @@ export async function getHeatmapStats(targetYear?: number): Promise<HeatmapStats
     dailyAverage,
     longestStreak,
     currentStreak,
+    learnedToday: todayCount > 0,
+    todayCount,
     weeks,
     monthsLabels,
   };

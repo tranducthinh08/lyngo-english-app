@@ -19,6 +19,7 @@ import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
 import { syncService, trackDeletedId } from '@/lib/syncService';
 import CreateAlbumModal from '@/components/bookshelf/CreateAlbumModal';
 import CuteCat from '@/components/common/CuteCat';
+import StreakBadge from '@/components/common/StreakBadge';
 
 export default function HomePage() {
   const [albums, setAlbums] = useState<Album[]>([]);
@@ -141,6 +142,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Chuỗi Học Tập (Streak Day) Nổi Bật Ở Trang Chủ */}
+      <StreakBadge variant="banner" />
 
       {/* SECTION 1: TỦ SÁCH & ALBUM MÈO CAM */}
       <section className="space-y-4">

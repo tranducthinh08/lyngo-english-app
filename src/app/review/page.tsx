@@ -19,6 +19,7 @@ import { syncService } from '@/lib/syncService';
 import { recordReviewActivity } from '@/lib/heatmapService';
 import AnkiHeatmap from '@/components/review/AnkiHeatmap';
 import CuteCat from '@/components/common/CuteCat';
+import StreakBadge from '@/components/common/StreakBadge';
 
 export default function ReviewPage() {
   const [allNotes, setAllNotes] = useState<VocabNote[]>([]);
@@ -187,6 +188,9 @@ export default function ReviewPage() {
           </select>
         </div>
       </div>
+
+      {/* Chuỗi Học Tập (Streak Day) Nổi Bật */}
+      <StreakBadge variant="banner" />
 
       {/* Thống kê chuẩn Anki */}
       <div className="bg-[#fffdfa] rounded-3xl p-4 border-2 border-orange-200 shadow-xs flex items-center justify-around text-center">

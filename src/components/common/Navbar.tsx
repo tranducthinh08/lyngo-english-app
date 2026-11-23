@@ -9,6 +9,7 @@ import { useSyncStatus } from '@/hooks/useSyncStatus';
 import SettingsModal from './SettingsModal';
 import CuteCat from './CuteCat';
 import CursorSizeControl from './CursorSizeControl';
+import StreakBadge from './StreakBadge';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -126,7 +127,10 @@ export default function Navbar() {
               })}
             </nav>
 
-            <div className="h-6 w-px bg-orange-200/80 mx-0.5 hidden md:block" />
+            {/* Huy hiệu Chuỗi Học Tập (Streak Badge toàn trang) */}
+            <StreakBadge variant="navbar" />
+
+            <div className="h-6 w-px bg-orange-200/80 mx-0.5 hidden sm:block" />
 
             {/* Chỉ báo trạng thái Đồng bộ Đám mây (Icon gọn gàng kèm Tooltip) */}
             {isConfigured ? (

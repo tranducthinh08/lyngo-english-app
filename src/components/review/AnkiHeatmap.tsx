@@ -302,16 +302,28 @@ export default function AnkiHeatmap({ className = '', defaultTheme = 'meo-cam' }
           </span>
         </div>
 
-        <div className="flex items-center gap-1 whitespace-nowrap">
-          <span>Longest streak:</span>
-          <span className={`font-black ${isDark ? 'text-[#55a630]' : 'text-orange-600'}`}>
+        <div
+          className={`flex items-center gap-1.5 whitespace-nowrap px-2.5 py-1 rounded-xl border transition-all ${
+            isDark
+              ? 'bg-zinc-800/80 border-zinc-700 text-zinc-200'
+              : 'bg-amber-100/70 border-amber-300/80 text-orange-950 shadow-2xs'
+          }`}
+        >
+          <span>🏆 Longest streak:</span>
+          <span className={`font-black ${isDark ? 'text-[#55a630]' : 'text-amber-700'}`}>
             {stats?.longestStreak ?? 0} days
           </span>
         </div>
 
-        <div className="flex items-center gap-1 whitespace-nowrap">
-          <span>Current streak:</span>
-          <span className={`font-black ${isDark ? 'text-[#55a630]' : 'text-amber-600'}`}>
+        <div
+          className={`flex items-center gap-1.5 whitespace-nowrap px-2.5 py-1 rounded-xl border transition-all ${
+            isDark
+              ? 'bg-zinc-800/80 border-zinc-700 text-zinc-200'
+              : 'bg-gradient-to-r from-orange-100 to-amber-100 border-orange-300 text-orange-950 shadow-xs'
+          }`}
+        >
+          <span className="flex items-center gap-1">🔥 Current streak:</span>
+          <span className={`font-black ${isDark ? 'text-[#55a630]' : 'text-orange-600 font-sans'}`}>
             {stats?.currentStreak ?? 0} {stats?.currentStreak === 1 ? 'day' : 'days'}
           </span>
         </div>
