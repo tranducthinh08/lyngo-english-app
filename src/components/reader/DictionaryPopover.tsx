@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, ExternalLink, X, Loader2, Sparkles, BookOpen, Globe } from 'lucide-react';
 import { DictionaryData } from '@/types';
 import { lookupCambridgeInstant } from '@/lib/cambridgeLookup';
@@ -20,9 +20,38 @@ interface DictionaryPopoverProps {
 }
 
 export default function DictionaryPopover({ word, position, onClose, onAddNote }: DictionaryPopoverProps) {
+  const popoverRef = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<DictionaryData | null>(null);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+
+  // Tự động đóng popup khi nhấp chuột ra ngoài hoặc ấn phím Escape
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent | TouchEvent) => {
+      if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) {
+        onClose();
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    const timer = setTimeout(() => {
+      document.addEventListener('mousedown', handleOutsideClick, true);
+      document.addEventListener('touchstart', handleOutsideClick, true);
+      window.addEventListener('keydown', handleKeyDown);
+    }, 60);
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('mousedown', handleOutsideClick, true);
+      document.removeEventListener('touchstart', handleOutsideClick, true);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose]);
 
   useEffect(() => {
     let isMounted = true;
@@ -117,6 +146,7 @@ export default function DictionaryPopover({ word, position, onClose, onAddNote }
 
   return (
     <div
+      ref={popoverRef}
       style={{ left: `${left}px`, top: `${top}px` }}
       className="fixed z-50 w-[360px] bg-[#fffdfa] rounded-3xl border-2 border-orange-200 shadow-modal backdrop-blur-md p-4 animate-in fade-in zoom-in-95 duration-150 text-slate-900"
     >

@@ -305,6 +305,7 @@ export default function ReaderPage() {
       {/* Popover Tra Từ Cambridge */}
       {selectedWordInfo && (
         <DictionaryPopover
+          key={`${selectedWordInfo.word}-${selectedWordInfo.position.x}-${selectedWordInfo.position.y}`}
           word={selectedWordInfo.word}
           position={selectedWordInfo.position}
           onClose={() => setSelectedWordInfo(null)}
